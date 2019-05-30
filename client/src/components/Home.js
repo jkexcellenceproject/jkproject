@@ -1,4 +1,5 @@
 import React from 'react';
+import PriceCard from './PriceCard';
 import { Link } from 'react-router-dom';
 
 import '../styles/common.scss';
@@ -8,6 +9,7 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div>
+				{/* About us Section */}
 				<section className="ui middle aligned stackable grid container margin-bottom">
 					<div className="row">
 						<div className="center aligned column">
@@ -64,10 +66,11 @@ class Home extends React.Component {
 					</div>
 					<div className="row">
 						<div className="center aligned column">
-							<Link className="ui huge yellow button">About us</Link>
+							<Link className="ui huge button">About us</Link>
 						</div>
 					</div>
 				</section>
+				{/* Our Class Section */}
 				<section className="ui middle aligned stackable grid container margin-bottom">
 					<div className="row">
 						<div className="center aligned column">
@@ -75,10 +78,7 @@ class Home extends React.Component {
 						</div>
 					</div>
 					<div className="row">
-						<div
-							className="six wide centered column"
-							style={{ textAlign: 'center' }}
-						>
+						<div className="six wide centered center aligned column">
 							<p>
 								Course sub titleCourse sub titleCourse sub titleCourse sub
 								titleCourse sub titleCourse sub titleCourse sub titleCourse sub
@@ -118,6 +118,23 @@ class Home extends React.Component {
 							<Link className="ui huge primary button">Try Free Trial</Link>
 						</div>
 					</div>
+				</section>
+				{/* Price Section */}
+				<section className="ui middle aligned stackable grid container margin-bottom">
+					<div className="row">
+						<div className="center aligned column">
+							<h2>Price</h2>
+						</div>
+					</div>
+					<div className="four column row">
+						<PriceCard />
+						<PriceCard />
+						<PriceCard />
+						<PriceCard />
+					</div>
+					{/* <div className="row">
+
+					</div> */}
 				</section>
 			</div>
 		);
