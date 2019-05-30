@@ -65,32 +65,30 @@ class Home extends React.Component {
 							<p>
 								texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextte
 							</p>
-							<div className="ui grid">
-								<div className="four column row">
-									<div class="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
-										/>
-									</div>
-									<div class="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
-										/>
-									</div>
-									<div class="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
-										/>
-									</div>
-									<div class="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
-										/>
-									</div>
+							<div className="ui four column grid">
+								<div class="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										class="ui image"
+									/>
+								</div>
+								<div class="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										class="ui image"
+									/>
+								</div>
+								<div class="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										class="ui image"
+									/>
+								</div>
+								<div class="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										class="ui image"
+									/>
 								</div>
 							</div>
 						</div>
@@ -104,7 +102,7 @@ class Home extends React.Component {
 					</div>
 					<div className="row">
 						<div className="center aligned column">
-							<Link className="ui huge button">About us</Link>
+							<Link className="ui big button">About us</Link>
 						</div>
 					</div>
 				</section>
@@ -153,7 +151,7 @@ class Home extends React.Component {
 					</div>
 					<div className="row">
 						<div className="center aligned column">
-							<Link className="ui huge primary button">Try Free Trial</Link>
+							<Link className="ui big primary button">Try Free Trial</Link>
 						</div>
 					</div>
 				</section>
@@ -296,9 +294,9 @@ class Home extends React.Component {
 						</div>
 						<div className="column">
 							<div className="ui card">
-								<div className="image">
+								<Link to="/ h" className="image">
 									<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-								</div>
+								</Link>
 								<div className="content">
 									<Link className="header">Article Title</Link>
 									<div className="meta">
@@ -320,9 +318,9 @@ class Home extends React.Component {
 						</div>
 						<div className="column">
 							<div className="ui card">
-								<div className="image">
+								<Link to="/ h" className="image">
 									<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-								</div>
+								</Link>
 								<div className="content">
 									<Link className="header">Article Title</Link>
 									<div className="meta">
@@ -344,9 +342,9 @@ class Home extends React.Component {
 						</div>
 						<div className="column">
 							<div className="ui card">
-								<div className="image">
+								<Link to="/ h" className="image">
 									<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-								</div>
+								</Link>
 								<div className="content">
 									<Link className="header">Article Title</Link>
 									<div className="meta">
@@ -366,6 +364,80 @@ class Home extends React.Component {
 								</div>
 							</div>
 						</div>
+					</div>
+				</section>
+
+				{/* FAQ Section */}
+				<section className="ui middle aligned stackable grid container margin-bottom">
+					<div className="row">
+						<div className="center aligned column">
+							<h2>FAQ</h2>
+						</div>
+					</div>
+					<div className="row">
+						<div className="six wide centered center aligned column">
+							<p style={{ fontSize: '18px' }}>
+								Do you have any question? <br />
+								texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+							</p>
+						</div>
+					</div>
+					<div className="equal width row center aligned">
+						<div className="column">
+							<div>
+								<p>
+									texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
+								</p>
+							</div>
+							<div className="ui divider" />
+							<div className="centered">
+								<Link to="/" className="ui button yellow basic">
+									See More
+								</Link>
+							</div>
+						</div>
+						<div className="column">
+							<div>
+								<p>
+									texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
+								</p>
+							</div>
+							<div className="ui divider" />
+							<div className="centered">
+								<Link to="/" className="ui button yellow basic">
+									See More
+								</Link>
+							</div>
+						</div>
+						<div className="column">
+							<div>
+								<p>
+									texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
+								</p>
+							</div>
+							<div className="ui divider" />
+							<div className="centered">
+								<Link to="/" className="ui button yellow basic">
+									See More
+								</Link>
+							</div>
+						</div>
+						<div className="column">
+							<div>
+								<p>
+									texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
+								</p>
+							</div>
+							<div className="ui divider" />
+							<Link to="/" className="ui button yellow basic">
+								See More
+							</Link>
+						</div>
+					</div>
+					<div className="row centered">
+						<Link to="/" className="ui big button yellow">
+							View FAQ's
+						</Link>
 					</div>
 				</section>
 			</div>
