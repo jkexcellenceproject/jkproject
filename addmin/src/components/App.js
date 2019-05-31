@@ -10,8 +10,15 @@ const Home = () => {
 
 class App extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLogin: false
+        }
+    }
+
     renderNav() {
-        if(!this.props.isLogin) {
+        if(window.location.pathname !== "/") {
             return (
                 <>
                     <Header />
@@ -24,9 +31,9 @@ class App extends Component {
         return(
             <div>
                 <BrowserRouter>
-                    <Route exact path="/" render={(props) => <Login isLogin={true} />} />
                     {this.renderNav()}
                     <div className="container">
+                        <Route exact path="/" component={Login} />
                         <Route exact path="/home" component={Home} />
                     </div>
                 </BrowserRouter>
