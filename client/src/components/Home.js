@@ -10,7 +10,12 @@ class Home extends React.Component {
 		return (
 			<div>
 				{/* Image Slider */}
-				<Carousel autoplay={true} speed="1000">
+				<Carousel
+					className="margin-bottom"
+					autoplay={true}
+					speed="2000"
+					transitionMode="fade"
+				>
 					<img src={`${process.env.PUBLIC_URL}/images/slideExample1.jpg`} />
 					<img src={`${process.env.PUBLIC_URL}/images/slideExample2.jpg`} />
 					<img src={`${process.env.PUBLIC_URL}/images/slideExample3.jpg`} />
