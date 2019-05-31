@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
-		<div class="ui menu">
+		<div class="ui menu" style={{ marginBottom: '0' }}>
 			<div class="header item">LOGO</div>
 			<Link to="/" class="item">
 				Home

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from 'nuka-carousel';
 
 import '../styles/common.scss';
 import '../styles/style.scss';
@@ -9,44 +10,11 @@ class Home extends React.Component {
 		return (
 			<div>
 				{/* Image Slider */}
-				<div id="slider-wrap">
-					<ul id="slider">
-						<li data-color="#1abc9c">
-							<div>
-								<h3>Slide #1</h3>
-								<span>Sub-title #1</span>
-							</div>
-							<i class="fa fa-image" />
-						</li>
-
-						<li data-color="#3498db">
-							<div>
-								<h3>Slide #2</h3>
-								<span>Sub-title #2</span>
-							</div>
-							<i class="fa fa-gears" />
-						</li>
-
-						<li data-color="#9b59b6">
-							<div>
-								<h3>Slide #3</h3>
-								<span>Sub-title #3</span>
-							</div>
-							<i class="fa fa-sliders" />
-						</li>
-					</ul>
-					<div class="btns" id="next">
-						<i class="fa fa-arrow-right" />
-					</div>
-					<div class="btns" id="previous">
-						<i class="fa fa-arrow-left" />
-					</div>
-					<div id="counter" />
-
-					<div id="pagination-wrap">
-						<ul />
-					</div>
-				</div>
+				<Carousel autoplay={true} speed="1000">
+					<img src={`${process.env.PUBLIC_URL}/images/slideExample1.jpg`} />
+					<img src={`${process.env.PUBLIC_URL}/images/slideExample2.jpg`} />
+					<img src={`${process.env.PUBLIC_URL}/images/slideExample3.jpg`} />
+				</Carousel>
 				{/* About us Section */}
 				<section className="ui middle aligned stackable grid container margin-bottom">
 					<div className="row">
@@ -106,6 +74,7 @@ class Home extends React.Component {
 						</div>
 					</div>
 				</section>
+
 				{/* Our Class Section */}
 				<section className="ui middle aligned stackable grid container margin-bottom">
 					<div className="row">
@@ -155,6 +124,7 @@ class Home extends React.Component {
 						</div>
 					</div>
 				</section>
+
 				{/* Price Section */}
 				<section className="ui middle aligned stackable grid container margin-bottom">
 					<div className="row">
@@ -440,6 +410,44 @@ class Home extends React.Component {
 						</Link>
 					</div>
 				</section>
+
+				{/* Contact Section */}
+				{/* <section className="ui middle aligned stackable grid container margin-bottom">
+					<div className="row">
+						<div className="center aligned column">
+							<h2>Contact</h2>
+						</div>
+					</div>
+					<div className="row">
+						<div className="nine wide column">
+							<div>
+								blog sub titleblog sub titleblog sub titleblog sub titleblog sub
+								titleblog sub title
+							</div>
+							<div>
+								000-0000-0000 <br />
+								xxxxx@gmail.com <br />
+								123-222 Granville st, Vancouver
+							</div>
+						</div>
+						<div className="row">
+							<div className="seven wide column">
+								<div className="ui form">
+									<div className="fields">
+										<div className="field">
+											<label>Name</label>
+											<input type="text" placeholder="First Name" />
+										</div>
+										<div className="field">
+											<label>Last name</label>
+											<input type="text" placeholder="Last Name" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> */}
 			</div>
 		);
 	}
