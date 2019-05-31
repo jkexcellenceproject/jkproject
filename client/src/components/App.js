@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
+import Footer from './Footer';
 
 class App extends Component {
 	render() {
@@ -9,6 +10,7 @@ class App extends Component {
 			<BrowserRouter>
 				<Header />
 				<Route path="/" exact component={Home} />
+				<Footer />
 			</BrowserRouter>
 		);
 	}
