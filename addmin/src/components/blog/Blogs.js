@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchUsers } from "../../actions";
+import { fetchBlogs } from "../../actions";
 
 class Blogs extends Component {
     componentDidMount() {
-        this.props.fetchUsers();
+        this.props.fetchBlogs();
     }
     componentWillMount(){
         document.getElementById('body').className='blogs'
@@ -20,18 +20,18 @@ class Blogs extends Component {
         document.getElementById('add-form').className='';
     }
     renderList() {
-        if(this.props.users === null){
+        if(this.props.blogs === null){
             return <p>Loading</p>;
         }
-        return Object.values(this.props.users).map(user => {
+        return Object.values(this.props.blogs).map(blog => {
                 return (
-                    <div className="item" key={user.id}>
+                    <div className="item" key={blog.id}>
                         <div className="right floated content">
-                            <div className="ui large teal button"><Link to={`/${user.id}`}>Edit</Link></div>
+                            <div className="ui large teal button"><Link to={`/${blog.id}`}>Edit</Link></div>
                         </div>
                             <img className="ui image" src="https://dummyimage.com/150x150/ccc/fff" />
                         <div className="content">
-                            {user.name}
+                            {blog.title}
                         </div>
                     </div>
                 );
@@ -44,25 +44,25 @@ class Blogs extends Component {
         return(
             <div className="ui middle aligned divided list">
                 {this.renderList()}
-                <button id="add" onClick={() => this.onClickPopup()} class="ui icon button red">
-                    <i class="material-icons">add</i>
+                <button id="add" onClick={() => this.onClickPopup()} className="ui icon button red">
+                    <i className="material-icons">add</i>
                 </button>
                 <div id="add-form">
-                    <form class="ui form">
-                        <div class="field">
+                    <form className="ui form">
+                        <div className="field">
                             <label>Title</label>
                             <input type="text" name="first-name" />
                         </div>
-                        <div class="field">
+                        <div className="field">
                             <label>Text</label>
                             <textarea></textarea>
                         </div>
-                        <div class="ui small image upload-image">
+                        <div className="ui small image upload-image">
                             <img src={`${process.env.PUBLIC_URL}/images/common/upload-image.png`}/>
                             <input type="file" name="fileToUpload" id="fileToUpload"/>
                         </div>
-                        <button class="ui large teal button" type="submit">Submit</button>
-                        <button class="ui large red button" onClick={this.clickClose}>Cancel</button>
+                        <button className="ui large teal button" type="submit">Submit</button>
+                        <button className="ui large red button" onClick={this.clickClose}>Cancel</button>
                     </form>
                 </div>
             </div>
@@ -70,13 +70,13 @@ class Blogs extends Component {
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = ({blogs}) => {
     return { 
-        users: state.users
+        blogs
     };
 };
 
 export default connect(
     mapStateToProps,
-    { fetchUsers }
+    { fetchBlogs }
 )(Blogs);

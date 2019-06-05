@@ -1,10 +1,10 @@
-import users from '../api/user';
-import { FETCH_USERS } from './types';
+import axios from 'axios';
+import { FETCH_BLOGS } from './types';
 
-export const fetchUsers = () => async dispatch => {
-    const response = await users.get('users');
+export const fetchBlogs = () => async dispatch => {
+    const response = await axios.get('/api/blogs');
 
-    dispatch({ type: FETCH_USERS, payload: response.data });
+    dispatch({ type: FETCH_BLOGS, payload: response.data });
 };
 
 
