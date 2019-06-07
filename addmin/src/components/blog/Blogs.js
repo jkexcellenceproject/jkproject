@@ -8,10 +8,10 @@ class Blogs extends Component {
         this.props.fetchBlogs();
     }
     componentWillMount(){
-        document.getElementById('body').className='blogs'
+        document.getElementById('body').className='blogs';
     }
     componentWillUnmount(){
-        document.getElementById('body').className=''
+        document.getElementById('body').className='';
     }
     onClickPopup() {
         document.getElementById('add-form').className='open'
@@ -23,21 +23,22 @@ class Blogs extends Component {
         if(this.props.blogs === null){
             return <p>Loading</p>;
         }
-        return Object.values(this.props.blogs).map(blog => {
+        return this.props.blogs.map(blog => {
+            if(!blog[0]) {
                 return (
                     <div className="item" key={blog.id}>
                         <div className="right floated content">
-                            <div className="ui large teal button"><Link to={`/${blog.id}`}>Edit</Link></div>
+                            <div className="ui large teal button"><Link to={`/blog/edit/${blog.id}`}>Edit</Link></div>
                         </div>
                             <img className="ui image" src="https://dummyimage.com/150x150/ccc/fff" />
                         <div className="content">
                             {blog.title}
                         </div>
                     </div>
-                );
-                
+                    );
+                }   
             }
-        )        
+        )       
     }
 
     render() {
@@ -70,9 +71,9 @@ class Blogs extends Component {
     }
 }
 
-const mapStateToProps = ({blogs}) => {
+const mapStateToProps = state => {
     return { 
-        blogs
+        blogs: Object.values(state.blogs)
     };
 };
 
