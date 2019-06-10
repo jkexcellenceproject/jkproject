@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import '../styles/style.scss';
+import '../styles/common.scss';
+
 const Header = () => {
 	return (
-		<div className="ui top fixed menu">
-			<div className="item">LOGO</div>
+		<div className="ui top fixed borderless menu links">
+			<Link className="item">
+				<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
+			</Link>
 			<div className="ui container" />
 			<Link className="item">About us</Link>
 			<Link className="item">Learn English</Link>

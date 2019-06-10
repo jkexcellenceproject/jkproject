@@ -1,3 +1,51 @@
-.slideImage {
-	background-size: cover;
+@import 'common';
+
+.blueGreen {
+	background-color: $blueGreen;
 }
+
+.red {
+	background-color: $red;
+}
+
+.white-text {
+	color: white !important;
+}
+
+.blue-text {
+	color: $blueGreen !important;
+}
+
+.content-padding {
+	@include padding;
+}
+
+.margin {
+	@include margin;
+}
+
+// Header.j
+
+.links {
+	img {
+		background-size: contain;
+	}
+	a {
+		color: $yellow !important;
+	}
+}
+
+// Home.js
+.slide-wrap {
+	margin-bottom: -5px;
+	overflow: hidden;
+}
+
+.slideImage {
+	object-fit: cover;
+	object-position: 50% 25%;
+	width: 100%;
+	height: 100vh;
+}
+
+// About us
