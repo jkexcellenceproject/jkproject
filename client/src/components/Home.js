@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carousel from 'nuka-carousel';
+import ReactSiema from 'react-siema';
 
 import '../styles/common.scss';
 import '../styles/style.scss';
 
 class Home extends React.Component {
+	state = {
+		datas: [
+			{ name: 'Kano', age: 38 },
+			{ name: 'YOoo', age: 23 },
+			{ name: 'G.R', age: 90 }
+		]
+	};
+
 	componentWillMount() {
 		document.querySelector('body').className = 'blogs';
 	}
@@ -13,28 +21,34 @@ class Home extends React.Component {
 		document.querySelector('body').className = '';
 	}
 
+	createCarouselItem = datas => {
+		const item = this.state.datas.map(data => {
+			return (
+				<div className="carousel-item">
+					<img
+						class="ui small circular image"
+						src="https://react.semantic-ui.com/images/wireframe/image.png"
+					/>
+					<p>
+						TexttextTexttext TexttextTexttextTexttTexttextTexttext
+						TexttextTexttextTextt TexttextTexttext
+						TexttextTexttextTexttTexttextTexttext TexttextTexttextTextt
+					</p>
+					<div className="meta">
+						{data.name}, {data.age} year-old, US
+					</div>
+				</div>
+			);
+		});
+		return item;
+	};
+
 	render() {
+		let slider;
 		return (
 			<div>
 				{/* Image Slider */}
-				{/* <Carousel
-					autoplay={true}
-					speed="3000"
-					transitionMode="fade"
-				>
-					<img
-						className="slideImage"
-						src={`${process.env.PUBLIC_URL}/images/slideImage1.jpg`}
-					/>
-					<img
-						className="slideImage"
-						src={`${process.env.PUBLIC_URL}/images/slideExample2.jpg`}
-					/>
-					<img
-						className="slideImage"
-						src={`${process.env.PUBLIC_URL}/images/slideExample3.jpg`}
-					/>
-				</Carousel> */}
+
 				<div className="ui fluid container slide-wrap">
 					<img
 						className="slideImage"
@@ -266,24 +280,20 @@ class Home extends React.Component {
 								</div>
 							</div>
 						</div>
-						{/* <div className="row">
+						<div className="row">
 							<div className="center aligned column">
 								<h2 className="white-text">Our tutors</h2>
 							</div>
 						</div>
 						<div className="row">
-							<div className="center aligned column">
-								<img
-									class="ui small circular image"
-									src="https://react.semantic-ui.com/images/wireframe/image.png"
-								/>
-								<p>
-									TexttextTexttext TexttextTexttextTexttTexttextTexttext
-									TexttextTexttextTextt TexttextTexttext
-									TexttextTexttextTexttTexttextTexttext TexttextTexttextTextt
-								</p>
+							<div class="center aligned column">
+								<ReactSiema ref={siema => (slider = siema)}>
+									{this.createCarouselItem(this.state.datas)}
+								</ReactSiema>
+								<button onClick={() => slider.prev()}>⇦</button>
+								<button onClick={() => slider.next()}>⇨</button>
 							</div>
-						</div> */}
+						</div>
 					</div>
 				</section>
 
