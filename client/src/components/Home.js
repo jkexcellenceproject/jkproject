@@ -8,9 +8,21 @@ import '../styles/style.scss';
 class Home extends React.Component {
 	state = {
 		datas: [
-			{ name: 'Kano', age: 38 },
-			{ name: 'YOoo', age: 23 },
-			{ name: 'G.R', age: 90 }
+			{
+				name: 'Kano',
+				age: 38,
+				image: `${process.env.PUBLIC_URL}/images/avator1.png`
+			},
+			{
+				name: 'YOoo',
+				age: 23,
+				image: `${process.env.PUBLIC_URL}/images/avator2.png`
+			},
+			{
+				name: 'G.R',
+				age: 90,
+				image: `${process.env.PUBLIC_URL}/images/avator3.png`
+			}
 		]
 	};
 
@@ -25,10 +37,7 @@ class Home extends React.Component {
 		const item = this.state.datas.map(data => {
 			return (
 				<div className="carousel-item">
-					<img
-						class="ui small circular image"
-						src="https://react.semantic-ui.com/images/wireframe/image.png"
-					/>
+					<img class="ui small circular image" src={data.image} />
 					<p>
 						TexttextTexttext TexttextTexttextTexttTexttextTexttext
 						TexttextTexttextTextt TexttextTexttext
@@ -52,7 +61,7 @@ class Home extends React.Component {
 				<div className="ui fluid container slide-wrap">
 					<img
 						className="slideImage"
-						src={`${process.env.PUBLIC_URL}/images/slideImage1.jpg`}
+						src={`${process.env.PUBLIC_URL}/images/sampleImage1.jpg`}
 					/>
 				</div>
 
@@ -287,7 +296,11 @@ class Home extends React.Component {
 						</div>
 						<div className="row">
 							<div class="center aligned column carousel-item">
-								<ReactSiema ref={siema => (slider = siema)}>
+								<ReactSiema
+									duration="400"
+									loop={true}
+									ref={siema => (slider = siema)}
+								>
 									{this.createCarouselItem(this.state.datas)}
 								</ReactSiema>
 								<button className="button left" onClick={() => slider.prev()} />

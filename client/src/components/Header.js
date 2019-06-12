@@ -7,11 +7,13 @@ import '../styles/common.scss';
 const Header = () => {
 	return (
 		<div className="ui top fixed borderless menu links">
-			<Link className="item">
+			<Link to="/" className="item">
 				<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
 			</Link>
 			<div className="ui container" />
-			<Link className="item">About us</Link>
+			<Link to="/about" className="item">
+				About us
+			</Link>
 			<Link className="item">Learn English</Link>
 			<Link className="item">FAQ</Link>
 			<Link className="item">Contact</Link>

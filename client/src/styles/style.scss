@@ -24,7 +24,7 @@
 	@include margin;
 }
 
-// Header.j
+// Header.js
 
 .links {
 	img {
@@ -89,4 +89,19 @@
 			font-weight: bold;
 		}
 	}
+}
+
+// AboutUs.js
+
+.bcg-base {
+	background-color: $blue;
+}
+
+.bcg-image {
+	width: 100%;
+	height: 60vh;
+	object-fit: cover;
+	vertical-align: bottom;
+	object-position: 50% 30%;
+	opacity: 0.6;
 }
