@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from './Carousel';
 import { Link } from 'react-router-dom';
 
 class AboutUs extends React.Component {
@@ -158,6 +159,11 @@ class AboutUs extends React.Component {
 					<div className="ui fluid container center aligned margin padding red content-padding">
 						<h1 className="white-text">We have free trial! Let"s try it</h1>
 						<Link className="ui big yellow button">Free Trial</Link>
+					</div>
+
+					<div className="ui fluid container center aligned blueGreen content-padding">
+						<h1 className="header white-text">Our tutors</h1>
+						<Carousel />
 					</div>
 				</div>
 			</div>
