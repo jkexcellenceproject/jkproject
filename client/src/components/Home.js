@@ -286,12 +286,15 @@ class Home extends React.Component {
 							</div>
 						</div>
 						<div className="row">
-							<div class="center aligned column">
+							<div class="center aligned column carousel-item">
 								<ReactSiema ref={siema => (slider = siema)}>
 									{this.createCarouselItem(this.state.datas)}
 								</ReactSiema>
-								<button onClick={() => slider.prev()}>⇦</button>
-								<button onClick={() => slider.next()}>⇨</button>
+								<button className="button left" onClick={() => slider.prev()} />
+								<button
+									className="button right"
+									onClick={() => slider.next()}
+								/>
 							</div>
 						</div>
 					</div>
