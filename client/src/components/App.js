@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
-import Slider from './Slider';
 import Home from './Home';
+import AboutUs from './AboutUs';
+import Footer from './Footer';
 
 class App extends Component {
 	render() {
 		return (
 			<BrowserRouter>
 				<Header />
-				<Slider />
 				<Route path="/" exact component={Home} />
+				<Route path="/about" exact component={AboutUs} />
+				<Footer />
 			</BrowserRouter>
 		);
 	}
