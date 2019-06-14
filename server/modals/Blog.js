@@ -3,7 +3,8 @@ const { Schema } = mongoose;
 
 const blogsSchema = new Schema({
     id: Number,
-    name: String
+    title: String,
+    content: String
 });
 
 mongoose.model('blogs', blogsSchema);
