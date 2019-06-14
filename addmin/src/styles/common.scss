@@ -2,6 +2,13 @@ $main-color:#70AFAC;
 $main-title-color:#448FB3;
 $main-title-color:#448FB3;
 
+a {
+    color: white;
+  &:hover {
+    color: white;
+  }  
+}
+
 ol, ul {
     margin: 0;
     padding: 0;
@@ -31,18 +38,11 @@ ol, ul {
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: .5s;
     background: #ccc;
     form {
         padding: 50px;
     }
 }
-#add-form.open {
-    opacity: 1;
-    visibility: visible;
-} 
 .image.upload-image {
     margin-bottom: 40px;
     position: relative;
@@ -54,4 +54,9 @@ ol, ul {
         opacity: 0;
         cursor: pointer;
     }
+}
+.back {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
