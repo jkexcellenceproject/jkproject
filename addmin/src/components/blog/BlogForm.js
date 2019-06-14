@@ -35,5 +35,6 @@ class BlogForm extends Component {
 }
 
 export default reduxForm({
-  form: 'blogForm'
+  form: 'blogForm',
+  destroyOnUnmount: false
 })(BlogForm);
