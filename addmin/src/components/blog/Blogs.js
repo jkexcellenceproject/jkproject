@@ -3,7 +3,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchBlogs } from "../../actions";
 
+
 class Blogs extends Component {
+    state = { showFormReview: false };
     componentDidMount() {
         this.props.fetchBlogs();
     }
@@ -12,12 +14,6 @@ class Blogs extends Component {
     }
     componentWillUnmount(){
         document.getElementById('body').className='';
-    }
-    onClickPopup() {
-        document.getElementById('add-form').className='open'
-    }
-    clickClose() {
-        document.getElementById('add-form').className='';
     }
     renderList() {
         if(this.props.blogs === null){
@@ -40,32 +36,13 @@ class Blogs extends Component {
             }
         )       
     }
-
     render() {
         return(
             <div className="ui middle aligned divided list">
                 {this.renderList()}
-                <button id="add" onClick={() => this.onClickPopup()} className="ui icon button red">
+                <Link id="add" to="/blog/new" className="ui icon button red">
                     <i className="material-icons">add</i>
-                </button>
-                <div id="add-form">
-                    <form className="ui form">
-                        <div className="field">
-                            <label>Title</label>
-                            <input type="text" name="first-name" />
-                        </div>
-                        <div className="field">
-                            <label>Text</label>
-                            <textarea></textarea>
-                        </div>
-                        <div className="ui small image upload-image">
-                            <img src={`${process.env.PUBLIC_URL}/images/common/upload-image.png`}/>
-                            <input type="file" name="fileToUpload" id="fileToUpload"/>
-                        </div>
-                        <button className="ui large teal button" type="submit">Submit</button>
-                        <button className="ui large red button" onClick={this.clickClose}>Cancel</button>
-                    </form>
-                </div>
+                </Link> 
             </div>
         );
     }
@@ -76,8 +53,10 @@ const mapStateToProps = state => {
         blogs: Object.values(state.blogs)
     };
 };
-
+      
 export default connect(
     mapStateToProps,
-    { fetchBlogs }
+    { 
+        fetchBlogs
+    }
 )(Blogs);
