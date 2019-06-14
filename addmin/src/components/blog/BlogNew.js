@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { reduxForm, Field } from 'redux-form';
 import BlogForm from './BlogForm';
 import BlogFormReview from './BlogFormReview';
 
@@ -38,4 +38,6 @@ class BlogNew extends Component {
     }
 }
       
-export default BlogNew;
+export default reduxForm({
+    form: 'blogForm'
+  })(BlogNew);
