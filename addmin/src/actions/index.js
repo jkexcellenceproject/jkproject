@@ -8,9 +8,12 @@ export const fetchBlogs = () => async dispatch => {
 };
 
 export const editBlog = id => async dispatch => {
-    const response = await axios.post(`/api/blog/edit/${id}`, {
-        id
-      });
+    const response = await axios.post(`/api/blog/edit/${id}`, {id});
     dispatch({ type: EDIT_BLOG, payload: response.data });
 }
 
+export const submitBlog = (values, history) => async () => {
+    const response = await axios.post('/api/blog/submit', {values});
+    console.log(response);
+    history.push('/');
+}
