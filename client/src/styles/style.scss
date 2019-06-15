@@ -36,8 +36,8 @@
 }
 
 // Home.js
-.slide-wrap {
-	margin-bottom: -5px;
+.slides-wrap {
+	position: relative;
 	overflow: hidden;
 }
 
@@ -49,52 +49,11 @@
 	vertical-align: bottom;
 }
 
-// About us
-
-// Prices
-.carousel-item {
-	position: relative;
-
-	img {
-		display: inline-block !important;
-	}
-	p {
-		width: 35%;
-		margin: 40px auto;
-	}
-
-	.button {
-		font-size: 1.5rem;
-		outline: none;
-		background: none;
-		border: 0;
-		position: absolute;
-		top: 100px;
-	}
-
-	.left {
-		left: 300px;
-		&:before {
-			font-family: 'Font Awesome 5 Free';
-			content: '\f104';
-			font-weight: bold;
-		}
-	}
-
-	.right {
-		right: 300px;
-		&:before {
-			font-family: 'Font Awesome 5 Free';
-			content: '\f105';
-			font-weight: bold;
-		}
-	}
-}
-
 // AboutUs.js
 
 .bcg-base {
 	background-color: $blue;
+	position: relative;
 }
 
 .bcg-image {
@@ -104,4 +63,17 @@
 	vertical-align: bottom;
 	object-position: 50% 30%;
 	opacity: 0.6;
+}
+
+.main-header {
+	position: absolute;
+	top: 0;
+	left: 200px;
+}
+
+// Carousel.js
+
+.carousel-wrap {
+	width: 50%;
+	margin: 0 auto;
 }

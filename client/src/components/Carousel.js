@@ -1,32 +1,16 @@
 import React from 'react';
-import ReactSiema from 'react-siema';
+import Slider from 'react-slick';
+import { connect } from 'react-redux';
+
+import '../../node_modules/slick-carousel/slick/slick.css';
+import '../../node_modules/slick-carousel/slick/slick-theme.css';
 
 class Carousel extends React.Component {
-	state = {
-		datas: [
-			{
-				name: 'Kano',
-				age: 38,
-				image: `${process.env.PUBLIC_URL}/images/avator1.png`
-			},
-			{
-				name: 'YOoo',
-				age: 23,
-				image: `${process.env.PUBLIC_URL}/images/avator2.png`
-			},
-			{
-				name: 'G.R',
-				age: 90,
-				image: `${process.env.PUBLIC_URL}/images/avator3.png`
-			}
-		]
-	};
-
-	createCarouselItem = datas => {
-		const item = this.state.datas.map(data => {
+	createCarouselItem = () => {
+		return this.props.datas.map(data => {
 			return (
-				<div className="carousel-item">
-					<img class="ui small circular image" src={data.image} />
+				<div className="centered" key={data.name}>
+					<img className="ui small circular image centered" src={data.image} />
 					<p>
 						TexttextTexttext TexttextTexttextTexttTexttextTexttext
 						TexttextTexttextTextt TexttextTexttext
@@ -38,21 +22,26 @@ class Carousel extends React.Component {
 				</div>
 			);
 		});
-		return item;
 	};
 
 	render() {
-		let slider;
+		const settings = {
+			dots: true,
+			infinite: true,
+			speed: 500,
+			slidesToShow: 1,
+			slidesToScroll: 1
+		};
 		return (
-			<div class="carousel-item">
-				<ReactSiema duration="400" loop={true} ref={siema => (slider = siema)}>
-					{this.createCarouselItem(this.state.datas)}
-				</ReactSiema>
-				<button className="button left" onClick={() => slider.prev()} />
-				<button className="button right" onClick={() => slider.next()} />
+			<div className="carousel-wrap">
+				<Slider {...settings}>{this.createCarouselItem()}</Slider>
 			</div>
 		);
 	}
 }
 
-export default Carousel;
+const mapStateToProps = state => {
+	return { datas: state.datas };
+};
+
+export default connect(mapStateToProps)(Carousel);
