@@ -13,7 +13,6 @@ module.exports = app => {
     Blogs.find({'id':request.body.id}, (err, blogs) => {  
       if (err) response.status(500).send()
       else response.status(200).send(blogs)
-      console.log(response.body);
     })
   })
 
