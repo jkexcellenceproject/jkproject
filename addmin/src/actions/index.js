@@ -13,18 +13,15 @@ export const editBlog = id => async dispatch => {
 }
 
 export const submitBlog = (values, history) => async dispatch => {
-    const response = await axios.post('/api/blog/submit', {values});
-    dispatch({ type: FETCH_BLOGS, payload: response.data });
+    await axios.post('/api/blog/submit', {values});
     history.push('/');
 }
 
 export const submitBlogEdit = (id, values, history) => async dispatch => {
-    const response = await axios.post('/api/blog/editSubmit', {id, values});
-    dispatch({ type: FETCH_BLOGS, payload: response.data });
+    await axios.post('/api/blog/editSubmit', {id, values});
     history.push('/');
 }
 
-export const deleteBlog = id => async dispatch => {
-    const response = await axios.post(`/api/blog/delete/`, {id});
-    dispatch({ type: FETCH_BLOGS, payload: response.data });
+export const deleteBlog = (id, history) => async dispatch => {
+    await axios.post(`/api/blog/delete/`, {id});
 }
