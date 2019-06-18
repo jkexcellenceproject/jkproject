@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { fetchBlogs } from "../../actions";
+import { fetchBlogs, deleteBlog } from "../../actions";
 
 
 class Blogs extends Component {
@@ -15,6 +15,9 @@ class Blogs extends Component {
     componentWillUnmount(){
         document.getElementById('body').className='';
     }
+    deletePost = (id) => {
+        this.props.deleteBlog(id);
+    }
     renderList() {
         if(this.props.blogs === null){
             return <p>Loading</p>;
@@ -25,6 +28,7 @@ class Blogs extends Component {
                     <div className="item" key={blog.id}>
                         <div className="right floated content">
                             <div className="ui large teal button"><Link to={`/blog/edit/${blog.id}`}>Edit</Link></div>
+                            <button className="ui large red button" onClick={() => { if (window.confirm('Do you want to delete it ?')) this.deletePost(blog.id) } }>Delete</button>
                         </div>
                             <img className="ui image" src="https://dummyimage.com/150x150/ccc/fff" />
                         <div className="content">
@@ -57,6 +61,7 @@ const mapStateToProps = state => {
 export default connect(
     mapStateToProps,
     { 
-        fetchBlogs
+        fetchBlogs,
+        deleteBlog
     }
 )(Blogs);
