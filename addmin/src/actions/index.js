@@ -12,8 +12,19 @@ export const editBlog = id => async dispatch => {
     dispatch({ type: EDIT_BLOG, payload: response.data });
 }
 
-export const submitBlog = (values, history) => async () => {
+export const submitBlog = (values, history) => async dispatch => {
     const response = await axios.post('/api/blog/submit', {values});
-    console.log(response);
+    dispatch({ type: FETCH_BLOGS, payload: response.data });
     history.push('/');
+}
+
+export const submitBlogEdit = (id, values, history) => async dispatch => {
+    const response = await axios.post('/api/blog/editSubmit', {id, values});
+    dispatch({ type: FETCH_BLOGS, payload: response.data });
+    history.push('/');
+}
+
+export const deleteBlog = id => async dispatch => {
+    const response = await axios.post(`/api/blog/delete/`, {id});
+    dispatch({ type: FETCH_BLOGS, payload: response.data });
 }
