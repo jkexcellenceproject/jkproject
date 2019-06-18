@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import {submitBlog} from '../../actions/index';
+import { submitBlog } from '../../actions/index';
 
 class BlogFormReview extends Component {
     render() {
@@ -26,7 +26,7 @@ class BlogFormReview extends Component {
             </div>
         )
     }
-};
+}
 
 function mapStateToProps(state) {
     if(Object.keys(state.form).length !== 0) {
