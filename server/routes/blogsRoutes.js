@@ -28,7 +28,8 @@ module.exports = app => {
       const blog = new Blogs({
         id, 
         title,
-        content
+        content,
+        dateSent: Date.now()
       });
       try{
           blog.save();
