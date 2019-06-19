@@ -18,10 +18,10 @@ class BlogForm extends Component {
                 <div className="field">
                     <label>Text</label>
                     <Field
-                    name="content"
-                    type="text"
-                    component="input"
-                    placeholder="Benedict"
+                            name="content"
+                            type="text"
+                            component="input"
+                            placeholder="Benedict"
                 />
                 </div>
                 </>
