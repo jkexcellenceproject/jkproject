@@ -3,15 +3,25 @@ import Carousel from './Carousel';
 import EnglishArticleCard from './EnglishArticleCard';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+<<<<<<< HEAD
 import { fetchArticles } from '../actions';
+=======
+import { fetchBlogs } from '../actions';
+>>>>>>> Modified EnglishArticleCard.js
 
 import '../styles/common.scss';
 import '../styles/style.scss';
 
 class Home extends React.Component {
+<<<<<<< HEAD
 	componentDidMount() {
 		this.props.fetchArticles();
 	}
+=======
+	// componentDidMount() {
+	// 	this.props.fetchBlogs();
+	// }
+>>>>>>> Modified EnglishArticleCard.js
 	componentWillMount() {
 		document.querySelector('body').className = 'blogs';
 	}
@@ -487,6 +497,7 @@ class Home extends React.Component {
 		);
 	}
 }
+<<<<<<< HEAD
 const mapStateToProps = state => {
 	return { articles: state.articles };
 };
@@ -494,3 +505,16 @@ export default connect(
 	mapStateToProps,
 	{ fetchArticles }
 )(Home);
+=======
+
+// const mapStateToProps = state => {
+// 	return { blogs: state.blogs };
+// };
+
+// export default connect(
+// 	mapStateToProps,
+// 	{ fetchBlogs }
+// )(Home);
+
+export default Home;
+>>>>>>> Modified EnglishArticleCard.js
