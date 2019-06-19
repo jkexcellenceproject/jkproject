@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import articlesReducer from './articlesReducer';
 
 const carouselDatasReducer = () => {
 	return [
@@ -21,5 +22,6 @@ const carouselDatasReducer = () => {
 };
 
 export default combineReducers({
-	datas: carouselDatasReducer
+	datas: carouselDatasReducer,
+	articles: articlesReducer
 });

@@ -26,11 +26,11 @@ class AboutUs extends React.Component {
 					</div>
 				</div>
 
-				<div className="ui fluid container blueGreen content-padding">
+				<section className="ui fluid container blueGreen content-padding">
 					<div className="ui center aligned container">
 						<div className="ui grid">
 							<div className="row centered">
-								<h1 className="header white-text">What's JK Education</h1>
+								<h2 className="header white-text">What's JK Education</h2>
 							</div>
 							<div className="three column row">
 								<div className="eight wide column left aligned white-text">
@@ -69,24 +69,24 @@ class AboutUs extends React.Component {
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
 				{/* What does it take lesson? */}
 				<div className="ui fluid container content-padding">
 					<div className="ui container ">
 						<div className="ui grid">
 							<div className="row centered">
-								<h1 className="header blue-text">How it does take lesson?</h1>
+								<h2 className="header blue-text">How it does take lesson?</h2>
 							</div>
 							<div className="four column row">
 								<div className="one wide column" />
 								<div className="seven wide column blue-text">
-									<h2 className="header">1. Contact to Vickey</h2>
-									<h3>
+									<h3 className="header">1. Contact to Vickey</h3>
+									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h3>
+									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
@@ -109,12 +109,12 @@ class AboutUs extends React.Component {
 									/>
 								</div>
 								<div className="seven wide column blue-text">
-									<h2 className="header">2. Try free trial</h2>
-									<h3>
+									<h3 className="header">2. Try free trial</h3>
+									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h3>
+									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>

@@ -1,11 +1,17 @@
 import React from 'react';
 import Carousel from './Carousel';
+import EnglishArticleCard from './EnglishArticleCard';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { fetchBlogs } from '../actions';
 
 import '../styles/common.scss';
 import '../styles/style.scss';
 
 class Home extends React.Component {
+	// componentDidMount() {
+	// 	this.props.fetchBlogs();
+	// }
 	componentWillMount() {
 		document.querySelector('body').className = 'blogs';
 	}
@@ -140,7 +146,9 @@ class Home extends React.Component {
 
 						<div className="ui fluid container center aligned margin padding red content-padding">
 							<h1 className="white-text">We have free trial! Let"s try it</h1>
-							<Link className="ui big yellow button">Free Trial</Link>
+							<Link to="/" className="ui big yellow button">
+								Free Trial
+							</Link>
 						</div>
 					</div>
 				</section>
@@ -272,7 +280,8 @@ class Home extends React.Component {
 								<h2 className="white-text">English Articles</h2>
 							</div>
 						</div>
-						<div className="four column row">
+						<EnglishArticleCard />
+						{/* <div className="four column row">
 							<div className="column">
 								<div className="ui items">
 									<div className="item">
@@ -304,7 +313,9 @@ class Home extends React.Component {
 										<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
 									</Link>
 									<div className="content">
-										<Link className="header">Article Title</Link>
+										<Link to="/" className="header">
+											Article Title
+										</Link>
 										<div className="meta">
 											<span className="date">Posted Date</span>
 										</div>
@@ -321,7 +332,9 @@ class Home extends React.Component {
 										<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
 									</Link>
 									<div className="content">
-										<Link className="header">Article Title</Link>
+										<Link to="/" className="header">
+											Article Title
+										</Link>
 										<div className="meta">
 											<span className="date">Posted Date</span>
 										</div>
@@ -334,11 +347,13 @@ class Home extends React.Component {
 							</div>
 							<div className="column">
 								<div className="ui card">
-									<Link to="/ h" className="image">
+									<Link to="/" className="image">
 										<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
 									</Link>
 									<div className="content">
-										<Link className="header">Article Title</Link>
+										<Link to="/" className="header">
+											Article Title
+										</Link>
 										<div className="meta">
 											<span className="date">Posted Date</span>
 										</div>
@@ -349,7 +364,7 @@ class Home extends React.Component {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</section>
 
@@ -475,5 +490,14 @@ class Home extends React.Component {
 		);
 	}
 }
+
+// const mapStateToProps = state => {
+// 	return { blogs: state.blogs };
+// };
+
+// export default connect(
+// 	mapStateToProps,
+// 	{ fetchBlogs }
+// )(Home);
 
 export default Home;

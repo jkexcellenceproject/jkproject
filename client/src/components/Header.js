@@ -11,6 +11,9 @@ const Header = () => {
 				<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
 			</Link>
 			<div className="ui container" />
+			<Link to="/" className="item">
+				Home
+			</Link>
 			<Link to="/about" className="item">
 				About us
 			</Link>
