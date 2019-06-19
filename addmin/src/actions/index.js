@@ -12,8 +12,16 @@ export const editBlog = id => async dispatch => {
     dispatch({ type: EDIT_BLOG, payload: response.data });
 }
 
-export const submitBlog = (values, history) => async () => {
-    const response = await axios.post('/api/blog/submit', {values});
-    console.log(response);
+export const submitBlog = (values, history) => async dispatch => {
+    await axios.post('/api/blog/submit', {values});
     history.push('/');
+}
+
+export const submitBlogEdit = (id, values, history) => async dispatch => {
+    await axios.post('/api/blog/editSubmit', {id, values});
+    history.push('/');
+}
+
+export const deleteBlog = (id, history) => async dispatch => {
+    await axios.post(`/api/blog/delete/`, {id});
 }

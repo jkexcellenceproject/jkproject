@@ -1,12 +1,11 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { submitBlog } from '../../actions/index';
+import { submitBlogEdit } from '../../actions/index';
 
-class BlogFormReview extends Component {
+class BlogEditFormReview extends Component {
     render() {
-        const {formValues, onCancel, history} = this.props;
+        const {id, formValues, onCancel, history} = this.props;
         return(
             <div>
                 <h5>Place confirm your entries</h5>
@@ -18,7 +17,7 @@ class BlogFormReview extends Component {
                     Back
                 </button>
                 <button 
-                    onClick={submitBlog(formValues, history)}
+                    onClick={submitBlogEdit(id, formValues, history)}
                     className="green white-text btn-flat right">
                     Send Survey
                     <i className="material-icons right">email</i>
@@ -36,5 +35,5 @@ function mapStateToProps(state) {
 
 export default connect(
     mapStateToProps,
-    {submitBlog}
-)(withRouter(BlogFormReview));
+    {submitBlogEdit}
+)(withRouter(BlogEditFormReview));

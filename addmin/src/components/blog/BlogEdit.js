@@ -1,59 +1,51 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
 import { editBlog } from "../../actions";
+import BlogForm from './BlogForm';
+import BlogEditFormReview from './BlogEditFormReview';
 
 class BlogEdit extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { showFormReview: false };
+    }
     componentDidMount() {
         this.props.editBlog(this.props.match.params.id);
     }
-    componentWillMount(){
-        document.getElementById('body').className='edit-blog';
-    }
-    componentWillUnmount(){
-        document.getElementById('body').className='';
-    }
-    onClickPopup() {
-        document.getElementById('add-form').className='open';
-    }
-    clickClose() {
-        document.getElementById('add-form').className='';
-    }
-    renderList() {
-        if(this.props.blog.state !== undefined) {
-            const {title, content} = this.props.blog.state[0];
+    renderForm() {
+        if (this.state.showFormReview) {
             return (
-                <>
-                <h1>{title}</h1>
-                <p>{content}</p>
-                </>
-            );
+                <BlogEditFormReview 
+                    onCancel={()=> this.setState({ showFormReview: false })}
+                    id = {this.props.match.params.id}
+                />
+                );
+            }
+            else {
+                console.log(this.props.blog.state);
+                if(this.props.blog.state !== undefined) {
+                    const {title, content} = this.props.blog.state[0];
+                    console.log(this.props.blog.state[0]);
+                    return (
+                        <BlogForm 
+                            onBlogSubmit = {() => this.setState({ showFormReview: true })}
+                            initialValues={{title: title, content: content}}
+                            onCancel={()=> this.setState({ showFormReview: false })}
+                        />
+                    ); 
+                }
+            }
         }
-    }
     render() {
         return(
             <div className="ui middle aligned divided list">
-                {this.renderList()}
-                <button id="add" onClick={() => this.onClickPopup()} className="ui icon button red">
-                    <i className="material-icons">add</i>
-                </button>
-                <div id="add-form">
-                    <form className="ui form">
-                        <div className="field">
-                            <label>Title</label>
-                            <input type="text" name="first-name" />
-                        </div>
-                        <div className="field">
-                            <label>Text</label>
-                            <textarea></textarea>
-                        </div>
-                        <div className="ui small image upload-image">
-                            <img src={`${process.env.PUBLIC_URL}/images/common/upload-image.png`}/>
-                            <input type="file" name="fileToUpload" id="fileToUpload"/>
-                        </div>
-                        <button className="ui large teal button" type="submit">Submit</button>
-                        <button className="ui large red button" onClick={this.clickClose}>Cancel</button>
-                    </form>
+                <div className="ui large teal button"><Link to="/">Back</Link></div>
+                <div className="ui middle aligned divided list">
+                    <div id="add-form">
+                        {this.renderForm()}
+                    </div>
                 </div>
             </div>
         );
@@ -67,6 +59,9 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(
-    mapStateToProps,
-    { editBlog }
-)(BlogEdit);
+    mapStateToProps, {
+        editBlog
+    }
+)(reduxForm({
+    form: 'blogForm'
+  })(BlogEdit))
