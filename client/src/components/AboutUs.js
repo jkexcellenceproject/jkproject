@@ -3,6 +3,13 @@ import Carousel from './Carousel';
 import { Link } from 'react-router-dom';
 
 class AboutUs extends React.Component {
+	componentWillMount() {
+		document.querySelector('body').className = 'blogs';
+	}
+	componentWillUnmount() {
+		document.querySelector('body').className = '';
+	}
+
 	render() {
 		return (
 			<div>
@@ -12,9 +19,10 @@ class AboutUs extends React.Component {
 							className="bcg-image"
 							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
 						/>
-						{/* <div className="main-header">
-							WHAT’S <br /> JK Education <br /> FOR?
-						</div> */}
+						<div className="main-header">
+							WHAT’S <span className="br">JK Education</span>
+							<span className="br">FOR?</span>
+						</div>
 					</div>
 				</div>
 

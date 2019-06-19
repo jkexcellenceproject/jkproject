@@ -29,6 +29,8 @@
 .links {
 	img {
 		background-size: contain;
+		width: auto !important;
+		height: 40px;
 	}
 	a {
 		color: $yellow !important;
@@ -67,9 +69,60 @@
 
 .main-header {
 	position: absolute;
-	top: 0;
-	left: 200px;
+	top: 33%;
+	left: 15%;
+	font-size: 4.5rem;
+	line-height: 5rem;
+	color: white;
+
+	.br {
+		&:before {
+			content: '\A';
+			white-space: pre;
+		}
+	}
 }
+
+// Faq.js
+
+// .accordion {
+// 	background-color: #eee;
+// 	color: #444;
+// 	cursor: pointer;
+// 	padding: 18px;
+// 	width: 100%;
+// 	text-align: left;
+// 	border: none;
+// 	outline: none;
+// 	transition: 0.4s;
+
+// 	&:after {
+// 		content: '\02795';
+// 		font-size: 13px;
+// 		color: #777;
+// 		float: right;
+// 		margin-left: 5px;
+// 	}
+// }
+
+// .active,
+// .accordion:hover {
+// 	background-color: #ccc;
+// }
+
+// .active:after {
+// 	content: '\2796';
+// }
+
+// .panel {
+// 	padding: 0 18px;
+// 	background-color: white;
+// 	display: none;
+// 	overflow: hidden;
+// 	padding: 0 18px;
+// 	max-height: 0;
+// 	transition: max-height 0.2s ease-out;
+// }
 
 // Carousel.js
 

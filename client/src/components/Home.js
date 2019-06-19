@@ -18,16 +18,10 @@ class Home extends React.Component {
 			<div>
 				{/* Image Slider */}
 				<div className="ui fluid container slides-wrap">
-					{/* <ReactSiema loop={true}> */}
 					<img
 						className="slideImage"
 						src={`${process.env.PUBLIC_URL}/images/sampleImage1.jpg`}
 					/>
-					{/* <img
-							className="slideImage"
-							src={`${process.env.PUBLIC_URL}/images/sampleImage3.jpg`}
-						/> */}
-					{/* </ReactSiema> */}
 				</div>
 
 				{/* About us Section */}
@@ -87,7 +81,9 @@ class Home extends React.Component {
 						<div className="two wide column" />
 						<div className="row">
 							<div className="center aligned column">
-								<Link className="ui big yellow button">About us</Link>
+								<Link to="/about" className="ui big yellow button">
+									About us
+								</Link>
 							</div>
 						</div>
 					</div>
