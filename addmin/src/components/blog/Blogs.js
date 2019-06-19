@@ -5,11 +5,12 @@ import { fetchBlogs, deleteBlog } from "../../actions";
 
 
 class Blogs extends Component {
-    state = { showFormReview: false };
+    constructor(props) {
+        super(props);
+        this.state = { showFormReview: false };
+    }
     componentDidMount() {
         this.props.fetchBlogs();
-    }
-    componentWillMount(){
         document.getElementById('body').className='blogs';
     }
     componentWillUnmount(){
@@ -17,6 +18,7 @@ class Blogs extends Component {
     }
     deletePost = (id) => {
         this.props.deleteBlog(id);
+        console.log("render");
     }
     renderList() {
         if(this.props.blogs === null){
@@ -24,6 +26,7 @@ class Blogs extends Component {
         }
         return this.props.blogs.map(blog => {
             if(!blog[0]) {
+                console.log(blog.dateSent);
                 return (
                     <div className="item" key={blog.id}>
                         <div className="right floated content">
