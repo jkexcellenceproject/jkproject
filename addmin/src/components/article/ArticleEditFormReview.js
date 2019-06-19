@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { submitBlogEdit } from '../../actions/index';
+import { submitArticleEdit } from '../../actions/index';
 
-class BlogEditFormReview extends Component {
+class ArticleEditFormReview extends Component {
     render() {
         const {id, formValues, onCancel, history} = this.props;
         return(
@@ -17,7 +17,7 @@ class BlogEditFormReview extends Component {
                     Back
                 </button>
                 <button 
-                    onClick={submitBlogEdit(id, formValues, history)}
+                    onClick={submitArticleEdit(id, formValues, history)}
                     className="green white-text btn-flat right">
                     Send Survey
                     <i className="material-icons right">email</i>
@@ -29,11 +29,11 @@ class BlogEditFormReview extends Component {
 
 function mapStateToProps(state) {
     if(Object.keys(state.form).length !== 0) {
-        return { formValues: state.form.blogForm.values };
+        return { formValues: state.form.articleForm.values };
     }
 }
 
 export default connect(
     mapStateToProps,
-    {submitBlogEdit}
-)(withRouter(BlogEditFormReview));
+    {submitArticleEdit}
+)(withRouter(ArticleEditFormReview));

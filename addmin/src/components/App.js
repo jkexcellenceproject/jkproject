@@ -4,10 +4,10 @@ import '../styles/common.scss';
 import '../styles/style.scss';
 import Header from './Header'
 import Login from './Login';
-import Blogs from './blog/Blogs';
-import BlogEdit from './blog/BlogEdit';
+import Articles from './article/Articles';
+import ArticleEdit from './article/ArticleEdit';
 import LearningEnglish from './learnignEnglish/LearningEnglish';
-import BlogNew from './blog/BlogNew';
+import ArticleNew from './article/ArticleNew';
 
 
 class App extends Component {
@@ -35,9 +35,9 @@ class App extends Component {
                     {this.renderNav()}
                     <div className="container">
                         <Route exact path="/login" component={Login} />
-                        <Route exact path="/" component={Blogs} />
-                        <Route exact path="/blog/new" component={BlogNew} />
-                        <Route exact path="/blog/edit/:id" component={BlogEdit} />
+                        <Route exact path="/" component={Articles} />
+                        <Route exact path="/article/new" component={ArticleNew} />
+                        <Route exact path="/article/edit/:id" component={ArticleEdit} />
                         <Route exact path="/learningEnglish" component={LearningEnglish} />
                     </div>
                 </BrowserRouter>

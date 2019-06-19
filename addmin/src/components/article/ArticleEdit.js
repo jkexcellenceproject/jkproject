@@ -2,35 +2,35 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
-import { editBlog } from "../../actions";
-import BlogForm from './BlogForm';
-import BlogEditFormReview from './BlogEditFormReview';
+import { editArticle } from "../../actions";
+import ArticleForm from './ArticleForm';
+import ArticleEditFormReview from './ArticleEditFormReview';
 
-class BlogEdit extends Component {
+class ArticleEdit extends Component {
     constructor(props) {
         super(props);
         this.state = { showFormReview: false };
     }
     componentDidMount() {
-        this.props.editBlog(this.props.match.params.id);
+        this.props.editArticle(this.props.match.params.id);
     }
     renderForm() {
         if (this.state.showFormReview) {
             return (
-                <BlogEditFormReview 
+                <ArticleEditFormReview 
                     onCancel={()=> this.setState({ showFormReview: false })}
                     id = {this.props.match.params.id}
                 />
                 );
             }
             else {
-                console.log(this.props.blog.state);
-                if(this.props.blog.state !== undefined) {
-                    const {title, content} = this.props.blog.state[0];
-                    console.log(this.props.blog.state[0]);
+                console.log(this.props.article.state);
+                if(this.props.article.state !== undefined) {
+                    const {title, content} = this.props.article.state[0];
+                    console.log(this.props.article.state[0]);
                     return (
-                        <BlogForm 
-                            onBlogSubmit = {() => this.setState({ showFormReview: true })}
+                        <ArticleForm 
+                            onArticleSubmit = {() => this.setState({ showFormReview: true })}
                             initialValues={{title: title, content: content}}
                             onCancel={()=> this.setState({ showFormReview: false })}
                         />
@@ -54,14 +54,14 @@ class BlogEdit extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        blog:state.blogs
+        article:state.articles
     };
 };
 
 export default connect(
     mapStateToProps, {
-        editBlog
+        editArticle
     }
 )(reduxForm({
-    form: 'blogForm'
-  })(BlogEdit))
+    form: 'articleForm'
+  })(ArticleEdit))

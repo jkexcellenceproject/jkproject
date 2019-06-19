@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import { Link } from 'react-router-dom';
 
-class BlogForm extends Component {
+class ArticleForm extends Component {
     renderFields() {
         if(this.props.initialValues !== undefined) {
             return (
@@ -52,7 +52,7 @@ class BlogForm extends Component {
     }
     render() {
         return (
-            <form onSubmit={this.props.handleSubmit(this.props.onBlogSubmit)} className="ui form">
+            <form onSubmit={this.props.handleSubmit(this.props.onArticleSubmit)} className="ui form">
             {this.renderFields()}
             <button className="ui large teal button" type="submit">Submit</button>
             <Link className="ui large red button" to="/">Cancel</Link>
@@ -62,6 +62,6 @@ class BlogForm extends Component {
 }
 
 export default reduxForm({
-  form: 'blogForm',
+  form: 'articleForm',
   destroyOnUnmount: false
-})(BlogForm);
+})(ArticleForm);

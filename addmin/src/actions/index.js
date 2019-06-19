@@ -1,27 +1,27 @@
 import axios from 'axios';
-import { FETCH_BLOGS, EDIT_BLOG } from './types';
+import { FETCH_ARTICLES, EDIT_ARTICLE } from './types';
 
-export const fetchBlogs = () => async dispatch => {
-    const response = await axios.get('/api/blogs');
+export const fetchArticles = () => async dispatch => {
+    const response = await axios.get('/api/articles');
 
-    dispatch({ type: FETCH_BLOGS, payload: response.data });
+    dispatch({ type: FETCH_ARTICLES, payload: response.data });
 };
 
-export const editBlog = id => async dispatch => {
-    const response = await axios.post(`/api/blog/edit/${id}`, {id});
-    dispatch({ type: EDIT_BLOG, payload: response.data });
+export const editArticle = id => async dispatch => {
+    const response = await axios.post(`/api/article/edit/${id}`, {id});
+    dispatch({ type: EDIT_ARTICLE, payload: response.data });
 }
 
-export const submitBlog = (values, history) => async dispatch => {
-    await axios.post('/api/blog/submit', {values});
+export const submitArticle = (values, history) => async dispatch => {
+    await axios.post('/api/article/submit', {values});
     history.push('/');
 }
 
-export const submitBlogEdit = (id, values, history) => async dispatch => {
-    await axios.post('/api/blog/editSubmit', {id, values});
+export const submitArticleEdit = (id, values, history) => async dispatch => {
+    await axios.post('/api/article/editSubmit', {id, values});
     history.push('/');
 }
 
-export const deleteBlog = (id, history) => async dispatch => {
-    await axios.post(`/api/blog/delete/`, {id});
+export const deleteArticle = (id, history) => async dispatch => {
+    await axios.post(`/api/article/delete/`, {id});
 }

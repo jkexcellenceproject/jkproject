@@ -4,7 +4,7 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 bodyParser = require('body-parser')
 const keys = require('./config/dev');
-require('./modals/Blog');
+require('./modals/Article');
 
 mongoose.connect(keys.mongoURI);
 
@@ -12,7 +12,7 @@ const app = express();
 
 app.use(bodyParser.json())
 
-require('./routes/blogsRoutes')(app); 
+require('./routes/articleRoutes')(app); 
 
 
 const PORT = process.env.PORT || 5000;

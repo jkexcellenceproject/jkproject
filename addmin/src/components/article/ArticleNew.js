@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
-import BlogForm from './BlogForm';
-import BlogFormReview from './BlogFormReview';
+import ArticleForm from './ArticleForm';
+import ArticleFormReview from './ArticleFormReview';
 
 
-class BlogNew extends Component {
+class ArticleNew extends Component {
     state = { showFormReview: false };
     componentWillMount(){
         document.getElementById('body').className='blog-new';
@@ -15,14 +15,14 @@ class BlogNew extends Component {
     renderForm() {
         if (this.state.showFormReview) {
             return (
-                <BlogFormReview 
+                <ArticleFormReview 
                     onCancel={()=> this.setState({ showFormReview: false })}
                 />
                 );
             }
             return (
-                <BlogForm 
-                        onBlogSubmit = {() => this.setState({ showFormReview: true })}
+                <ArticleForm 
+                        onArticleSubmit = {() => this.setState({ showFormReview: true })}
                         onCancel={()=> this.setState({ showFormReview: false })}
                 />
             ); 
@@ -39,5 +39,5 @@ class BlogNew extends Component {
 }
       
 export default reduxForm({
-    form: 'blogForm'
-  })(BlogNew);
+    form: 'articleForm'
+  })(ArticleNew);
