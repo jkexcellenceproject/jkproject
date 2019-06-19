@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel';
 import { Link } from 'react-router-dom';
-// import ReactSiema from 'react-siema';
 
 import '../styles/common.scss';
 import '../styles/style.scss';
@@ -18,8 +17,7 @@ class Home extends React.Component {
 		return (
 			<div>
 				{/* Image Slider */}
-
-				<div className="ui fluid container slide-wrap">
+				<div className="ui fluid container slides-wrap">
 					<img
 						className="slideImage"
 						src={`${process.env.PUBLIC_URL}/images/sampleImage1.jpg`}
@@ -41,48 +39,51 @@ class Home extends React.Component {
 									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 								</div>
-								<div class="ui divider" />
+								<div className="ui divider" />
 								<p className="white-text">
 									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextte
 								</p>
 								<div className="ui four column grid">
-									<div class="column">
+									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
-									<div class="column">
+									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
-									<div class="column">
+									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
-									<div class="column">
+									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
 								</div>
 							</div>
-
-							<div className="five wide right floated column">
+							<div className="one wide column" />
+							<div className="five wide column">
 								<img
-									src="https://react.semantic-ui.com/images/wireframe/image.png"
-									class="ui image"
+									src={`${process.env.PUBLIC_URL}/images/groupPhoto.jpg`}
+									className="ui image"
 								/>
 							</div>
 						</div>
+						<div className="two wide column" />
 						<div className="row">
 							<div className="center aligned column">
-								<Link className="ui big yellow button">About us</Link>
+								<Link to="/about" className="ui big yellow button">
+									About us
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -112,25 +113,25 @@ class Home extends React.Component {
 									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
 									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
 									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
 									<div className="column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											class="ui image"
+											className="ui image"
 										/>
 									</div>
 								</div>
@@ -154,15 +155,15 @@ class Home extends React.Component {
 						</div>
 						<div className="four column row">
 							<div className="column">
-								<div class="ui card">
-									<div class="content center aligned">
-										<div class="header">Course Title</div>
+								<div className="ui card">
+									<div className="content center aligned">
+										<div className="header">Course Title</div>
 									</div>
-									<div class="content center aligned">
-										<h4 class="ui sub header">Description</h4>
-										<div class="ui small feed">
-											<div class="event">
-												<div class="content center aligned">
+									<div className="content center aligned">
+										<h4 className="ui sub header">Description</h4>
+										<div className="ui small feed">
+											<div className="event">
+												<div className="content center aligned">
 													<p>
 														TexttextTexttext
 														TexttextTexttextTexttTexttextTexttext
@@ -172,21 +173,21 @@ class Home extends React.Component {
 											</div>
 										</div>
 									</div>
-									<div class="extra content center aligned">
-										<button class="ui big button">$15</button>
+									<div className="extra content center aligned">
+										<button className="ui big button">$15</button>
 									</div>
 								</div>
 							</div>
 							<div className="column">
-								<div class="ui card">
-									<div class="content center aligned">
-										<div class="header">Course Title</div>
+								<div className="ui card">
+									<div className="content center aligned">
+										<div className="header">Course Title</div>
 									</div>
-									<div class="content center aligned">
-										<h4 class="ui sub header">Description</h4>
-										<div class="ui small feed">
-											<div class="event">
-												<div class="content center aligned">
+									<div className="content center aligned">
+										<h4 className="ui sub header">Description</h4>
+										<div className="ui small feed">
+											<div className="event">
+												<div className="content center aligned">
 													<p>
 														TexttextTexttext
 														TexttextTexttextTexttTexttextTexttext
@@ -196,21 +197,21 @@ class Home extends React.Component {
 											</div>
 										</div>
 									</div>
-									<div class="extra content center aligned">
-										<button class="ui big button">$15</button>
+									<div className="extra content center aligned">
+										<button className="ui big button">$15</button>
 									</div>
 								</div>
 							</div>
 							<div className="column">
-								<div class="ui card">
-									<div class="content center aligned">
-										<div class="header">Course Title</div>
+								<div className="ui card">
+									<div className="content center aligned">
+										<div className="header">Course Title</div>
 									</div>
-									<div class="content center aligned">
-										<h4 class="ui sub header">Description</h4>
-										<div class="ui small feed">
-											<div class="event">
-												<div class="content center aligned">
+									<div className="content center aligned">
+										<h4 className="ui sub header">Description</h4>
+										<div className="ui small feed">
+											<div className="event">
+												<div className="content center aligned">
 													<p>
 														TexttextTexttext
 														TexttextTexttextTexttTexttextTexttext
@@ -220,21 +221,21 @@ class Home extends React.Component {
 											</div>
 										</div>
 									</div>
-									<div class="extra content center aligned">
-										<button class="ui big button">$15</button>
+									<div className="extra content center aligned">
+										<button className="ui big button">$15</button>
 									</div>
 								</div>
 							</div>
 							<div className="column">
-								<div class="ui card">
-									<div class="content center aligned">
-										<div class="header">Course Title</div>
+								<div className="ui card">
+									<div className="content center aligned">
+										<div className="header">Course Title</div>
 									</div>
-									<div class="content center aligned">
-										<h4 class="ui sub header">Description</h4>
-										<div class="ui small feed">
-											<div class="event">
-												<div class="content center aligned">
+									<div className="content center aligned">
+										<h4 className="ui sub header">Description</h4>
+										<div className="ui small feed">
+											<div className="event">
+												<div className="content center aligned">
 													<p>
 														TexttextTexttext
 														TexttextTexttextTexttTexttextTexttext
@@ -244,8 +245,8 @@ class Home extends React.Component {
 											</div>
 										</div>
 									</div>
-									<div class="extra content center aligned">
-										<button class="ui big button">$15</button>
+									<div className="extra content center aligned">
+										<button className="ui big button">$15</button>
 									</div>
 								</div>
 							</div>
@@ -370,9 +371,9 @@ class Home extends React.Component {
 						</div>
 						<div className="equal width row center aligned">
 							<div className="column">
-								<div class="ui card">
-									<div class="content">
-										<div class="header">Cute Dog</div>
+								<div className="ui card">
+									<div className="content">
+										<div className="header">Cute Dog</div>
 										<p>
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
@@ -380,9 +381,9 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div class="ui card">
-									<div class="content">
-										<div class="header">Cute Dog</div>
+								<div className="ui card">
+									<div className="content">
+										<div className="header">Cute Dog</div>
 										<p>
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
@@ -390,9 +391,9 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div class="ui card">
-									<div class="content">
-										<div class="header">Cute Dog</div>
+								<div className="ui card">
+									<div className="content">
+										<div className="header">Cute Dog</div>
 										<p>
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
@@ -400,9 +401,9 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div class="ui card">
-									<div class="content">
-										<div class="header">Cute Dog</div>
+								<div className="ui card">
+									<div className="content">
+										<div className="header">Cute Dog</div>
 										<p>
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
@@ -457,7 +458,7 @@ class Home extends React.Component {
 												/>
 											</div>
 										</div>
-										<div class="field">
+										<div className="field">
 											<label>Content</label>
 											<textarea />
 										</div>

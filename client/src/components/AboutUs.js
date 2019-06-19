@@ -3,6 +3,13 @@ import Carousel from './Carousel';
 import { Link } from 'react-router-dom';
 
 class AboutUs extends React.Component {
+	componentWillMount() {
+		document.querySelector('body').className = 'blogs';
+	}
+	componentWillUnmount() {
+		document.querySelector('body').className = '';
+	}
+
 	render() {
 		return (
 			<div>
@@ -12,6 +19,10 @@ class AboutUs extends React.Component {
 							className="bcg-image"
 							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
 						/>
+						<div className="main-header">
+							WHAT’S <span className="br">JK Education</span>
+							<span className="br">FOR?</span>
+						</div>
 					</div>
 				</div>
 
@@ -36,7 +47,7 @@ class AboutUs extends React.Component {
 								<div className="six wide column">
 									<img
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										class="ui medium image"
+										className="ui medium image"
 									/>
 								</div>
 							</div>
@@ -45,7 +56,7 @@ class AboutUs extends React.Component {
 								<div className="six wide column">
 									<img
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										class="ui medium circular image"
+										className="ui medium circular image"
 									/>
 								</div>
 
@@ -84,7 +95,7 @@ class AboutUs extends React.Component {
 								<div className="six wide column">
 									<img
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										class="ui medium image"
+										className="ui medium image"
 									/>
 								</div>
 							</div>
@@ -94,7 +105,7 @@ class AboutUs extends React.Component {
 								<div className="six wide column">
 									<img
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										class="ui medium image"
+										className="ui medium image"
 									/>
 								</div>
 								<div className="seven wide column blue-text">
@@ -128,7 +139,7 @@ class AboutUs extends React.Component {
 								<div className="six wide column">
 									<img
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										class="ui medium image"
+										className="ui medium image"
 									/>
 								</div>
 							</div>
@@ -138,7 +149,7 @@ class AboutUs extends React.Component {
 								<div className="six wide column">
 									<img
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										class="ui medium image"
+										className="ui medium image"
 									/>
 								</div>
 								<div className="seven wide column blue-text">
@@ -158,7 +169,9 @@ class AboutUs extends React.Component {
 					</div>
 					<div className="ui fluid container center aligned margin padding red content-padding">
 						<h1 className="white-text">We have free trial! Let"s try it</h1>
-						<Link className="ui big yellow button">Free Trial</Link>
+						<Link to="/" className="ui big yellow button">
+							Free Trial
+						</Link>
 					</div>
 
 					<div className="ui fluid container center aligned blueGreen content-padding">
