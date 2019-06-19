@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import AboutUs from './AboutUs';
+import Articles from './Articles';
 import Footer from './Footer';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
 				<Header />
 				<Route path="/" exact component={Home} />
 				<Route path="/about" exact component={AboutUs} />
+				<Route path="/english-article" exact component={Articles} />
 				<Footer />
 			</BrowserRouter>
 		);
