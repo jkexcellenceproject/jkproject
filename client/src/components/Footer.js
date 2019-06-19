@@ -12,16 +12,24 @@ const Footer = () => {
 					<div className="three wide column">
 						<h4 className="ui inverted header">Link Header</h4>
 						<div className="ui inverted link list">
-							<Link className="item">Link</Link>
-							<Link className="item">Link</Link>
+							<Link to="/" className="item">
+								Link
+							</Link>
+							<Link to="/" className="item">
+								Link
+							</Link>
 							{/* <Link className="item">Link</Link> */}
 						</div>
 					</div>
 					<div className="three wide column">
 						<h4 className="ui inverted header">Link Header</h4>
 						<div className="ui inverted link list">
-							<Link className="item">Link</Link>
-							<Link className="item">Link</Link>
+							<Link to="/" className="item">
+								Link
+							</Link>
+							<Link to="/" className="item">
+								Link
+							</Link>
 							{/* <Link className="item">Link</Link> */}
 						</div>
 					</div>
