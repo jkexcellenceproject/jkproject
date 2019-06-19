@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import blogsReducer from './blogsReducer';
+import articlesReducer from './articlesReducer';
 import { reducer as reduxForm } from 'redux-form';
 
 export default combineReducers({
-    blogs: blogsReducer,
+    articles: articlesReducer,
     form: reduxForm
 });

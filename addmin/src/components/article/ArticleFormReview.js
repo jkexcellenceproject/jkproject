@@ -2,9 +2,9 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { submitBlog } from '../../actions/index';
+import { submitArticle } from '../../actions/index';
 
-class BlogFormReview extends Component {
+class ArticleFormReview extends Component {
     render() {
         const {formValues, onCancel, history} = this.props;
         return(
@@ -18,7 +18,7 @@ class BlogFormReview extends Component {
                     Back
                 </button>
                 <button 
-                    onClick={submitBlog(formValues, history)}
+                    onClick={submitArticle(formValues, history)}
                     className="green white-text btn-flat right">
                     Send Survey
                     <i className="material-icons right">email</i>
@@ -30,11 +30,11 @@ class BlogFormReview extends Component {
 
 function mapStateToProps(state) {
     if(Object.keys(state.form).length !== 0) {
-        return { formValues: state.form.blogForm.values };
+        return { formValues: state.form.articleForm.values };
     }
 }
 
 export default connect(
     mapStateToProps,
-    {submitBlog}
-)(withRouter(BlogFormReview));
+    {submitArticle}
+)(withRouter(ArticleFormReview));

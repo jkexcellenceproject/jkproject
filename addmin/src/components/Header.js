@@ -13,7 +13,7 @@ class Header extends Component {
                         <li>
                             <Link className="item" to="/">
                                 <i className="material-icons">border_color</i>
-                                Blog
+                                Articles
                             </Link>
                         </li>
                         <li>

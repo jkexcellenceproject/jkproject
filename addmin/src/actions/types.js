@@ -1,2 +1,2 @@
-export const FETCH_BLOGS = 'FETCH_BLOGS';
-export const EDIT_BLOG = 'EDIT_BLOG';
+export const FETCH_ARTICLES = 'FETCH_ARTICLES';
+export const EDIT_ARTICLE = 'EDIT_BLOG';
