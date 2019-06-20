@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
 
+
 class Carousel extends React.Component {
 	createCarouselItem = () => {
 		return this.props.datas.map(data => {
