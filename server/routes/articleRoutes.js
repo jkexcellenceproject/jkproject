@@ -24,7 +24,9 @@ module.exports = app => {
     var id = 0;
     const {title, content} = request.body.values;
     Articles.find({}).sort([['id', -1]]).limit(1).exec(function(err, articles) { 
-      id = articles[0].id + 1;
+      if(!articles[0].id) {
+        id = articles[0].id + 1;
+      }
       const article = new Articles({
         id, 
         title,
