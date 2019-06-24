@@ -13,18 +13,20 @@ class AboutUs extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="ui fluid container">
+				<section className="ui fluid container main-visual">
 					<div className="bcg-base">
 						<img
 							className="bcg-image"
 							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
 						/>
 						<div className="main-header">
-							WHAT’S <span className="br">JK Education</span>
-							<span className="br">FOR?</span>
+							<h1>
+								WHAT’S <span className="br">JK Education</span>
+								<span className="br">FOR?</span>
+							</h1>
 						</div>
 					</div>
-				</div>
+				</section>
 
 				<section className="ui fluid container blueGreen content-padding">
 					<div className="ui center aligned container">

@@ -1,25 +1,5 @@
 @import 'common';
 
-.blueGreen {
-	background-color: $blueGreen;
-}
-
-.red {
-	background-color: $red;
-}
-
-.white-text {
-	color: white !important;
-}
-
-.blue-text {
-	color: $blueGreen !important;
-}
-
-.content-padding {
-	@include padding;
-}
-
 .margin {
 	@include margin;
 }
@@ -85,44 +65,30 @@
 
 // Faq.js
 
-// .accordion {
-// 	background-color: #eee;
-// 	color: #444;
-// 	cursor: pointer;
-// 	padding: 18px;
-// 	width: 100%;
-// 	text-align: left;
-// 	border: none;
-// 	outline: none;
-// 	transition: 0.4s;
-
-// 	&:after {
-// 		content: '\02795';
-// 		font-size: 13px;
-// 		color: #777;
-// 		float: right;
-// 		margin-left: 5px;
-// 	}
-// }
-
-// .active,
-// .accordion:hover {
-// 	background-color: #ccc;
-// }
-
-// .active:after {
-// 	content: '\2796';
-// }
-
-// .panel {
-// 	padding: 0 18px;
-// 	background-color: white;
-// 	display: none;
-// 	overflow: hidden;
-// 	padding: 0 18px;
-// 	max-height: 0;
-// 	transition: max-height 0.2s ease-out;
-// }
+.acd-check {
+	display: none;
+}
+.acd-label {
+	border-radius: 2px;
+	background: white;
+	color: $blueGreen;
+	display: block;
+	margin-bottom: 1px;
+	padding: 10px;
+}
+.acd-content {
+	height: 0;
+	opacity: 0;
+	padding: 0 10px;
+	transition: 0.5s;
+	visibility: hidden;
+}
+.acd-check:checked + .acd-label + .acd-content {
+	height: 40px;
+	opacity: 1;
+	padding: 10px;
+	visibility: visible;
+}
 
 // Carousel.js
 
