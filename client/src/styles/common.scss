@@ -18,3 +18,37 @@ $blueGreen: #70afac;
 p {
 	word-wrap: break-word;
 }
+h1 {
+	font-size: 4.5rem;
+}
+h2 {
+	width: 100%;
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+}
+h3 {
+	font-size: 1.625rem;
+}
+.main-visual {
+	margin-bottom: 100px;
+}
+.content-padding {
+	padding: 100px 0;
+}
+
+.blueGreen {
+	background-color: $blueGreen;
+}
+
+.red {
+	background-color: $red;
+}
+
+.white-text {
+	color: white !important;
+}
+
+.blue-text {
+	color: $blueGreen !important;
+}

@@ -9,9 +9,6 @@ import '../styles/common.scss';
 import '../styles/style.scss';
 
 class Home extends React.Component {
-	// componentDidMount() {
-	// 	this.props.fetchBlogs();
-	// }
 	componentWillMount() {
 		document.querySelector('body').className = 'blogs';
 	}
@@ -281,90 +278,6 @@ class Home extends React.Component {
 							</div>
 						</div>
 						<EnglishArticleCard />
-						{/* <div className="four column row">
-							<div className="column">
-								<div className="ui items">
-									<div className="item">
-										<div className="content">
-											<h2 className="header white-text">
-												Sub Title Sub Title Sub Title Sub Title Sub Title Sub
-												Title Sub Title Sub Title
-											</h2>
-											<div className="description">
-												<p className="white-text">
-													TexttextTexttext TexttextTexttextTexttTexttextTexttext
-													TexttextTexttextTextt TexttextTexttext
-													TexttextTexttextTexttTexttextTexttext
-													TexttextTexttextTextt
-												</p>
-											</div>
-											<div style={{ margin: '15px 0' }}>
-												<Link to="/" className="ui button big yellow">
-													View Articles
-												</Link>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<div className="ui card">
-									<Link to="/" className="image">
-										<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-									</Link>
-									<div className="content">
-										<Link to="/" className="header">
-											Article Title
-										</Link>
-										<div className="meta">
-											<span className="date">Posted Date</span>
-										</div>
-										<p className="description">
-											TexttextTexttext TexttextTexttextTexttTexttextTexttext
-											TexttextTexttextTextt
-										</p>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<div className="ui card">
-									<Link to="/ h" className="image">
-										<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-									</Link>
-									<div className="content">
-										<Link to="/" className="header">
-											Article Title
-										</Link>
-										<div className="meta">
-											<span className="date">Posted Date</span>
-										</div>
-										<p className="description">
-											TexttextTexttext TexttextTexttextTexttTexttextTexttext
-											TexttextTexttextTextt
-										</p>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<div className="ui card">
-									<Link to="/" className="image">
-										<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-									</Link>
-									<div className="content">
-										<Link to="/" className="header">
-											Article Title
-										</Link>
-										<div className="meta">
-											<span className="date">Posted Date</span>
-										</div>
-										<p className="description">
-											TexttextTexttext TexttextTexttextTexttTexttextTexttext
-											TexttextTexttextTextt
-										</p>
-									</div>
-								</div>
-							</div>
-						</div> */}
 					</div>
 				</section>
 

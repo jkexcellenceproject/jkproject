@@ -19,28 +19,26 @@ class EnglishArticleCard extends React.Component {
 		return this.props.articles.map(article => {
 			if (!article[0]) {
 				console.log(article.dateSent);
+
 				return (
 					<div className="column">
-						<div className="item" key={article.id}>
-							<div className="right floated content">
-								<div className="ui large teal button">
-									<Link to={`/article/edit/${article.id}`}>Edit</Link>
-								</div>
-								<button
-									className="ui large red button"
-									onClick={() => {
-										if (window.confirm('Do you want to delete it ?'))
-											this.deletePost(article.id);
-									}}
-								>
-									Delete
-								</button>
+						<div className="ui card" key={article.id}>
+							<div className="image">
+								<img src="https://dummyimage.com/150x150/ccc/fff" />
 							</div>
-							<img
-								className="ui image"
-								src="https://dummyimage.com/150x150/ccc/fff"
-							/>
-							<div className="content">{article.title}</div>
+							<div className="content">
+								<div className="header">{article.title}</div>
+								<div className="meta">
+									<span className="date">Sep. 06 / 2013</span>
+								</div>
+								<div className="description">fadfas</div>
+							</div>
+							<div className="extra content">
+								<a>
+									<i className="comment icon" />
+									22 Comments
+								</a>
+							</div>
 						</div>
 					</div>
 				);
