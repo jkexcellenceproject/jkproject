@@ -16,33 +16,26 @@ class Articles extends Component {
 			return <p>Loading</p>;
 		}
 		return this.props.articles.map(article => {
-			if (!article[0]) {
-				console.log(article.dateSent);
-				return (
-					<>
-						<div className="column article-box">
-                        <div className="ui card">
-                            <Link to="/" className="image">
-                                <img src="https://react.semantic-ui.com/images/wireframe/image.png" />
-                            </Link>
-                            <div className="content">
-                                <h3>
-                                    <Link to="/" className="header">
-                                        {article.title}
-                                    </Link>
-                                </h3>
-                                <p className="description">
-                                    {article.content}
-                                </p>
-                                <div className="meta">
-                                    <span className="date">{article.dateSent}</span>
-                                </div>
+			return (
+                <>
+                    <div className="column article-box">
+                    <div className="ui card">
+                        <Link to="/" className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
+                            <h3>
+                                {article.title.rendered}
+                            </h3>
+                            <p className="description" dangerouslySetInnerHTML={{ __html: article.content.rendered }}>
+                            </p>
+                        </Link>
+                        <div className="content">
+                            <div className="meta">
+                                <span className="date">{article.date}</span>
                             </div>
                         </div>
                     </div>
-					</>
-				);
-			}
+                </div>
+                </>
+            );
 		});
     }
     render() {
