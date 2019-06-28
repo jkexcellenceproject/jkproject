@@ -26,6 +26,7 @@ const Header = () => {
 			<Link to="/contact" className="item">
 				Contact
 			</Link>
+			<div />
 		</div>
 	);
 };
