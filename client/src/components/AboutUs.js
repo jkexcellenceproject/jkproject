@@ -77,111 +77,122 @@ class AboutUs extends React.Component {
 				</section>
 
 				{/* What does it take lesson? */}
-				<div className="ui fluid container content-padding">
-					<div className="ui container ">
-						<div className="ui grid">
-							<div className="row centered">
-								<h2 className="header blue-text">How it does take lesson?</h2>
-							</div>
-							<div className="ui stackable four column row">
-								<div className="one wide column" />
-								<div className="seven wide column blue-text">
-									<h3 className="header">1. Contact to Vickey</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
-									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-									</p>
+				<div className="content-padding">
+					<div className="ui fluid container">
+						<div className="ui container">
+							<div className="ui grid">
+								<div className="row centered">
+									<h2 className="header blue-text">How it does take lesson?</h2>
 								</div>
-								<div className="two wide column" />
-								<div className="six wide column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui medium image"
-									/>
+								<div className="ui stackable four column row">
+									<div className="one wide column" />
+									<div className="seven wide column blue-text">
+										<h3 className="header">1. Contact to Vickey</h3>
+										<h4>
+											About sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub titleAbout sub titleAbout sub titleAbout
+											sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub
+										</h4>
+										<p>
+											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+										</p>
+									</div>
+									<div className="two wide column" />
+									<div className="six wide column">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui medium image"
+										/>
+									</div>
 								</div>
-							</div>
 
-							<div className="ui stackable four column row">
-								<div className="one wide column" />
-								<div className="six wide column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui medium image"
-									/>
+								<div className="ui stackable four column row">
+									<div className="one wide column" />
+									<div className="six wide column">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui medium image"
+										/>
+									</div>
+									<div className="seven wide column blue-text">
+										<h3 className="header">2. Try free trial</h3>
+										<h4>
+											About sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub titleAbout sub titleAbout sub titleAbout
+											sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub
+										</h4>
+										<p>
+											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+										</p>
+									</div>
+									<div className="one wide column" />
 								</div>
-								<div className="seven wide column blue-text">
-									<h3 className="header">2. Try free trial</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
-									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-									</p>
-								</div>
-								<div className="one wide column" />
-							</div>
 
-							<div className="ui stackable four column row">
-								<div className="one wide column" />
-								<div className="seven wide column blue-text">
-									<h3 className="header">3. Contact to Vickey</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
-									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-									</p>
+								<div className="ui stackable four column row">
+									<div className="one wide column" />
+									<div className="seven wide column blue-text">
+										<h3 className="header">3. Contact to Vickey</h3>
+										<h4>
+											About sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub titleAbout sub titleAbout sub titleAbout
+											sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub
+										</h4>
+										<p>
+											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+										</p>
+									</div>
+									<div className="two wide column" />
+									<div className="six wide column">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui medium image"
+										/>
+									</div>
 								</div>
-								<div className="two wide column" />
-								<div className="six wide column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui medium image"
-									/>
-								</div>
-							</div>
 
-							<div className="ui stackable four column row">
-								<div className="one wide column" />
-								<div className="six wide column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui medium image"
-									/>
+								<div className="ui stackable four column row">
+									<div className="one wide column" />
+									<div className="six wide column">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui medium image"
+										/>
+									</div>
+									<div className="seven wide column blue-text">
+										<h3 className="header">4. Try free trial</h3>
+										<h4>
+											About sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub titleAbout sub titleAbout sub titleAbout
+											sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub
+										</h4>
+										<p>
+											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+										</p>
+									</div>
+									<div className="one wide column" />
 								</div>
-								<div className="seven wide column blue-text">
-									<h3 className="header">4. Try free trial</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
-									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-									</p>
-								</div>
-								<div className="one wide column" />
 							</div>
 						</div>
 					</div>
-					<div className="ui fluid container center aligned margin padding red content-padding">
-						<h1 className="white-text">We have free trial! Let"s try it</h1>
-						<Link to="/" className="ui big yellow button">
-							Free Trial
-						</Link>
+
+					<div className="red content-padding">
+						<div className="ui fluid container center aligned">
+							<h1 className="white-text">We have free trial! Let"s try it</h1>
+							<Link to="/" className="ui big yellow button">
+								Free Trial
+							</Link>
+						</div>
 					</div>
 
-					<div className="ui fluid container center aligned blueGreen content-padding">
-						<h1 className="header white-text">Our tutors</h1>
-						<Carousel />
+					<div className="blueGreen content-padding">
+						<div className="ui fluid container center aligned">
+							<h1 className="header white-text">Our tutors</h1>
+							<Carousel />
+						</div>
 					</div>
 				</div>
 			</div>
