@@ -13,7 +13,7 @@ class AboutUs extends React.Component {
 	render() {
 		return (
 			<div>
-				<section className="ui fluid container main-visual">
+				<section>
 					<div className="bcg-base">
 						<img
 							className="bcg-image"
@@ -28,45 +28,48 @@ class AboutUs extends React.Component {
 					</div>
 				</section>
 
-				<section className="ui fluid container blueGreen content-padding">
-					<div className="ui center aligned container">
-						<div className="ui grid">
-							<div className="row centered">
-								<h2 className="header white-text">What's JK Education</h2>
-							</div>
-							<div className="three column row">
-								<div className="eight wide column left aligned white-text">
-									<h3>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h3>
-									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextt
-									</p>
+				<section className=" blueGreen content-padding">
+					<div className="ui fluid container">
+						<div className="ui center aligned container">
+							<div className="ui grid">
+								<div className="row centered">
+									<h2 className="header white-text">What's JK Education</h2>
 								</div>
-								<div className="two wide column" />
-								<div className="six wide column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui medium image"
-									/>
+								<div className="three column row">
+									<div className="eight wide column left aligned white-text">
+										<h3>
+											About sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub titleAbout sub titleAbout sub titleAbout
+											sub titleAbout sub titleAbout sub titleAbout sub
+											titleAbout sub
+										</h3>
+										<p>
+											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextt
+										</p>
+									</div>
+									<div className="two wide column" />
+									<div className="six wide column">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui medium image"
+										/>
+									</div>
 								</div>
-							</div>
-							<div className="three column row">
-								<div className="two wide column" />
-								<div className="six wide column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui medium circular image"
-									/>
-								</div>
+								<div className="three column row">
+									<div className="two wide column" />
+									<div className="six wide column">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui medium circular image"
+										/>
+									</div>
 
-								<div className="six wide column left aligned white-text">
-									<h3 className="header">Tutor Name</h3>
-									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextt
-									</p>
+									<div className="six wide column left aligned white-text">
+										<h3 className="header">Tutor Name</h3>
+										<p>
+											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextt
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -80,7 +83,7 @@ class AboutUs extends React.Component {
 							<div className="row centered">
 								<h2 className="header blue-text">How it does take lesson?</h2>
 							</div>
-							<div className="four column row">
+							<div className="ui stackable four column row">
 								<div className="one wide column" />
 								<div className="seven wide column blue-text">
 									<h3 className="header">1. Contact to Vickey</h3>
@@ -102,7 +105,7 @@ class AboutUs extends React.Component {
 								</div>
 							</div>
 
-							<div className="four column row">
+							<div className="ui stackable four column row">
 								<div className="one wide column" />
 								<div className="six wide column">
 									<img
@@ -121,18 +124,18 @@ class AboutUs extends React.Component {
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
 								</div>
-								<div className="two wide column" />
+								<div className="one wide column" />
 							</div>
 
-							<div className="four column row">
+							<div className="ui stackable four column row">
 								<div className="one wide column" />
 								<div className="seven wide column blue-text">
-									<h2 className="header">3. Contact to Vickey</h2>
-									<h3>
+									<h3 className="header">3. Contact to Vickey</h3>
+									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h3>
+									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
@@ -146,7 +149,7 @@ class AboutUs extends React.Component {
 								</div>
 							</div>
 
-							<div className="four column row">
+							<div className="ui stackable four column row">
 								<div className="one wide column" />
 								<div className="six wide column">
 									<img
@@ -155,17 +158,17 @@ class AboutUs extends React.Component {
 									/>
 								</div>
 								<div className="seven wide column blue-text">
-									<h2 className="header">4. Try free trial</h2>
-									<h3>
+									<h3 className="header">4. Try free trial</h3>
+									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h3>
+									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
 								</div>
-								<div className="two wide column" />
+								<div className="one wide column" />
 							</div>
 						</div>
 					</div>

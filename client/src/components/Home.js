@@ -23,7 +23,7 @@ class Home extends React.Component {
 		return (
 			<div>
 				{/* Image Slider */}
-				<div className="ui fluid container slides-wrap">
+				<div className="slides-wrap">
 					<img
 						className="slideImage"
 						src={`${process.env.PUBLIC_URL}/images/sampleImage1.jpg`}
@@ -39,6 +39,7 @@ class Home extends React.Component {
 							</div>
 						</div>
 						<div className="row">
+							<div className="one wide column" />
 							<div className="eight wide column">
 								<div className="white-text">
 									About sub titleAbout sub titleAbout sub titleAbout sub
@@ -84,7 +85,6 @@ class Home extends React.Component {
 								/>
 							</div>
 						</div>
-						<div className="two wide column" />
 						<div className="row">
 							<div className="center aligned column">
 								<Link to="/about" className="ui big yellow button">
@@ -97,54 +97,54 @@ class Home extends React.Component {
 
 				{/* Our Class Section */}
 				<section className="content-padding">
-					<div>
-						<div className="ui container">
-							<div className="ui middle aligned stackable grid">
-								<div className="row">
-									<div className="center aligned column">
-										<h2 className="blue-text">Our Class</h2>
-									</div>
+					<div className="ui container">
+						<div className="ui middle aligned stackable grid">
+							<div className="row">
+								<div className="center aligned column">
+									<h2 className="blue-text">Our Class</h2>
 								</div>
-								<div className="row">
-									<div className="six wide centered center aligned column">
-										<p className="blue-text">
-											Course sub titleCourse sub titleCourse sub titleCourse sub
-											titleCourse sub titleCourse sub titleCourse sub
-											titleCourse sub titleCourse sub titleCourse sub
-											titleCourse sub titleCourse sub titleCourse sub title
-										</p>
-									</div>
+							</div>
+							<div className="row">
+								<div className="six wide centered center aligned column">
+									<p className="blue-text">
+										Course sub titleCourse sub titleCourse sub titleCourse sub
+										titleCourse sub titleCourse sub titleCourse sub titleCourse
+										sub titleCourse sub titleCourse sub titleCourse sub
+										titleCourse sub titleCourse sub title
+									</p>
 								</div>
-								<div className="four column row">
-									<div className="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
-									<div className="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
-									<div className="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
-									<div className="column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
+							</div>
+							<div className="four column row">
+								<div className="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
+								</div>
+								<div className="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
+								</div>
+								<div className="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
+								</div>
+								<div className="column">
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div className="ui fluid container center aligned margin padding red content-padding">
+					<div className=" margin red content-padding">
+						<div className="ui fluid container center aligned">
 							<h1 className="white-text">We have free trial! Let"s try it</h1>
 							<Link to="/" className="ui big yellow button">
 								Free Trial
@@ -153,14 +153,14 @@ class Home extends React.Component {
 					</div>
 				</section>
 				{/* Price Section */}
-				<section className="ui fluid container blueGreen content-padding">
-					<div className="ui middle aligned stackable grid container">
+				<section className="blueGreen content-padding">
+					<div className="ui middle aligned grid container">
 						<div className="row">
 							<div className="center aligned column">
 								<h2 className="white-text">Prices</h2>
 							</div>
 						</div>
-						<div className="four column row">
+						<div className="ui stackable equal width row">
 							<div className="column">
 								<div className="ui card">
 									<div className="content center aligned">
@@ -172,9 +172,8 @@ class Home extends React.Component {
 											<div className="event">
 												<div className="content center aligned">
 													<p>
-														TexttextTexttext
-														TexttextTexttextTexttTexttextTexttext
-														TexttextTexttextTextt
+														TexttextTexttext TexttextTexttext
+														TexttTexttextTexttext TexttextTexttextTextt
 													</p>
 												</div>
 											</div>
@@ -196,9 +195,8 @@ class Home extends React.Component {
 											<div className="event">
 												<div className="content center aligned">
 													<p>
-														TexttextTexttext
-														TexttextTexttextTexttTexttextTexttext
-														TexttextTexttextTextt
+														TexttextTexttext TexttextTexttext
+														TexttTexttextTexttext TexttextTexttextTextt
 													</p>
 												</div>
 											</div>
@@ -220,9 +218,8 @@ class Home extends React.Component {
 											<div className="event">
 												<div className="content center aligned">
 													<p>
-														TexttextTexttext
-														TexttextTexttextTexttTexttextTexttext
-														TexttextTexttextTextt
+														TexttextTexttext TexttextTexttext
+														TexttTexttextTexttext TexttextTexttextTextt
 													</p>
 												</div>
 											</div>
@@ -244,9 +241,8 @@ class Home extends React.Component {
 											<div className="event">
 												<div className="content center aligned">
 													<p>
-														TexttextTexttext
-														TexttextTexttextTexttTexttextTexttext
-														TexttextTexttextTextt
+														TexttextTexttext TexttextTexttext
+														TexttTexttextTexttext TexttextTexttextTextt
 													</p>
 												</div>
 											</div>
@@ -271,20 +267,22 @@ class Home extends React.Component {
 					</div>
 				</section>
 				{/* English Article Section */}
-				<section className="ui fluid container red content-padding">
-					<div className="ui middle aligned stackable grid container">
-						<div className="row">
-							<div className="center aligned column">
-								<h2 className="white-text">English Articles</h2>
+				<section className="red content-padding">
+					<div className="ui fluid container ">
+						<div className="ui middle aligned grid container">
+							<div className="row">
+								<div className="center aligned column">
+									<h2 className="white-text">English Articles</h2>
+								</div>
 							</div>
+							<EnglishArticleCard />
 						</div>
-						<EnglishArticleCard />
 					</div>
 				</section>
 
 				{/* FAQ Section */}
 				<section className="ui container content-padding">
-					<div className="ui middle aligned stackable grid">
+					<div className="ui stackable  middle aligned grid">
 						<div className="row">
 							<div className="center aligned column">
 								<h2 className="blue-text">FAQ</h2>
@@ -348,53 +346,55 @@ class Home extends React.Component {
 					</div>
 				</section>
 				{/* Contact Section */}
-				<section className="ui fluid container blueGreen content-padding">
-					<div className="ui middle aligned stackable grid container">
-						<div className="row">
-							<div className="center aligned column">
-								<h2 className="white-text">Contact us</h2>
-							</div>
-						</div>
-						<div className="equal width row">
-							<div className="column">
-								<div className="white-text">
-									blog sub titleblog sub titleblog sub titleblog sub titleblog
-									sub titleblog sub title
-								</div>
-								<div className="white-text">
-									000-0000-0000 <br />
-									xxxxx@gmail.com <br />
-									123-222 Granville st, Vancouver
+				<section className="blueGreen content-padding">
+					<div className="ui fluid container">
+						<div className="ui middle aligned stackable grid container">
+							<div className="row">
+								<div className="center aligned column">
+									<h2 className="white-text">Contact us</h2>
 								</div>
 							</div>
-							<div className="column">
-								<form className="ui large form">
-									<div className="ui stackable segment">
-										<div className="field">
-											<div className="ui left icon input">
-												<i className="user icon" />
-												<input type="text" placeholder="Name" name="name" />
-											</div>
-										</div>
-										<div className="field">
-											<div className="ui left icon input">
-												<i className="mail icon" />
-												<input
-													type="text"
-													placeholder="E-mail adrress"
-													name="e-mail"
-												/>
-											</div>
-										</div>
-										<div className="field">
-											<label>Content</label>
-											<textarea />
-										</div>
-										<div>
-											<button className="ui button primary">Submit</button>
-										</div>
+							<div className="equal width row">
+								<div className="center aligned column">
+									<div className="white-text">
+										blog sub titleblog sub titleblog sub titleblog sub titleblog
+										sub titleblog sub title
 									</div>
-								</form>
+									<div className="white-text">
+										000-0000-0000 <br />
+										xxxxx@gmail.com <br />
+										123-222 Granville st, Vancouver
+									</div>
+								</div>
+								<div className="column">
+									<form className="ui large form">
+										<div className="ui stackable segment">
+											<div className="field">
+												<div className="ui left icon input">
+													<i className="user icon" />
+													<input type="text" placeholder="Name" name="name" />
+												</div>
+											</div>
+											<div className="field">
+												<div className="ui left icon input">
+													<i className="mail icon" />
+													<input
+														type="text"
+														placeholder="E-mail adrress"
+														name="e-mail"
+													/>
+												</div>
+											</div>
+											<div className="field">
+												<label>Content</label>
+												<textarea />
+											</div>
+											<div>
+												<button className="ui button primary">Submit</button>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>

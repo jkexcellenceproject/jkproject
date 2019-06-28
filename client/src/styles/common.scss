@@ -6,10 +6,6 @@ $blue: #448fb3;
 $blueGreen: #70afac;
 
 // mixins
-@mixin padding {
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
 
 @mixin margin {
 	margin-top: 100px;
@@ -82,5 +78,11 @@ ul {
 	}
 	@media screen and (max-width:1024px) {
 		min-height: 230px;
+	}
+}
+
+@media screen and (max-width: 468px) {
+	.ui.card {
+		margin: 0 auto !important;
 	}
 }
