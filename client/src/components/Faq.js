@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Accordion, Icon } from 'semantic-ui-react';
 
 class Faq extends React.Component {
 	componentWillMount() {

@@ -6,6 +6,9 @@ $blue: #448fb3;
 $blueGreen: #70afac;
 
 // mixins
+* {
+	box-sizing: border-box;
+}
 
 @mixin margin {
 	margin-top: 100px;
@@ -25,6 +28,12 @@ h2 {
 }
 h3 {
 	font-size: 1.625rem;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style: none;
 }
 .main-visual {
 	margin-bottom: 100px;

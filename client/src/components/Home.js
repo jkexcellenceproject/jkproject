@@ -113,28 +113,36 @@ class Home extends React.Component {
 							</div>
 							<div className="four column row">
 								<div className="column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui image"
-									/>
+									<div className="ui segment">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui image"
+										/>
+									</div>
 								</div>
 								<div className="column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui image"
-									/>
+									<div className="ui segment">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui image"
+										/>
+									</div>
 								</div>
 								<div className="column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui image"
-									/>
+									<div className="ui segment">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui image"
+										/>
+									</div>
 								</div>
 								<div className="column">
-									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui image"
-									/>
+									<div className="ui segment">
+										<img
+											src="https://react.semantic-ui.com/images/wireframe/image.png"
+											className="ui image"
+										/>
+									</div>
 								</div>
 							</div>
 						</div>
