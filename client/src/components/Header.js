@@ -13,8 +13,11 @@ const Header = () => {
 				</Link>
 			</div>
 			<input type="checkbox" id="toggle" />
-			<label for="toggle" className="open-menu-btn">
-				<i class="fas fa-bars" />
+			<label for="toggle" className="menu-trigger-btn">
+				{/* <i class="fas fa-bars" /> */}
+				<span />
+				<span />
+				<span />
 			</label>
 			<ul className="nav-menu">
 				<Link to="/">Home</Link>
@@ -23,9 +26,9 @@ const Header = () => {
 				<Link to="/faq">FAQ</Link>
 				<Link to="/contact">Contact</Link>
 
-				<label for="toggle" className="close-menu-btn">
+				{/* <label for="toggle" className="close-menu-btn">
 					<i class="fas fa-times" />
-				</label>
+				</label> */}
 			</ul>
 		</div>
 	);
