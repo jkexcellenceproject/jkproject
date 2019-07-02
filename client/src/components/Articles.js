@@ -20,7 +20,7 @@ class Articles extends Component {
                 <>
                     <div className="column article-box">
                     <div className="ui card">
-                        <Link to="/" className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
+                        <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
                             <h3>
                                 {article.title.rendered}
                             </h3>
