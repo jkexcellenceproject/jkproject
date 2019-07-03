@@ -19,7 +19,6 @@ class Articles extends Component {
 			return (
                 <>
                     <div className="column article-box">
-                    <div className="ui card">
                         <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
                             <h3>
                                 {article.title.rendered}
@@ -33,7 +32,6 @@ class Articles extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
                 </>
             );
 		});
@@ -54,9 +52,9 @@ class Articles extends Component {
 						</div>
 					</div>
 				</section>
-                <section className="ui grid container content-padding">
+                <section className="ui container">
                     <h2>Our article to study English</h2>
-                    <div className="three column row">
+                    <div className="ui stackable three column grid">
                             {this.renderList()}
                     </div>
                 </section>
