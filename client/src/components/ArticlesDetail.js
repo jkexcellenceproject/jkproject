@@ -5,8 +5,8 @@ import { fetchArticles, fetchArticle } from '../actions';
 
 class Articles extends Component {
     componentDidMount() {
-        document.querySelector('body').className = 'articles';
-        this.props.fetchArticles();
+        document.querySelector('body').className = 'articles article-detail';
+        this.props.fetchArticle(this.props.match.params.slug, this.props.fetchArticles());
 	}
 	componentWillUnmount() {
 		document.querySelector('body').className = '';
@@ -19,8 +19,7 @@ class Articles extends Component {
 			return (
                 <>
                     <div className="column article-box">
-                    <div className="ui card">
-                        <Link to="/" className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
+                        <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
                             <h3>
                                 {article.title.rendered}
                             </h3>
@@ -33,20 +32,41 @@ class Articles extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
                 </>
             );
 		});
     }
     render() {
-        const {title, content, jetpack_featured_media_url } = this.props.article;
-        return(
-            <div>
-                <section className="ui fluid container main-visual">
-					{title.rendered}
-                </section>
-            </div>
-        );
+        if(!this.props.article) {
+            return(
+                <div>
+                    <section className="ui fluid container main-visual">
+                        <div>
+                            <h1>Loding...</h1>
+                        </div>
+                    </section>
+                </div>
+            );
+        } else {
+            const {title, content, jetpack_featured_media_url } = this.props.article;
+            return(
+                <div>
+                    <section className="ui two column stackable container content-padding grid">
+                        <div className="twelve wide column">
+                            <h1>{title.rendered}</h1>
+                            <img src={jetpack_featured_media_url} alt={title.rendered}/>
+                            <p dangerouslySetInnerHTML={{ __html: content.rendered }}></p>
+                        </div>
+                        <div className="four wide column">
+                            <ul>
+                                {this.renderList()}
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            );
+        }
+        
     }
 }
 
