@@ -19,7 +19,7 @@ class Articles extends Component {
 			return (
                 <>
                     <div className="column article-box">
-                        <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
+                        <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("${article.jetpack_featured_media_url}") center no-repeat`}}>
                             <h3>
                                 {article.title.rendered}
                             </h3>
@@ -39,7 +39,7 @@ class Articles extends Component {
     render() {
         return(
             <div>
-                <section className="ui fluid container main-visual">
+                <section className="ui fluid main-visual">
 					<div className="bcg-base">
 						<img
 							className="bcg-image"
@@ -52,7 +52,7 @@ class Articles extends Component {
 						</div>
 					</div>
 				</section>
-                <section className="ui container">
+                <section className="ui container article-list">
                     <h2>Our article to study English</h2>
                     <div className="ui stackable three column grid">
                             {this.renderList()}
