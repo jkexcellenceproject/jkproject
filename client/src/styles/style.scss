@@ -134,15 +134,15 @@
 // Articles
 .articles {
 	background-color: $blueGreen;
-	.ui.card {
-		width: 100%!important;
-		-webkit-box-shadow: 2px 3px 6px 1px #61908e;
-    	box-shadow: 2px 3px 6px 1px #61908e;
+	.article-list {
+		margin-bottom: 100px;
 	}
 	.article-box {
 		margin-bottom: 50px!important;
 		.content {
 			background-color: #448FB3;
+			-webkit-box-shadow: 2px 3px 6px 1px #61908e;
+    		box-shadow: 2px 3px 6px 1px #61908e;
 		}
 		h3 {
 			margin-bottom: 5px;
@@ -150,5 +150,17 @@
 		a, p, span {
 			color: white!important;
 		}
+	}
+}
+.article-detail {
+	section.container {
+		margin-bottom: 150px;
+		padding-top: 100px; 
+	}
+	.four ul {
+		margin-top: 94px;
+	}
+	.aticle-image {
+		min-height: 150px;
 	}
 }
