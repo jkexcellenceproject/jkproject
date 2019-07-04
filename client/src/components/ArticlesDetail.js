@@ -15,25 +15,30 @@ class Articles extends Component {
         if (this.props.articles === null) {
 			return <p>Loading</p>;
 		}
-		return this.props.articles.map(article => {
-			return (
-                <>
-                    <div className="column article-box">
-                        <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("https://react.semantic-ui.com/images/wireframe/image.png") center no-repeat`}}>
-                            <h3>
-                                {article.title.rendered}
-                            </h3>
-                            <p className="description" dangerouslySetInnerHTML={{ __html: article.content.rendered }}>
-                            </p>
-                        </Link>
-                        <div className="content">
-                            <div className="meta">
-                                <span className="date">{article.date}</span>
+		return this.props.articles.map((article, index) => {
+            if (3 > index){
+                return (
+                    <>
+                        <div className="column article-box">
+                            <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("${article.jetpack_featured_media_url}") center no-repeat`}}>
+                                <h3>
+                                    {article.title.rendered}
+                                </h3>
+                                <p className="description" dangerouslySetInnerHTML={{ __html: article.content.rendered }}>
+                                </p>
+                            </Link>
+                            <div className="content">
+                                <div className="meta">
+                                    <span className="date">{article.date}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </>
-            );
+                    </>
+                );
+            } else {
+                return;
+            }
+			
 		});
     }
     render() {
