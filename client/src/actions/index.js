@@ -1,9 +1,5 @@
 import axios from 'axios';
-<<<<<<< HEAD
 import { FETCH_ARTICLES, FETCH_ARTICLE, FETCH_TUTORS } from './types';
-=======
-import { FETCH_ARTICLES } from './types';
->>>>>>> Modified EnglishArticleCard.js
 
 export const fetchDatas = datas => {
 	return {
@@ -13,7 +9,6 @@ export const fetchDatas = datas => {
 };
 
 export const fetchArticles = () => async dispatch => {
-<<<<<<< HEAD
 	const response = await axios.get('http://wordpress.local.com:8888/wordpress/jk-wp/wp-json/wp/v2/posts');
 	console.log(response.data);
 	dispatch({ type: FETCH_ARTICLES, payload: response.data });
@@ -29,9 +24,3 @@ export const fetchTutors = () => async dispatch => {
 	console.log(response.data);
 	dispatch({ type: FETCH_TUTORS, payload: response.data });
 }
-=======
-	const response = await axios.get('/api/articles');
-
-	dispatch({ type: FETCH_ARTICLES, payload: response.data });
-};
->>>>>>> Modified EnglishArticleCard.js

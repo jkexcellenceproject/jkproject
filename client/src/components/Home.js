@@ -170,7 +170,7 @@ class Home extends React.Component {
 						</div>
 						<div className="ui stackable equal width row">
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content center aligned">
 										<div className="header">Course Title</div>
 									</div>
@@ -193,7 +193,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content center aligned">
 										<div className="header">Course Title</div>
 									</div>
@@ -216,7 +216,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content center aligned">
 										<div className="header">Course Title</div>
 									</div>
@@ -239,7 +239,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content center aligned">
 										<div className="header">Course Title</div>
 									</div>
@@ -306,7 +306,7 @@ class Home extends React.Component {
 						</div>
 						<div className="equal width row center aligned">
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content">
 										<div className="header">Cute Dog</div>
 										<p>
@@ -316,7 +316,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content">
 										<div className="header">Cute Dog</div>
 										<p>
@@ -326,7 +326,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content">
 										<div className="header">Cute Dog</div>
 										<p>
@@ -336,7 +336,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="column">
-								<div className="ui card">
+								<div className="ui card centered">
 									<div className="content">
 										<div className="header">Cute Dog</div>
 										<p>

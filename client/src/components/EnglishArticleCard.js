@@ -47,8 +47,9 @@ class EnglishArticleCard extends React.Component {
 	}
 
 	render() {
+		// console.log(this.props);
 		return (
-			<div className="ui stackable four column row">{this.renderList()}</div>
+			<div className="ui stackable four column rowasu">{this.renderList()}</div>
 		);
 	}
 }

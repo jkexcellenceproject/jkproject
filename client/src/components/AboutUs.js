@@ -35,7 +35,7 @@ class AboutUs extends React.Component {
 								<div className="row centered">
 									<h2 className="header white-text">What's JK Education</h2>
 								</div>
-								<div className="three column row">
+								<div className="three stackable column row">
 									<div className="eight wide column left aligned white-text">
 										<h3>
 											About sub titleAbout sub titleAbout sub titleAbout sub
@@ -55,7 +55,7 @@ class AboutUs extends React.Component {
 										/>
 									</div>
 								</div>
-								<div className="three column row">
+								<div className="three stackable column row">
 									<div className="two wide column" />
 									<div className="six wide column">
 										<img
@@ -80,100 +80,87 @@ class AboutUs extends React.Component {
 				<div className="content-padding">
 					<div className="ui fluid container">
 						<div className="ui container">
-							<div className="ui grid">
-								<div className="row centered">
-									<h2 className="header blue-text">How it does take lesson?</h2>
+							<div className="flex-container">
+								<div className="blue-text">
+									<h3 className="header ">1. Contact to Vickey</h3>
+									<h4>
+										About sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+									</h4>
+									<p>
+										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+									</p>
 								</div>
-								<div className="ui stackable four column row">
-									<div className="one wide column" />
-									<div className="seven wide column blue-text">
-										<h3 className="header">1. Contact to Vickey</h3>
-										<h4>
-											About sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub titleAbout sub titleAbout sub titleAbout
-											sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub
-										</h4>
-										<p>
-											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-										</p>
-									</div>
-									<div className="two wide column" />
-									<div className="six wide column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui medium image"
-										/>
-									</div>
+								<div className="image-wrap">
+									<img
+										src="https://dummyimage.com/150x150/ccc/fff"
+										className="ui image"
+										className="ui medium image"
+									/>
 								</div>
+							</div>
 
-								<div className="ui stackable four column row">
-									<div className="one wide column" />
-									<div className="six wide column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui medium image"
-										/>
-									</div>
-									<div className="seven wide column blue-text">
-										<h3 className="header">2. Try free trial</h3>
-										<h4>
-											About sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub titleAbout sub titleAbout sub titleAbout
-											sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub
-										</h4>
-										<p>
-											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-										</p>
-									</div>
-									<div className="one wide column" />
+							<div className="flex-container reverse-order">
+								<div className="blue-text">
+									<h3 className="header ">1. Contact to Vickey</h3>
+									<h4>
+										About sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+									</h4>
+									<p>
+										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+									</p>
 								</div>
-
-								<div className="ui stackable four column row">
-									<div className="one wide column" />
-									<div className="seven wide column blue-text">
-										<h3 className="header">3. Contact to Vickey</h3>
-										<h4>
-											About sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub titleAbout sub titleAbout sub titleAbout
-											sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub
-										</h4>
-										<p>
-											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-										</p>
-									</div>
-									<div className="two wide column" />
-									<div className="six wide column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui medium image"
-										/>
-									</div>
+								<div className="image-wrap">
+									<img
+										src="https://dummyimage.com/150x150/ccc/fff"
+										className="ui image"
+										className="ui medium image"
+									/>
 								</div>
+							</div>
 
-								<div className="ui stackable four column row">
-									<div className="one wide column" />
-									<div className="six wide column">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui medium image"
-										/>
-									</div>
-									<div className="seven wide column blue-text">
-										<h3 className="header">4. Try free trial</h3>
-										<h4>
-											About sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub titleAbout sub titleAbout sub titleAbout
-											sub titleAbout sub titleAbout sub titleAbout sub
-											titleAbout sub
-										</h4>
-										<p>
-											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
-										</p>
-									</div>
-									<div className="one wide column" />
+							<div className="flex-container">
+								<div className="blue-text">
+									<h3 className="header ">1. Contact to Vickey</h3>
+									<h4>
+										About sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+									</h4>
+									<p>
+										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+									</p>
+								</div>
+								<div className="image-wrap">
+									<img
+										src="https://dummyimage.com/150x150/ccc/fff"
+										className="ui image"
+										className="ui medium image"
+									/>
+								</div>
+							</div>
+
+							<div className="flex-container reverse-order">
+								<div className="blue-text">
+									<h3 className="header ">1. Contact to Vickey</h3>
+									<h4>
+										About sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+									</h4>
+									<p>
+										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+									</p>
+								</div>
+								<div className="image-wrap">
+									<img
+										src="https://dummyimage.com/150x150/ccc/fff"
+										className="ui image"
+										className="ui medium image"
+									/>
 								</div>
 							</div>
 						</div>
