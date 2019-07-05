@@ -57,7 +57,7 @@ class Articles extends Component {
             return(
                 <div>
                     <section className="ui two column stackable container content-padding grid">
-                        <div className="twelve wide column">
+                        <div className="twelve wide column article-content">
                             <h1>{title.rendered}</h1>
                             <img src={jetpack_featured_media_url} alt={title.rendered}/>
                             <p dangerouslySetInnerHTML={{ __html: content.rendered }}></p>
