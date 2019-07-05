@@ -1,29 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import '../styles/style.scss';
+import '../styles/common.scss';
+
 const Header = () => {
 	return (
-		<div className="ui top fixed borderless menu links">
-			<Link to="/" className="item">
-				<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
-			</Link>
-			<div className="ui container" />
-			<Link to="/" className="item">
-				Home
-			</Link>
-			<Link to="/about" className="item">
-				About us
-			</Link>
-			<Link to="/articles" className="item">
-				Learn English
-			</Link>
-			<Link to="/faq" className="item">
-				FAQ
-			</Link>
-			<Link to="/contact" className="item">
-				Contact
-			</Link>
-			<div />
+		<div className="nav-bar">
+			<div className="logo">
+				<Link to="/">
+					<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
+				</Link>
+			</div>
+			<input type="checkbox" id="toggle" />
+			<label htmlFor="toggle" className="menu-trigger-btn">
+				<span />
+				<span />
+				<span />
+			</label>
+			<ul className="nav-menu">
+				<Link to="/">Home</Link>
+				<Link to="/about">About us</Link>
+				<Link to="/articles">Articles</Link>
+				<Link to="/faq">FAQ</Link>
+				<Link to="/contact">Contact</Link>
+			</ul>
 		</div>
 	);
 };
