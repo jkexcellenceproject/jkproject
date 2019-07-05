@@ -34,11 +34,7 @@ class Home extends React.Component {
 				{/* About us Section */}
 				<section className="content-padding blueGreen">
 					<div className="ui middle aligned stackable grid container">
-						<div className="row">
-							<div className="center aligned column">
-								<h2 className="ui header white-text">About us</h2>
-							</div>
-						</div>
+						<h2 className="white-text">About us</h2>
 						<div className="row">
 							<div className="one wide column" />
 							<div className="eight wide column">
@@ -100,11 +96,7 @@ class Home extends React.Component {
 				<section className="content-padding">
 					<div className="ui container">
 						<div className="ui middle aligned stackable grid">
-							<div className="row">
-								<div className="center aligned column">
-									<h2 className="blue-text">Our Class</h2>
-								</div>
-							</div>
+							<h2 className="blue-text">Our Class</h2>
 							<div className="row">
 								<div className="six wide centered center aligned column">
 									<p className="blue-text">
