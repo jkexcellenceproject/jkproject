@@ -140,6 +140,7 @@
 	.article-box {
 		margin-bottom: 50px!important;
 		.content {
+			padding: 15px;
 			background-color: #448FB3;
 			-webkit-box-shadow: 2px 3px 6px 1px #61908e;
     		box-shadow: 2px 3px 6px 1px #61908e;
@@ -162,5 +163,11 @@
 	}
 	.aticle-image {
 		min-height: 150px;
+	}
+	.article-content {
+		p {
+			color: white;
+			font-size:1.6rem;
+		}
 	}
 }
