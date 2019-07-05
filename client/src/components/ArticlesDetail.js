@@ -20,7 +20,7 @@ class Articles extends Component {
                 return (
                     <>
                         <div className="column article-box">
-                            <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("${article.jetpack_featured_media_url}") center no-repeat`}}>
+                            <Link to={`/article-detail/${article.slug}`} className="aticle-image" >
                                 <h3>
                                     {article.title.rendered}
                                 </h3>
