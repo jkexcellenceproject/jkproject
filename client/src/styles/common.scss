@@ -18,3 +18,67 @@ $blueGreen: #70afac;
 p {
 	word-wrap: break-word;
 }
+h1 {
+	font-size: 4.5rem;
+	color: white;
+}
+h2 {
+	width: 100%;
+	color: white;
+	font-size: 	3rem;
+	text-align: center;
+}
+h3 {
+	font-size: 1.625rem;
+}
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	.main-header {
+		left: 20px !important;
+	}
+}
+@media screen and (max-width: 468px) {
+	h1 {
+		font-size: 2rem;
+	}
+}
+img {
+	width: 100%;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+@media screen and (max-width: 468px) {
+	.line-break {
+		display: block;
+	}
+}
+.main-visual {
+	margin-bottom: 100px;
+}
+.content-padding {
+	padding: 100px 0;
+}
+.aticle-image {
+	min-height: 353px;
+	padding: 0 20px;
+	overflow: hidden;
+	background-size: cover!important; 
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+	text-align: center;
+	h3 {
+		color: #E86262;
+	}
+	@media screen and (max-width:1024px) {
+		min-height: 200px;
+	}
+}

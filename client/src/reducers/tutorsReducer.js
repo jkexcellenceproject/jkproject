@@ -1,12 +1,10 @@
 import _ from 'lodash';
-import { FETCH_ARTICLES, FETCH_ARTICLE } from '../actions/types';
+import { FETCH_TUTORS } from '../actions/types';
 
 export default function(state = {}, action) {
 	switch (action.type) {
-		case FETCH_ARTICLES:
+		case FETCH_TUTORS:
 			return { ...state, ..._.mapKeys(action.payload, 'slug') };
-		case FETCH_ARTICLE:
-			return {...state, [action.payload.slug]: action.payload};
 		default:
 			return state;
 	}

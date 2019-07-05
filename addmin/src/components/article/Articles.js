@@ -17,8 +17,8 @@ class Articles extends Component {
         document.getElementById('body').className='';
     }
     deletePost = (id) => {
-        this.props.deleteArticle(id);
-        console.log("render");
+        const {history} = this.props;
+        this.props.deleteArticle(id, history);
     }
     renderList() {
         if(this.props.articles === null){
