@@ -2,13 +2,17 @@ import React from 'react';
 import Carousel from './Carousel';
 import EnglishArticleCard from './EnglishArticleCard';
 import { Link } from 'react-router-dom';
-// import { connect } from 'react-redux';
-// import { fetchBlogs } from '../actions';
+
+import { connect } from 'react-redux';
+import { fetchArticles } from '../actions';
 
 import '../styles/common.scss';
 import '../styles/style.scss';
 
 class Home extends React.Component {
+	componentDidMount() {
+		this.props.fetchArticles();
+	}
 	componentWillMount() {
 		document.querySelector('body').className = 'blogs';
 	}
@@ -157,7 +161,6 @@ class Home extends React.Component {
 						</div>
 					</div>
 				</section>
-
 				{/* Price Section */}
 				<section className="blueGreen content-padding">
 					<div className="ui middle aligned grid container">
@@ -272,7 +275,6 @@ class Home extends React.Component {
 						</div>
 					</div>
 				</section>
-
 				{/* English Article Section */}
 				<section className="red content-padding">
 					<div className="ui fluid container ">
@@ -352,7 +354,6 @@ class Home extends React.Component {
 						</div>
 					</div>
 				</section>
-
 				{/* Contact Section */}
 				<section className="blueGreen content-padding">
 					<div className="ui fluid container">
@@ -412,13 +413,10 @@ class Home extends React.Component {
 	}
 }
 
-// const mapStateToProps = state => {
-// 	return { blogs: state.blogs };
-// };
-
-// export default connect(
-// 	mapStateToProps,
-// 	{ fetchBlogs }
-// )(Home);
-
-export default Home;
+const mapStateToProps = state => {
+	return { articles: state.articles };
+};
+export default connect(
+	mapStateToProps,
+	{ fetchArticles }
+)(Home);

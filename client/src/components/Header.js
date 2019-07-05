@@ -21,7 +21,8 @@ const Header = () => {
 			<ul className="nav-menu">
 				<Link to="/">Home</Link>
 				<Link to="/about">About us</Link>
-				<Link to="/learn">Articles</Link>
+
+				<Link to="/articles">Articles</Link>
 				<Link to="/faq">FAQ</Link>
 				<Link to="/contact">Contact</Link>
 			</ul>
