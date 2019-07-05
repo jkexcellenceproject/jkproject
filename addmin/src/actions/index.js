@@ -24,5 +24,4 @@ export const submitArticleEdit = (id, values, history) => async dispatch => {
 
 export const deleteArticle = (id, history) => async dispatch => {
     await axios.post(`/api/article/delete/`, {id});
-    history.push('/');
 }
