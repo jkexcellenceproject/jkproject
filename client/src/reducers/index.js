@@ -1,9 +1,6 @@
 import { combineReducers } from 'redux';
 import articlesReducer from './articlesReducer';
-<<<<<<< HEAD
 import tutorsReducer from './tutorsReducer';
-=======
->>>>>>> Modified EnglishArticleCard.js
 
 const carouselDatasReducer = () => {
 	return [
@@ -27,10 +24,6 @@ const carouselDatasReducer = () => {
 
 export default combineReducers({
 	datas: carouselDatasReducer,
-<<<<<<< HEAD
 	articles: articlesReducer,
 	tutors: tutorsReducer
-=======
-	articles: articlesReducer
->>>>>>> Modified EnglishArticleCard.js
 });
