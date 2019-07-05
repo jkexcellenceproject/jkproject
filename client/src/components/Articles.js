@@ -18,6 +18,7 @@ class Articles extends Component {
 		return this.props.articles.map(article => {
 			return (
                 <>
+
                     <div className="column article-box">
                         <Link to={`/article-detail/${article.slug}`} className="aticle-image" style={{background: `url("${article.jetpack_featured_media_url}") center no-repeat`}}>
                             <h3>
@@ -26,11 +27,13 @@ class Articles extends Component {
                             <p className="description" dangerouslySetInnerHTML={{ __html: article.content.rendered }}>
                             </p>
                         </Link>
-                        <div className="content">
-                            <div className="meta">
-                                <span className="date">{article.date}</span>
+                        <Link to={`/article-detail/${article.slug}`} >
+                            <div className="content">
+                                <div className="meta">
+                                    <span className="date">{article.date}</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </>
             );
@@ -53,7 +56,7 @@ class Articles extends Component {
 					</div>
 				</section>
                 <section className="ui container article-list">
-                    <h2>Our article to study English</h2>
+                    <h2>Our article<span className="line-break"> to study English</span></h2>
                     <div className="ui stackable three column grid">
                             {this.renderList()}
                     </div>
