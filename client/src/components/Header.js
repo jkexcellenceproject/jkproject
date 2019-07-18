@@ -4,30 +4,59 @@ import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import '../styles/common.scss';
 
-const Header = () => {
-	return (
-		<div className="nav-bar">
-			<div className="logo">
-				<Link to="/">
-					<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
-				</Link>
-			</div>
-			<input type="checkbox" id="toggle" />
-			<label htmlFor="toggle" className="menu-trigger-btn">
-				<span />
-				<span />
-				<span />
-			</label>
-			<ul className="nav-menu">
-				<Link to="/">Home</Link>
-				<Link to="/about">About us</Link>
+class Header extends React.Component {
+	componentDidMount() {
+		window.addEventListener('scroll', this.shrinkHeader);
+	}
 
-				<Link to="/articles">Articles</Link>
-				<Link to="/faq">FAQ</Link>
-				<Link to="/contact">Contact</Link>
-			</ul>
-		</div>
-	);
-};
+	shrinkHeader = () => {
+		const scrollingElement = document.scrollingElement;
+
+		if (scrollingElement.scrollTop > 80) {
+			document.querySelector('.nav-bar').classList.add('shrink-nav-bar');
+		} else {
+			document.querySelector('.nav-bar').classList.remove('shrink-nav-bar');
+		}
+	};
+
+	render() {
+		return (
+			<div className="nav-bar">
+				<div className="logo">
+					<Link to="/">
+						<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
+					</Link>
+				</div>
+				<input type="checkbox" id="toggle" />
+				<label htmlFor="toggle" className="menu-trigger-btn">
+					<span />
+					<span />
+					<span />
+				</label>
+				<div className="nav-menu">
+					<ul className="nav-page-link">
+						<Link to="/">Home</Link>
+						<Link to="/about">About us</Link>
+
+						<Link to="/articles">Articles</Link>
+						<Link to="/faq">FAQ</Link>
+						<Link to="/contact">Contact</Link>
+					</ul>
+					<ul className="nav-link-btns">
+						<button className="ui circular facebook icon button">
+							<i className="facebook icon" />
+						</button>
+						<button className="ui circular twitter icon button">
+							<i className="twitter icon" />
+						</button>
+						<button className="ui circular linkedin icon button">
+							<i className="instagram icon" />
+						</button>
+					</ul>
+				</div>
+			</div>
+		);
+	}
+}
 
 export default Header;
