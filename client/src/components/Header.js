@@ -34,24 +34,30 @@ class Header extends React.Component {
 					<span />
 				</label>
 				<div className="nav-menu">
-					<ul className="nav-page-link">
-						<Link to="/">Home</Link>
-						<Link to="/about">About us</Link>
+					<ul className="nav-menu-lists">
+						<li className="nav-btn-lists">
+							<ul>
+								<button className="ui circular facebook icon button">
+									<i className="facebook icon" />
+								</button>
+								<button className="ui circular twitter icon button">
+									<i className="twitter icon" />
+								</button>
+								<button className="ui circular linkedin icon button">
+									<i className="instagram icon" />
+								</button>
+							</ul>
+						</li>
+						<li className="nav-pagelink-lists">
+							<ul>
+								<Link to="/">Home</Link>
+								<Link to="/about">About us</Link>
 
-						<Link to="/articles">Articles</Link>
-						<Link to="/faq">FAQ</Link>
-						<Link to="/contact">Contact</Link>
-					</ul>
-					<ul className="nav-link-btns">
-						<button className="ui circular facebook icon button">
-							<i className="facebook icon" />
-						</button>
-						<button className="ui circular twitter icon button">
-							<i className="twitter icon" />
-						</button>
-						<button className="ui circular linkedin icon button">
-							<i className="instagram icon" />
-						</button>
+								<Link to="/articles">Articles</Link>
+								<Link to="/faq">FAQ</Link>
+								<Link to="/contact">Contact</Link>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
