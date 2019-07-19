@@ -52,7 +52,7 @@ class Header extends React.Component {
 							<ul>
 								<Link to="/">Home</Link>
 								<Link to="/about">About us</Link>
-
+                <Link to="/student-interview">Student Interview</Link>
 								<Link to="/articles">Articles</Link>
 								<Link to="/faq">FAQ</Link>
 								<Link to="/contact">Contact</Link>
@@ -64,5 +64,4 @@ class Header extends React.Component {
 		);
 	}
 }
-
 export default Header;
