@@ -5,7 +5,8 @@ import ScrollToTop from './ScrollToTop';
 import Home from './Home';
 import AboutUs from './AboutUs';
 import Articles from './Articles';
-import ArticlesDetail from './ArticlesDetail'
+import ArticlesDetail from './ArticlesDetail';
+import StudentInterView from './StudentInterview';
 import Faq from './Faq';
 import Footer from './Footer';
 
@@ -19,6 +20,7 @@ class App extends Component {
 				<Route path="/about" exact component={AboutUs} />
 				<Route path="/articles" exact component={Articles} />
 				<Route path="/article-detail/:slug" exact component={ArticlesDetail} />
+				<Route path="/student-interview" exact component={StudentInterView} />
 				<Route path="/faq" exact component={Faq} />
 				<Footer />
 			</ScrollToTop>
