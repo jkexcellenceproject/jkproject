@@ -55,7 +55,7 @@ class Articles extends Component {
 						</div>
 					</div>
 				</section>
-                <section className="ui container article-list">
+                <section className="ui container article-list content-padding">
                     <h2>Our article<span className="line-break"> to study English</span></h2>
                     <div className="ui stackable three column grid">
                             {this.renderList()}
