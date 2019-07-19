@@ -81,7 +81,7 @@ class AboutUs extends React.Component {
 					<div className="ui fluid container">
 						<div className="ui container">
 							<div className="flex-container">
-								<div className="blue-text">
+								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
 									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
@@ -94,15 +94,14 @@ class AboutUs extends React.Component {
 								</div>
 								<div className="image-wrap">
 									<img
-										src="https://dummyimage.com/150x150/ccc/fff"
+										src="https://dummyimage.com/450x300/ccc/fff"
 										className="ui image"
-										className="ui medium image"
 									/>
 								</div>
 							</div>
 
 							<div className="flex-container reverse-order">
-								<div className="blue-text">
+								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
 									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
@@ -115,15 +114,14 @@ class AboutUs extends React.Component {
 								</div>
 								<div className="image-wrap">
 									<img
-										src="https://dummyimage.com/150x150/ccc/fff"
+										src="https://dummyimage.com/450x300/ccc/fff"
 										className="ui image"
-										className="ui medium image"
 									/>
 								</div>
 							</div>
 
 							<div className="flex-container">
-								<div className="blue-text">
+								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
 									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
@@ -136,15 +134,14 @@ class AboutUs extends React.Component {
 								</div>
 								<div className="image-wrap">
 									<img
-										src="https://dummyimage.com/150x150/ccc/fff"
+										src="https://dummyimage.com/450x300/ccc/fff"
 										className="ui image"
-										className="ui medium image"
 									/>
 								</div>
 							</div>
 
 							<div className="flex-container reverse-order">
-								<div className="blue-text">
+								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
 									<h4>
 										About sub titleAbout sub titleAbout sub titleAbout sub
@@ -157,9 +154,8 @@ class AboutUs extends React.Component {
 								</div>
 								<div className="image-wrap">
 									<img
-										src="https://dummyimage.com/150x150/ccc/fff"
+										src="https://dummyimage.com/450x300/ccc/fff"
 										className="ui image"
-										className="ui medium image"
 									/>
 								</div>
 							</div>
