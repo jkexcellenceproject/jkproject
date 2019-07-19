@@ -1,64 +1,91 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const StudentInterview = () => {
-	return (
-		<div>
-			<section className="ui fluid container main-visual">
-				<div className="bcg-base">
-					<img
-						className="bcg-image"
-						src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
-					/>
-					<div className="main-header">
-						<h1>
-							WHAT’S <span className="br">JK Education</span>
-							<span className="br">FOR?</span>
-						</h1>
+class StudentInterview extends Component {
+	state = {
+		students: [
+			{
+				id:1,
+				name: 'Student Name',
+				title:'texttexttexttexttexttexttexttexttexttext',
+				content:'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext'
+			},
+			{
+				id:2,
+				name: 'Student Name',
+				title:'texttexttexttexttexttexttexttexttexttext',
+				content:'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext'
+			},
+			{
+				id:3,
+				name: 'Student Name',
+				title:'texttexttexttexttexttexttexttexttexttext',
+				content:'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext'
+			},
+			{
+				id:4,
+				name: 'Student Name',
+				title:'texttexttexttexttexttexttexttexttexttext',
+				content:'texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext'
+			},
+		]
+	}
+	componentDidMount() {
+		document.querySelector('body').className = 'student-interview';
+	}
+	componentWillUnmount() {
+		document.querySelector('body').className = '';
+	}
+	renderList() {
+		return this.state.students.map(({id, name, title, content}) => {
+			return(
+				<div className="stackable two column row interview-content">
+					<div className="four wide column">
+						<img className="ui medium circular image" src="https://dummyimage.com/150x150/ccc/fff" />
+					</div>
+					<div className="twelve wide column student-info">
+						<h3>{name}</h3>
+						<h4>
+							{title}
+						</h4>
+						<p>
+							{content}
+						</p>
 					</div>
 				</div>
-			</section>
-
-			<section className="ui fluid container blueGreen content-padding">
-				<div className="ui center aligned container">
-					<div className="ui grid">
-						<div className="row centered">
-							<h2 className="header white-text">What's JK Education</h2>
-						</div>
-						<div className="two column row">
-							<div className="six wide column">
-								<img src="https://dummyimage.com/150x150/ccc/fff" />
-							</div>
-							<div className="ten wide column">
-								<h3>Students Name</h3>
-								<h4>
-									About sub titleAbout sub titleAbout sub titleAbout sub
-									titleAbout sub titleAbout sub titleAbout sub titleAbout
-								</h4>
-								<p>
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-								</p>
-							</div>
-						</div>
-						<div className="two column row">
-							<div className="ten wide column">
-								<h3>Students Name</h3>
-								<h4>
-									About sub titleAbout sub titleAbout sub titleAbout sub
-									titleAbout sub titleAbout sub titleAbout sub titleAbout
-								</h4>
-								<p>
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-								</p>
-							</div>
-							<div className="six wide column">
-								<img src="https://dummyimage.com/150x150/ccc/fff" />
-							</div>
+			);
+		})
+	}
+	render() {
+		return (
+			<div>
+				<section className="ui fluid main-visual">
+					<div className="bcg-base container">
+						<img
+							className="bcg-image"
+							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
+						/>
+						<div className="main-header">
+							<h1>
+								Our Students<span className="br">Interview</span>
+							</h1>
 						</div>
 					</div>
-				</div>
-			</section>
-		</div>
-	);
+				</section>
+	
+				<section className="ui fluid blueGreen content-padding">
+					<div className="ui center aligned container">
+						<div className="ui grid">
+							<div className="row centered">
+								<h2 className="header white-text">Student Interview</h2>
+							</div>
+							
+							{this.renderList()}
+						</div>
+					</div>
+				</section>
+			</div>
+		);
+	}
 };
 
 export default StudentInterview;
