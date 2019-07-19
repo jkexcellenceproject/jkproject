@@ -279,3 +279,43 @@
 		}
 	}
 }
+
+// Student Interview
+
+.student-interview {
+	.interview-content {
+		margin-top: 50px;
+		h3 {
+			font-size: 2rem;
+			color: #F4C252;
+		}
+		h4 {
+			margin: 15px 0 5px 0;
+			font-size: 1.625rem;
+		}
+		.image {
+			width: 100%;
+		}
+		.student-info {
+			padding: 0 50px!important;
+			text-align: left;
+			align-self: center;
+			color: white;
+		}
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+		@media screen and (max-width: 768px) {
+			.image {
+				margin: auto;
+				width: 300px;
+			}
+			.student-info {
+				text-align: center;
+			}
+			&:nth-child(even) {
+				flex-direction: column;
+			}
+		}
+	}
+}
