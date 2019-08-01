@@ -31,3 +31,9 @@ export const fetchTutors = () => async dispatch => {
 	console.log(response.data);
 	dispatch({ type: FETCH_TUTORS, payload: response.data });
 };
+
+export const postContact = (formData, axiosConfig) => async dispatch => {
+	const response = await axios.post(
+		`http://wordpress.local.com:8888/wordpress/jk-wp/wp-json/contact-form-7/v1/contact-forms/21/feedback`, formData, axiosConfig
+	)
+}
