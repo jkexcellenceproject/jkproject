@@ -25,7 +25,6 @@ const carouselDatasReducer = () => {
 
 export default combineReducers({
 	datas: carouselDatasReducer,
-
 	articles: articlesReducer,
 	tutors: tutorsReducer
 });
