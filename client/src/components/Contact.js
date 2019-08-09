@@ -1,15 +1,35 @@
 import React, { Component } from 'react';
+import { reduxForm } from 'redux-form';
 import ContactForm from './contactForm/ContactForm';
+import ContactFormReview from './contactForm/ContactFormReview';
 
 class Contact extends Component {
     constructor(props) {
         super(props);
+        this.state = { showFormReview: false };
     }
   componentDidMount() {
       document.querySelector('body').className = 'contact'; 
 	}
 	componentWillUnmount() {
 		  document.querySelector('body').className = '';
+  }
+
+
+  renderContent() {
+      if (this.state.showFormReview) {
+          return (
+              <ContactFormReview 
+                  onCancel={()=> this.setState({ showFormReview: false })}
+              />
+          );
+      }
+
+      return (
+          <ContactForm 
+                  onSubmitContact = {() => this.setState({ showFormReview: true })}
+          />
+      );
   }
   render() {
       return(
@@ -27,10 +47,14 @@ class Contact extends Component {
               </div>
             </div>
           </section>
-          <ContactForm />
+          <section className="content-padding blueGreen">
+          { this.renderContent() }
+          </section>
           </>
       );
     }
 }
 
-export default Contact;
+export default reduxForm({
+  form: 'contactForm'
+})(Contact);
