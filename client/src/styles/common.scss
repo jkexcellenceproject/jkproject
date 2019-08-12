@@ -17,6 +17,14 @@ $blueGreen: #70afac;
 p {
 	word-wrap: break-word;
 }
+a {
+	color: white;
+	transition: .5s;
+}
+a:hover {
+	color: white;
+	opacity: .5;
+}
 h1 {
 	font-size: 4.5rem;
 

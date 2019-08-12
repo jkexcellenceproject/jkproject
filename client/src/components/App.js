@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Router } from 'react-router-dom';
+import '../styles/common.scss';
+import '../styles/style.scss';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 import Home from './Home';
 import AboutUs from './AboutUs';
-import Articles from './Articles';
+import Articles from './articles/Articles';
 import ArticlesDetail from './ArticlesDetail';
 import StudentInterView from './StudentInterview';
 import Faq from './Faq';
+import Contact from './Contact';
 import Footer from './Footer';
 
 class App extends Component {
@@ -22,6 +25,7 @@ class App extends Component {
 				<Route path="/article-detail/:slug" exact component={ArticlesDetail} />
 				<Route path="/student-interview" exact component={StudentInterView} />
 				<Route path="/faq" exact component={Faq} />
+				<Route path="/contact" exact component={Contact} />
 				<Footer />
 			</ScrollToTop>
 			</BrowserRouter>

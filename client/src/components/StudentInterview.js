@@ -38,7 +38,7 @@ class StudentInterview extends Component {
 	renderList() {
 		return this.state.students.map(({id, name, title, content}) => {
 			return(
-				<div className="stackable two column row interview-content">
+				<div key={id} className="stackable two column row interview-content">
 					<div className="four wide column">
 						<img className="ui medium circular image" src="https://dummyimage.com/150x150/ccc/fff" />
 					</div>

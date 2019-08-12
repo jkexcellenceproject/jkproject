@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import articlesReducer from './articlesReducer';
+import { reducer as reduxForm } from 'redux-form';
 
 import tutorsReducer from './tutorsReducer';
 
@@ -25,7 +26,7 @@ const carouselDatasReducer = () => {
 
 export default combineReducers({
 	datas: carouselDatasReducer,
-
 	articles: articlesReducer,
-	tutors: tutorsReducer
+	tutors: tutorsReducer,
+	form: reduxForm
 });
