@@ -13,13 +13,10 @@ const ContactFormReview = ({
 }) => {
 	const reviewFields = _.map(formFields, ({ name, label }) => {
 		return (
-			// <div key={name}>
-			// 	<label>{label}</label>
-			// 	<div>{formValues[name]}</div>
-			// </div>
 			<div key={name} class="item">
-				<div class="header">{label}</div>
+				<div class="ui header">{`${label} : `}</div>
 				{formValues[name]}
+				<div className="ui divider" />
 			</div>
 		);
 	});
@@ -37,7 +34,9 @@ const ContactFormReview = ({
 	return (
 		<>
 			<h2>Contact</h2>
-			<div className="ui divided list container">
+			<form className="ui form segment contact-form">
+				<h3 className="ui block header green">Check your statement </h3>
+				<div className="ui divider" />
 				{reviewFields}
 				<button className="ui large button" onClick={onCancel}>
 					Back
@@ -50,7 +49,7 @@ const ContactFormReview = ({
 				>
 					Submit
 				</button>
-			</div>
+			</form>
 		</>
 	);
 };
