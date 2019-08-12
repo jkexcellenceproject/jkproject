@@ -360,7 +360,7 @@
 		margin-top: 50px;
 		h3 {
 			font-size: 2rem;
-			color: #F4C252;
+			color: #f4c252;
 		}
 		h4 {
 			margin: 15px 0 5px 0;
@@ -370,7 +370,7 @@
 			width: 100%;
 		}
 		.student-info {
-			padding: 0 50px!important;
+			padding: 0 50px !important;
 			text-align: left;
 			align-self: center;
 			color: white;
@@ -391,4 +391,10 @@
 			}
 		}
 	}
+}
+
+// Contact.js----------------------------------------
+.contact-form {
+	width: 600px;
+	margin: 0 auto !important;
 }
