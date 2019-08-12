@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Router } from 'react-router-dom';
+import '../styles/common.scss';
+import '../styles/style.scss';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 import Home from './Home';
 import AboutUs from './AboutUs';
-import Articles from './Articles';
+import Articles from './articles/Articles';
 import ArticlesDetail from './ArticlesDetail';
 import StudentInterView from './StudentInterview';
 import Faq from './Faq';

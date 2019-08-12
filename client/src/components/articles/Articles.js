@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchArticles } from '../actions';
+import { fetchArticles } from '../../actions';
+
+import './articles.styles.scss';
 
 class Articles extends Component {
     componentDidMount() {
@@ -16,25 +18,19 @@ class Articles extends Component {
 			return <p>Loading</p>;
 		}
 		return this.props.articles.map(article => {
+            let str = article.date;
+            let date = str.split("T");
 			return (
                 <>
-
-                    <div className="column article-box">
-                        <Link to={`/article-detail/${article.slug}`} className="aticle-image">
-                            <h3>
-                                {article.title.rendered}
-                            </h3>
-                            <p className="description" dangerouslySetInnerHTML={{ __html: article.content.rendered }}>
-                            </p>
-                        </Link>
-                        <Link to={`/article-detail/${article.slug}`} >
-                            <div className="content">
-                                <div className="meta">
-                                    <span className="date">{article.date}</span>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
+                    <Link to={`/article-detail/${article.slug}`} className="column article-box">
+                        <div className="aticle-image">
+                            <h3>{article.title.rendered}</h3>
+                            <p className="description" dangerouslySetInnerHTML={{ __html: article.content.rendered }}></p>
+                        </div>
+                        <div className="meta content">
+                            <span className="date">{date[0]}</span>
+                        </div>
+                    </Link>
                 </>
             );
 		});
