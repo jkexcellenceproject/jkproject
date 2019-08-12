@@ -1,6 +1,6 @@
 export default [
-    { label: 'Survey Title', name: 'yourName' },
-    { label: 'Subject Line', name: 'yourEmail' },
-    { label: 'Email Body', name: 'body' },
-    { label: 'Recipient Line', name: 'recipients' }
+	{ label: 'Name', name: 'yourName' },
+	{ label: 'E-mail', name: 'yourEmail' },
+	{ label: 'Subject', name: 'yourSubject' },
+	{ label: 'Content', name: 'yourMessage' }
 ];
