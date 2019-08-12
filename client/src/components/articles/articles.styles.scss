@@ -6,6 +6,17 @@
 // Articles
 .articles {
 	background-color: $blueGreen;
+	.ui.search {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto 30px;
+		.input {
+			width: 100%;
+		}
+		.prompt {
+			border-radius: unset;
+		}
+	}
 	.article-list {
 		margin-bottom: 100px;
 	}
