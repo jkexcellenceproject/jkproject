@@ -9,15 +9,30 @@ import formFields from './formFields';
 class ContactForm extends Component {
 	renderFields() {
 		return _.map(formFields, ({ label, name }) => {
-			return (
-				<Field
-					key={name}
-					component={ContactField}
-					type="text"
-					label={label}
-					name={name}
-				/>
-			);
+			if (name === 'yourMessage') {
+				return (
+					<div>
+						<label className="ui header">Content</label>
+						<Field
+							style={{ margin: '10px 0' }}
+							key={name}
+							component="textarea"
+							type="text"
+							label={label}
+							name={name}
+						/>
+					</div>
+				);
+			} else
+				return (
+					<Field
+						key={name}
+						component={ContactField}
+						type="text"
+						label={label}
+						name={name}
+					/>
+				);
 		});
 	}
 
@@ -30,7 +45,7 @@ class ContactForm extends Component {
 					onSubmit={this.props.handleSubmit(this.props.onSubmitContact)}
 				>
 					{this.renderFields()}
-					<div className="ui large button" onClick={() => this.props.resetForm}>
+					<div className="ui large button" onClick={this.props.reset}>
 						Clear
 					</div>
 					<button className="ui large primary button" type="submit">
