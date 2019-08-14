@@ -33,9 +33,7 @@ class AboutUs extends React.Component {
 				<section className="blueGreen content-padding">
 				<div className="ui aligned container">
 							<div className="ui grid">
-								<div className="row centered">
-									<h2 className="header white-text">What's JK Education</h2>
-								</div>
+								<h2 className="header white-text">What's JK Education</h2>
 								<div className="three stackable column row about-company">
 									<div className="eight wide column aligned white-text">
 										<h3>
