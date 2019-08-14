@@ -78,7 +78,7 @@ class AboutUs extends React.Component {
 					</div>
 				</section>
 
-				<section className="content-padding">
+				<section className="content-padding lesson-info">
 					<h2 className='blue-text'>How to take lesson?</h2>
 					<div className="ui container">
 							<div className="flex-container">
