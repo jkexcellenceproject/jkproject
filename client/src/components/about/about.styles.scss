@@ -1,0 +1,55 @@
+@import '../../styles/common.scss';
+
+.margin {
+	@include margin;
+}
+
+// AboutUs.js--------------------------------
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+
+	.image-wrap {
+		margin-left: 50px;
+	}
+}
+
+.reverse-order {
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+
+	.image-wrap {
+		margin-left: 0;
+		margin-right: 50px;
+	}
+}
+
+.text-wrap {
+	width: 55%;
+}
+
+.image-wrap {
+	width: 40%;
+}
+
+.president-info {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.flex-container,
+	.reverse-order {
+		flex-direction: column;
+
+		div {
+			width: 100%;
+			padding: 15px 0;
+			text-align: center;
+		}
+		.image-wrap {
+			margin: 0;
+		}
+	}
+}
