@@ -80,11 +80,6 @@ class AboutUs extends React.Component {
 							<div className="flex-container">
 								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
@@ -100,11 +95,6 @@ class AboutUs extends React.Component {
 							<div className="flex-container reverse-order">
 								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
@@ -120,11 +110,6 @@ class AboutUs extends React.Component {
 							<div className="flex-container">
 								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
@@ -140,11 +125,6 @@ class AboutUs extends React.Component {
 							<div className="flex-container reverse-order">
 								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
-									<h4>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									</h4>
 									<p>
 										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
 									</p>
