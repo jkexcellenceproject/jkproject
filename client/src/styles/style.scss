@@ -52,7 +52,10 @@
 
 .student-interview {
 	.interview-content {
-		margin-top: 50px;
+		margin-bottom: 50px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 		h3 {
 			font-size: 2rem;
 			color: #f4c252;

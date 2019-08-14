@@ -75,9 +75,7 @@ class StudentInterview extends Component {
 				<section className="ui fluid blueGreen content-padding">
 					<div className="ui center aligned container">
 						<div className="ui grid">
-							<div className="row centered">
-								<h2 className="header white-text">Student Interview</h2>
-							</div>
+							<h2 className="white-text">Student Interview</h2>
 							
 							{this.renderList()}
 						</div>
