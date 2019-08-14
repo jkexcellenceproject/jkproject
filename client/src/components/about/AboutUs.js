@@ -31,14 +31,13 @@ class AboutUs extends React.Component {
 				</section>
 
 				<section className="blueGreen content-padding">
-					<div className="ui fluid container">
-						<div className="ui center aligned container">
+				<div className="ui aligned container">
 							<div className="ui grid">
 								<div className="row centered">
 									<h2 className="header white-text">What's JK Education</h2>
 								</div>
-								<div className="three stackable column row">
-									<div className="eight wide column left aligned white-text">
+								<div className="three stackable column row about-company">
+									<div className="eight wide column aligned white-text">
 										<h3>
 											About sub titleAbout sub titleAbout sub titleAbout sub
 											titleAbout sub titleAbout sub titleAbout sub titleAbout
@@ -53,20 +52,18 @@ class AboutUs extends React.Component {
 									<div className="six wide column">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui medium image"
 										/>
 									</div>
 								</div>
 								<div className="three stackable column row president-info">
-									<div className="two wide column" />
-									<div className="six wide column">
+									<div className="one wide column" />
+									<div className="five wide column center aligned">
 										<img
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui medium circular image"
 										/>
 									</div>
 
-									<div className="six wide column left aligned white-text">
+									<div className="eight wide column white-text">
 										<h3 className="header">Tutor Name</h3>
 										<p>
 											texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextt
@@ -75,7 +72,6 @@ class AboutUs extends React.Component {
 								</div>
 							</div>
 						</div>
-					</div>
 				</section>
 
 				<section className="content-padding lesson-info">

@@ -34,8 +34,22 @@
 	width: 40%;
 }
 
+.about-company {
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+
 .president-info {
     margin-top: 50px;
+    img {
+        width: auto;
+        max-height: 200px;
+        border-radius: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .lesson-info {
