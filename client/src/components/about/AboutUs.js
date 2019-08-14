@@ -1,6 +1,8 @@
 import React from 'react';
-import Carousel from './Carousel';
+import Carousel from '../Carousel';
 import { Link } from 'react-router-dom';
+
+import './about.styles.scss';
 
 class AboutUs extends React.Component {
 	componentWillMount() {
@@ -28,7 +30,7 @@ class AboutUs extends React.Component {
 					</div>
 				</section>
 
-				<section className=" blueGreen content-padding">
+				<section className="blueGreen content-padding">
 					<div className="ui fluid container">
 						<div className="ui center aligned container">
 							<div className="ui grid">
@@ -55,7 +57,7 @@ class AboutUs extends React.Component {
 										/>
 									</div>
 								</div>
-								<div className="three stackable column row">
+								<div className="three stackable column row president-info">
 									<div className="two wide column" />
 									<div className="six wide column">
 										<img
@@ -76,10 +78,9 @@ class AboutUs extends React.Component {
 					</div>
 				</section>
 
-				{/* What does it take lesson? */}
-				<div className="content-padding">
-					<div className="ui fluid container">
-						<div className="ui container">
+				<section className="content-padding">
+					<h2 className='blue-text'>How to take lesson?</h2>
+					<div className="ui container">
 							<div className="flex-container">
 								<div className="text-wrap blue-text">
 									<h3 className="header ">1. Contact to Vickey</h3>
@@ -160,24 +161,23 @@ class AboutUs extends React.Component {
 								</div>
 							</div>
 						</div>
-					</div>
+					</section>
 
-					<div className="red content-padding">
+					<section className="red content-padding">
 						<div className="ui fluid container center aligned">
-							<h1 className="white-text">We have free trial! Let"s try it</h1>
+							<h2 className="white-text">We have free trial! Let"s try it</h2>
 							<Link to="/" className="ui big yellow button">
 								Free Trial
 							</Link>
 						</div>
-					</div>
+					</section>
 
-					<div className="blueGreen content-padding">
+					<section className="blueGreen content-padding">
 						<div className="ui fluid container center aligned">
-							<h1 className="header white-text">Our tutors</h1>
+							<h2 className="header white-text">Our tutors</h2>
 							<Carousel />
 						</div>
-					</div>
-				</div>
+					</section>
 			</div>
 		);
 	}

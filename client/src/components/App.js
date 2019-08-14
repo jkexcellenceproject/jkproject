@@ -5,7 +5,7 @@ import '../styles/style.scss';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 import Home from './Home';
-import AboutUs from './AboutUs';
+import AboutUs from './about/AboutUs';
 import Articles from './articles/Articles';
 import ArticlesDetail from './ArticlesDetail';
 import StudentInterView from './StudentInterview';
