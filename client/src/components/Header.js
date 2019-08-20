@@ -7,16 +7,17 @@ import '../styles/common.scss';
 class Header extends React.Component {
 	componentDidMount() {
 		window.addEventListener('scroll', this.shrinkHeader);
+		document.querySelector('.nav-bar').classList.add('shrink-nav-bar');
 	}
 
 	shrinkHeader = () => {
 		const scrollingElement = document.scrollingElement;
+
 		if (scrollingElement.scrollTop > 80) {
 			document.querySelector('.nav-bar').classList.add('shrink-nav-bar');
+		} else if (document.querySelector('.home')) {
+			document.querySelector('.nav-bar').classList.remove('shrink-nav-bar');
 		}
-		// else {
-		// 	document.querySelector('.nav-bar').classList.remove('shrink-nav-bar');
-		// }
 	};
 
 	render() {
