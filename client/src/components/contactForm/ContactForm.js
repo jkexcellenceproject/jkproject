@@ -12,7 +12,7 @@ class ContactForm extends Component {
 			if (name === 'yourMessage') {
 				return (
 					<div>
-						<label className="ui header">Content</label>
+						<label className="ui header blue-text">Content</label>
 						<Field
 							style={{ margin: '10px 0' }}
 							key={name}

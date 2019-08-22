@@ -13,17 +13,17 @@ class Carousel extends React.Component {
 	createCarouselItem = () => {
 		return this.props.tutors.map(tutor => {
 			return (
-				<div className="centered" key={tutor.slug}>
+				<div key={tutor.slug}>
+					<img src={tutor.jetpack_featured_media_url} />
 					<img
-						className="ui small circular image centered"
-						src={tutor.jetpack_featured_media_url}
+						className="ui medium circular image centered"
+						src={tutor._embedded['wp:featuredmedia'][0].source_url}
 					/>
-					<img src={tutor._embedded['wp:featuredmedia'][0].source_url} />
 					<p
 						className="description"
 						dangerouslySetInnerHTML={{ __html: tutor.content.rendered }}
 					/>
-					<div className="meta">
+					<div className="meta centered">
 						{tutor.title.rendered}, {tutor.acf.age} year-old, US
 					</div>
 				</div>

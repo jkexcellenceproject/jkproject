@@ -12,17 +12,19 @@ import '../styles/style.scss';
 class Home extends React.Component {
 	componentDidMount() {
 		this.props.fetchArticles();
-	}
-	componentWillMount() {
-		document.querySelector('body').className = 'blogs';
+		document.querySelector('.nav-bar').classList.remove('shrink-nav-bar');
+		document.querySelector('body').className = 'home';
 	}
 	componentWillUnmount() {
+		console.log('hi');
 		document.querySelector('body').className = '';
+		// document.querySelector('.nav-bar').className += 'shrink-nav-bar';
+		document.querySelector('.nav-bar').classList.add('shrink-nav-bar');
 	}
 
 	render() {
 		return (
-			<div>
+			<div id="home">
 				{/* Image Slider */}
 				<div className="slides-wrap">
 					<img
@@ -38,13 +40,12 @@ class Home extends React.Component {
 						<div className="row">
 							<div className="one wide column" />
 							<div className="eight wide column">
-								<div className="white-text">
+								<h3 className="white-text" style={{ marginBottom: '10px' }}>
 									About sub titleAbout sub titleAbout sub titleAbout sub
 									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-								</div>
-								<div className="ui divider" />
-								<p className="white-text">
+								</h3>
+								<p className="white-text" style={{ marginBottom: '30px' }}>
 									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextte
 								</p>
 								<div className="ui four column grid">
@@ -109,36 +110,28 @@ class Home extends React.Component {
 							</div>
 							<div className="four column row">
 								<div className="column">
-									<div className="ui segment">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
 								</div>
 								<div className="column">
-									<div className="ui segment">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
 								</div>
 								<div className="column">
-									<div className="ui segment">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
 								</div>
 								<div className="column">
-									<div className="ui segment">
-										<img
-											src="https://react.semantic-ui.com/images/wireframe/image.png"
-											className="ui image"
-										/>
-									</div>
+									<img
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image"
+									/>
 								</div>
 							</div>
 						</div>
@@ -153,131 +146,20 @@ class Home extends React.Component {
 						</div>
 					</div>
 				</section>
-				{/* Price Section */}
+
+				{/* Tutor Section */}
 				<section className="blueGreen content-padding">
-					<div className="ui middle aligned grid container">
-						<div className="row">
-							<div className="center aligned column">
-								<h2 className="white-text">Prices</h2>
-							</div>
-						</div>
-						<div className="ui stackable equal width row">
-							<div className="column">
-								<div className="ui card centered">
-									<div className="content center aligned">
-										<div className="header">Course Title</div>
-									</div>
-									<div className="content center aligned">
-										<h4 className="ui sub header">Description</h4>
-										<div className="ui small feed">
-											<div className="event">
-												<div className="content center aligned">
-													<p>
-														TexttextTexttext TexttextTexttext
-														TexttTexttextTexttext TexttextTexttextTextt
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="extra content center aligned">
-										<button className="ui big button">$15</button>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<div className="ui card centered">
-									<div className="content center aligned">
-										<div className="header">Course Title</div>
-									</div>
-									<div className="content center aligned">
-										<h4 className="ui sub header">Description</h4>
-										<div className="ui small feed">
-											<div className="event">
-												<div className="content center aligned">
-													<p>
-														TexttextTexttext TexttextTexttext
-														TexttTexttextTexttext TexttextTexttextTextt
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="extra content center aligned">
-										<button className="ui big button">$15</button>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<div className="ui card centered">
-									<div className="content center aligned">
-										<div className="header">Course Title</div>
-									</div>
-									<div className="content center aligned">
-										<h4 className="ui sub header">Description</h4>
-										<div className="ui small feed">
-											<div className="event">
-												<div className="content center aligned">
-													<p>
-														TexttextTexttext TexttextTexttext
-														TexttTexttextTexttext TexttextTexttextTextt
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="extra content center aligned">
-										<button className="ui big button">$15</button>
-									</div>
-								</div>
-							</div>
-							<div className="column">
-								<div className="ui card centered">
-									<div className="content center aligned">
-										<div className="header">Course Title</div>
-									</div>
-									<div className="content center aligned">
-										<h4 className="ui sub header">Description</h4>
-										<div className="ui small feed">
-											<div className="event">
-												<div className="content center aligned">
-													<p>
-														TexttextTexttext TexttextTexttext
-														TexttTexttextTexttext TexttextTexttextTextt
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="extra content center aligned">
-										<button className="ui big button">$15</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="row">
-							<div className="center aligned column">
-								<h2 className="white-text">Our tutors</h2>
-							</div>
-						</div>
-						<div className="row">
-							<div className="center aligned column">
-								<Carousel />
-							</div>
-						</div>
+					<div className="ui center aligned container">
+						<h2 className="white-text">Our tutors</h2>
+						<Carousel />
 					</div>
 				</section>
 				{/* English Article Section */}
 				<section className="red content-padding">
 					<div className="ui fluid container ">
-						<div className="ui middle aligned grid container">
-							<div className="row">
-								<div className="center aligned column">
-									<h2 className="white-text">English Articles</h2>
-								</div>
-							</div>
-							<EnglishArticleCard />
-						</div>
+						<h2 className="white-text">English Articles</h2>
+
+						<EnglishArticleCard />
 					</div>
 				</section>
 
@@ -301,8 +183,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header ">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -311,8 +193,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -321,8 +203,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -331,8 +213,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -352,50 +234,26 @@ class Home extends React.Component {
 						<div className="ui middle aligned stackable grid container">
 							<div className="row">
 								<div className="center aligned column">
-									<h2 className="white-text">Contact us</h2>
+									<h2 className="white-text">Contact </h2>
 								</div>
 							</div>
 							<div className="equal width row">
 								<div className="center aligned column">
-									<div className="white-text">
-										blog sub titleblog sub titleblog sub titleblog sub titleblog
-										sub titleblog sub title
-									</div>
-									<div className="white-text">
+									<h3 className="white-text">
+										If you think you’ve got what we’re looking for please feel
+										free to ask about anything! <br /> Do not hesitate!
+									</h3>
+									<p className="white-text">
 										000-0000-0000 <br />
 										xxxxx@gmail.com <br />
 										123-222 Granville st, Vancouver
-									</div>
+									</p>
 								</div>
-								<div className="column">
-									<form className="ui large form">
-										<div className="ui stackable segment">
-											<div className="field">
-												<div className="ui left icon input">
-													<i className="user icon" />
-													<input type="text" placeholder="Name" name="name" />
-												</div>
-											</div>
-											<div className="field">
-												<div className="ui left icon input">
-													<i className="mail icon" />
-													<input
-														type="text"
-														placeholder="E-mail adrress"
-														name="e-mail"
-													/>
-												</div>
-											</div>
-											<div className="field">
-												<label>Content</label>
-												<textarea />
-											</div>
-											<div>
-												<button className="ui button primary">Submit</button>
-											</div>
-										</div>
-									</form>
-								</div>
+							</div>
+							<div className="row centered">
+								<Link to="/" className="ui big button yellow">
+									Contact us!
+								</Link>
 							</div>
 						</div>
 					</div>

@@ -17,25 +17,38 @@ class EnglishArticleCard extends React.Component {
 			return <p>Loading</p>;
 		}
 		return this.props.articles.map(article => {
+			const text = article.content.rendered;
+			const sliceText = text.length > 80 ? text.slice(0, 80) + '…' : text;
+			console.log(text);
 			return (
 				<>
-					<div className="column article-box">
+					<div
+						key={article.title.rendered}
+						className="four wide column article-box"
+					>
 						<Link
 							to={`/article-detail/${article.slug}`}
 							className="aticle-image"
-						>
-							<h3>{article.title.rendered}</h3>
-							<p
-								className="description"
-								dangerouslySetInnerHTML={{ __html: article.content.rendered }}
-							/>
-						</Link>
+						/>
 						<Link to={`/article-detail/${article.slug}`}>
-							<div className="content">
+							<div className="content" style={{ marginTop: '10px' }}>
 								<div className="meta">
-									<span className="date">{article.date}</span>
+									<span className="date white-text">{article.date}</span>
 								</div>
 							</div>
+						</Link>
+						<h3 className="white-text" style={{ margin: '0 0 10px 0' }}>
+							{article.title.rendered}
+						</h3>
+						<p
+							className="description white-text"
+							dangerouslySetInnerHTML={{ __html: sliceText }}
+						/>
+						<Link
+							to={`/article-detail/${article.slug}`}
+							className="ui button yellow"
+						>
+							Read More
 						</Link>
 					</div>
 				</>
@@ -44,9 +57,22 @@ class EnglishArticleCard extends React.Component {
 	}
 
 	render() {
-		// console.log(this.props);
 		return (
-			<div className="ui stackable four column rowasu">{this.renderList()}</div>
+			<div className="ui grid container">
+				<div className="four wide column">
+					<h3 className="white-text">
+						blog sub titleblog sub titleblog sub titleblog sub titleblog sub
+						titleblog sub title
+					</h3>
+					<p className="white-text">
+						exttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttex
+					</p>
+					<Link className="ui yellow button" to="/articles">
+						See Articles
+					</Link>
+				</div>
+				{this.renderList()}
+			</div>
 		);
 	}
 }
