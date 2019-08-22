@@ -16,9 +16,10 @@ class EnglishArticleCard extends React.Component {
 		if (this.props.articles === null) {
 			return <p>Loading</p>;
 		}
-		return this.props.articles.map(article => {
+		return this.props.articles.filter((article, idx) => idx < 3).map(article => {
 			const text = article.content.rendered;
 			const sliceText = text.length > 80 ? text.slice(0, 80) + '…' : text;
+			const spiltDate = article.date.split('T')
 			console.log(text);
 			return (
 				<>
@@ -33,7 +34,7 @@ class EnglishArticleCard extends React.Component {
 						<Link to={`/article-detail/${article.slug}`}>
 							<div className="content" style={{ marginTop: '10px' }}>
 								<div className="meta">
-									<span className="date white-text">{article.date}</span>
+									<span className="date white-text">{spiltDate[0]}</span>
 								</div>
 							</div>
 						</Link>
