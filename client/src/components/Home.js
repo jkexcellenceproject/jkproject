@@ -40,13 +40,12 @@ class Home extends React.Component {
 						<div className="row">
 							<div className="one wide column" />
 							<div className="eight wide column">
-								<h3 className="white-text">
+								<h3 className="white-text" style={{ marginBottom: '10px' }}>
 									About sub titleAbout sub titleAbout sub titleAbout sub
 									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
 								</h3>
-								<div className="ui divider" />
-								<p className="white-text">
+								<p className="white-text" style={{ marginBottom: '30px' }}>
 									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextte
 								</p>
 								<div className="ui four column grid">
@@ -158,14 +157,9 @@ class Home extends React.Component {
 				{/* English Article Section */}
 				<section className="red content-padding">
 					<div className="ui fluid container ">
-						<div className="ui middle aligned grid container">
-							<div className="row">
-								<div className="center aligned column">
-									<h2 className="white-text">English Articles</h2>
-								</div>
-							</div>
-							<EnglishArticleCard />
-						</div>
+						<h2 className="white-text">English Articles</h2>
+
+						<EnglishArticleCard />
 					</div>
 				</section>
 
@@ -189,8 +183,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header ">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -199,8 +193,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -209,8 +203,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -219,8 +213,8 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="header">Cute Dog</div>
-										<p>
+										<div className="faq-title header">Cute Dog</div>
+										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
 									</div>
@@ -240,21 +234,26 @@ class Home extends React.Component {
 						<div className="ui middle aligned stackable grid container">
 							<div className="row">
 								<div className="center aligned column">
-									<h2 className="white-text">Contact us</h2>
+									<h2 className="white-text">Contact </h2>
 								</div>
 							</div>
 							<div className="equal width row">
 								<div className="center aligned column">
-									<div className="white-text">
-										blog sub titleblog sub titleblog sub titleblog sub titleblog
-										sub titleblog sub title
-									</div>
-									<div className="white-text">
+									<h3 className="white-text">
+										If you think you’ve got what we’re looking for please feel
+										free to ask about anything! <br /> Do not hesitate!
+									</h3>
+									<p className="white-text">
 										000-0000-0000 <br />
 										xxxxx@gmail.com <br />
 										123-222 Granville st, Vancouver
-									</div>
+									</p>
 								</div>
+							</div>
+							<div className="row centered">
+								<Link to="/" className="ui big button yellow">
+									Contact us!
+								</Link>
 							</div>
 						</div>
 					</div>
