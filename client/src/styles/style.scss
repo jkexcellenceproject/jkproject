@@ -1,24 +1,16 @@
 @import 'common';
 // Home.js----------------------------------
 
-.slides-wrap {
-	position: relative;
-	overflow: hidden;
-}
-
-.slideImage {
-	object-fit: cover;
-	object-position: 50% 25%;
-	width: 100%;
-	height: 100vh;
-	vertical-align: bottom;
-}
-
-.faq-section-title {
-	color: #458fb4 !important;
+.faq-title {
+	color: $blue !important;
 }
 
 // Carousel.js
+
+.slider-control-centerright,
+.slider-control-centerleft {
+	display: none;
+}
 
 .carousel-wrap {
 	width: 50%;
