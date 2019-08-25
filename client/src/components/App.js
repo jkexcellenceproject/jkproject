@@ -7,7 +7,7 @@ import ScrollToTop from './ScrollToTop';
 import Home from './Home';
 import AboutUs from './about/AboutUs';
 import Articles from './articles/Articles';
-import ArticlesDetail from './ArticlesDetail';
+import ArticlesDetail from './articleDetail/ArticlesDetail';
 import StudentInterView from './StudentInterview';
 import Faq from './faq/Faq';
 import Contact from './Contact';

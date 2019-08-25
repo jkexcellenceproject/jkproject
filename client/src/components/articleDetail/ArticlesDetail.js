@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchArticles, fetchArticle } from '../actions';
+import { fetchArticles, fetchArticle } from '../../actions';
+
+import './article-detail.styles.scss';
 
 class Articles extends Component {
 	componentDidMount() {
@@ -18,32 +20,30 @@ class Articles extends Component {
 		if (this.props.articles === null) {
 			return <p>Loading</p>;
 		}
-		return this.props.articles.map((article, index) => {
-			if (3 > index) {
-				return (
-					<>
-						<div className="column article-box">
-							<Link
-								to={`/article-detail/${article.slug}`}
-								className="aticle-image"
-							>
-								<h3>{article.title.rendered}</h3>
-								<p
-									className="description"
-									dangerouslySetInnerHTML={{ __html: article.content.rendered }}
-								/>
-							</Link>
-							<div className="content">
-								<div className="meta">
-									<span className="date">{article.date}</span>
-								</div>
+		return this.props.articles.filter(article => this.props.match.params.slug != article.slug).filter((article, idx) => idx < 4).map((article, index) => {
+			const sliceText = article.content.rendered.length > 80 ? article.content.rendered.slice(0, 80) + '…' : article.content.rendered;
+			const spiltDate = article.date.split('T')
+			return (
+				<>
+					<div className="column article-box">
+						<Link
+							to={`/article-detail/${article.slug}`}
+							className="aticle-image"
+						>
+							<h3>{article.title.rendered}</h3>
+							<p
+								className="description"
+								dangerouslySetInnerHTML={{ __html: sliceText }}
+							/>
+						</Link>
+						<div className="content">
+							<div className="meta">
+								<span className="date">{spiltDate[0]}</span>
 							</div>
 						</div>
-					</>
-				);
-			} else {
-				return;
-			}
+					</div>
+				</>
+			);
 		});
 	}
 	render() {
@@ -64,7 +64,7 @@ class Articles extends Component {
 					<section className="ui two column stackable container content-padding grid">
 						<div className="twelve wide column article-content">
 							<h1>{title.rendered}</h1>
-							<img src={jetpack_featured_media_url} alt={title.rendered} />
+							{ jetpack_featured_media_url ?  <img src={jetpack_featured_media_url} alt={title.rendered} /> : ''}
 							<p dangerouslySetInnerHTML={{ __html: content.rendered }} />
 						</div>
 						<div className="four wide column">
