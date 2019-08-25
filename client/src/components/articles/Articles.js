@@ -74,7 +74,7 @@ class Articles extends Component {
     }
     render() {
         return(
-            <div>
+            <div className='blueGreen'>
                 <section className="ui fluid main-visual">
 					<div className="bcg-base">
 						<img
