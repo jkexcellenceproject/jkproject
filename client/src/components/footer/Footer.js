@@ -5,7 +5,7 @@ import './footer.scss';
 
 const Footer = () => {
 	return (
-		<div className="ui vertical footer segment">
+		<footer className="ui vertical footer segment">
 			<div className="ui container" style={{ marginTop: '20px' }}>
 				<div className="ui stackable divided equal height stackable grid footer-links">
 					<div className="four wide column footer-logo">
@@ -48,7 +48,7 @@ const Footer = () => {
 				</div>
 				<small>© 2019 JKExcellnce</small>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
