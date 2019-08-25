@@ -10,20 +10,25 @@ import 'slick-carousel/slick/slick-theme.scss';
 
 class SlideShow extends React.Component {
 	componentDidMount() {
-		this.props.fetchTutors();
-		this.changeSlide();
+		if(this.props.for == 'topPage') {
+			this.changeSlide();
+		} else if(this.props.for == 'tutors') {
+			this.props.fetchTutors();
+		}
 	}
 
 	changeSlide() {
 		const images = document.querySelectorAll('.slides-wrap');
 		const imagesLength = images.length;
 		let count = 0;
-		function timer() {
-			images[count].classList.remove('showSlide');
-			count = (count + 1) % imagesLength;
-			images[count].classList.add('showSlide');
+		if(images) {
+			function timer() {
+				images[count].classList.remove('showSlide');
+				count = (count + 1) % imagesLength;
+				images[count].classList.add('showSlide');
+			}
+			setInterval(timer, 4000);
 		}
-		setInterval(timer, 4000);
 	}
 
 	createCarouselItem = () => {
