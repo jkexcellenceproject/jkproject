@@ -17,7 +17,6 @@ class Home extends React.Component {
 		document.querySelector('body').className = 'home';
 	}
 	componentWillUnmount() {
-		console.log('hi');
 		document.querySelector('body').className = '';
 		document.querySelector('.nav-bar').classList.add('shrink-nav-bar');
 	}
