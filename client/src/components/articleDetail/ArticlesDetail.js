@@ -60,7 +60,7 @@ class Articles extends Component {
 		} else {
 			const { title, content, jetpack_featured_media_url } = this.props.article;
 			return (
-				<div>
+				<div className="blueGreen article-detail-content">
 					<section className="ui two column stackable container content-padding grid">
 						<div className="twelve wide column article-content">
 							<h1>{title.rendered}</h1>
