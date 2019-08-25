@@ -35,16 +35,17 @@ class Articles extends Component {
     renderArticles() {
         if (this.props.articles == null) {
 			return <p>Loading</p>;
-        } else if(this.state.serchTerm.length == 0) {
+        } else if(this.state.serchTerm.length === 0) {
             return this.props.articles.map(article => {
                 let str = article.date;
+                const sliceText = article.content.rendered.length > 80 ? article.content.rendered.slice(0, 80) + '…' : article.content.rendered;
                 let date = str.split("T");
                 return (
                     <>
                         <Link to={`/article-detail/${article.slug}`} className="column article-box" key={article.slug}>
                             <div className="aticle-image">
                                 <h3>{article.title.rendered}</h3>
-                                <p className="description" dangerouslySetInnerHTML={{ __html: article.content.rendered }}></p>
+                                <p className="description" dangerouslySetInnerHTML={{ __html: sliceText }}></p>
                             </div>
                             <div className="meta content">
                                 <span className="date">{date[0]}</span>
