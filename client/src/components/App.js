@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Router } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import '../styles/common.scss';
 import '../styles/style.scss';
 import Header from './Header';
@@ -11,7 +11,7 @@ import ArticlesDetail from './articleDetail/ArticlesDetail';
 import StudentInterView from './StudentInterview';
 import Faq from './faq/Faq';
 import Contact from './Contact';
-import Footer from './Footer';
+import Footer from './footer/Footer';
 
 class App extends Component {
 	render() {

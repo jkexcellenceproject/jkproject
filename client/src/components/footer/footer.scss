@@ -1,0 +1,22 @@
+@import '../../styles/common';
+
+.footer-logo {
+	padding: 0 !important;
+	img {
+		background-size: contain;
+		width: auto !important;
+		height: 90px;
+		transition: 0.3s;
+	}
+}
+
+small {
+	display: block;
+	text-align: center;
+	color: $blue;
+	margin: 30px 0;
+}
+
+.footer-links .item {
+	margin: 10px 0;
+}

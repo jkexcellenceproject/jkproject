@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../Carousel';
+import SlideShow from '../slides/SlideShow';
 import { Link } from 'react-router-dom';
 
 import './about.styles.scss';
@@ -144,7 +144,7 @@ class AboutUs extends React.Component {
 				<section className="blueGreen content-padding">
 					<div className="ui fluid container center aligned">
 						<h2 className="header white-text">Our tutors</h2>
-						<Carousel />
+						<SlideShow for="tutor" />
 					</div>
 				</section>
 			</div>

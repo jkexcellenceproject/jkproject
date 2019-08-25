@@ -19,8 +19,7 @@ class EnglishArticleCard extends React.Component {
 		return this.props.articles.filter((article, idx) => idx < 3).map(article => {
 			const text = article.content.rendered;
 			const sliceText = text.length > 80 ? text.slice(0, 80) + '…' : text;
-			const spiltDate = article.date.split('T')
-			console.log(text);
+			const spiltDate = article.date.split('T');
 			return (
 				<>
 					<div
@@ -59,14 +58,12 @@ class EnglishArticleCard extends React.Component {
 
 	render() {
 		return (
-			<div className="ui grid container">
+			<div className="ui stackable grid container">
 				<div className="four wide column">
-					<h3 className="white-text">
-						blog sub titleblog sub titleblog sub titleblog sub titleblog sub
-						titleblog sub title
-					</h3>
+					<h3 className="white-text">Lorem ipsum dolor sit amet</h3>
 					<p className="white-text">
-						exttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttex
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
 					</p>
 					<Link className="ui yellow button" to="/articles">
 						See Articles

@@ -23,7 +23,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<div className="nav-bar">
-				<div className="logo">
+				<div className="header-logo">
 					<Link to="/">
 						<img src={`${process.env.PUBLIC_URL}/images/JKEducationLogo.jpg`} />
 					</Link>

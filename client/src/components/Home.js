@@ -1,6 +1,7 @@
 import React from 'react';
-import Carousel from './Carousel';
+import SlideShow from './slides/SlideShow';
 import EnglishArticleCard from './EnglishArticleCard';
+
 import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
@@ -18,7 +19,6 @@ class Home extends React.Component {
 	componentWillUnmount() {
 		console.log('hi');
 		document.querySelector('body').className = '';
-		// document.querySelector('.nav-bar').className += 'shrink-nav-bar';
 		document.querySelector('.nav-bar').classList.add('shrink-nav-bar');
 	}
 
@@ -26,13 +26,7 @@ class Home extends React.Component {
 		return (
 			<div id="home">
 				{/* Image Slider */}
-				<div className="slides-wrap">
-					<img
-						className="slideImage"
-						src={`${process.env.PUBLIC_URL}/images/sampleImage1.jpg`}
-					/>
-				</div>
-
+				<SlideShow for="topPage" />
 				{/* About us Section */}
 				<section className="content-padding blueGreen">
 					<div className="ui middle aligned stackable grid container">
@@ -41,12 +35,16 @@ class Home extends React.Component {
 							<div className="one wide column" />
 							<div className="eight wide column">
 								<h3 className="white-text" style={{ marginBottom: '10px' }}>
-									About sub titleAbout sub titleAbout sub titleAbout sub
-									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-									titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+									Lorem ipsum dolor sit amet
 								</h3>
 								<p className="white-text" style={{ marginBottom: '30px' }}>
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextte
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+									accusantium doloremque laudantium, totam rem aperiam, eaque
+									ipsa quae ab illo inventore veritatis et quasi architecto
+									beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+									quia voluptas sit aspernatur aut odit aut fugit, sed quia
+									consequuntur magni dolores eos qui ratione voluptatem sequi
+									nesciunt.
 								</p>
 								<div className="ui four column grid">
 									<div className="column">
@@ -94,17 +92,17 @@ class Home extends React.Component {
 				</section>
 
 				{/* Our Class Section */}
-				<section className="content-padding">
+				<section className="content-padding" style={{ paddingBottom: '0' }}>
 					<div className="ui container">
 						<div className="ui middle aligned stackable grid">
 							<h2 className="blue-text">Our Class</h2>
 							<div className="row">
 								<div className="six wide centered center aligned column">
 									<p className="blue-text">
-										Course sub titleCourse sub titleCourse sub titleCourse sub
-										titleCourse sub titleCourse sub titleCourse sub titleCourse
-										sub titleCourse sub titleCourse sub titleCourse sub
-										titleCourse sub titleCourse sub title
+										Sed ut perspiciatis unde omnis iste natus error sit
+										voluptatem accusantium doloremque laudantium, totam rem
+										aperiam, eaque ipsa quae ab illo inventore veritatis et
+										quasi architecto beatae vitae dicta sunt explicabo.
 									</p>
 								</div>
 							</div>
@@ -139,7 +137,7 @@ class Home extends React.Component {
 
 					<div className=" margin red content-padding">
 						<div className="ui fluid container center aligned">
-							<h1 className="white-text">We have free trial! Let"s try it</h1>
+							<h1 className="white-text">We have free trial! Let's try it</h1>
 							<Link to="/" className="ui big yellow button">
 								Free Trial
 							</Link>
@@ -151,14 +149,13 @@ class Home extends React.Component {
 				<section className="blueGreen content-padding">
 					<div className="ui center aligned container">
 						<h2 className="white-text">Our tutors</h2>
-						<Carousel />
+						<SlideShow for="tutors" />
 					</div>
 				</section>
 				{/* English Article Section */}
 				<section className="red content-padding">
 					<div className="ui fluid container ">
 						<h2 className="white-text">English Articles</h2>
-
 						<EnglishArticleCard />
 					</div>
 				</section>
@@ -175,7 +172,8 @@ class Home extends React.Component {
 							<div className="six wide centered center aligned column">
 								<p className="blue-text">
 									Do you have any question? <br />
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+									accusantium doloremque laudantium
 								</p>
 							</div>
 						</div>
@@ -183,9 +181,10 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="faq-title header ">Cute Dog</div>
+										<div className="faq-title header ">Lorem Ipsum?</div>
 										<p className="blue-text">
-											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
+											Sed ut perspiciatis unde omnis iste natus error sit
+											voluptatem
 										</p>
 									</div>
 								</div>
@@ -193,9 +192,10 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="faq-title header">Cute Dog</div>
+										<div className="faq-title header">Lorem Ipsum?</div>
 										<p className="blue-text">
-											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
+											Sed ut perspiciatis unde omnis iste natus error sit
+											voluptatem
 										</p>
 									</div>
 								</div>
@@ -203,9 +203,10 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="faq-title header">Cute Dog</div>
+										<div className="faq-title header">Lorem Ipsum?</div>
 										<p className="blue-text">
-											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
+											Sed ut perspiciatis unde omnis iste natus error sit
+											voluptatem
 										</p>
 									</div>
 								</div>
@@ -213,7 +214,7 @@ class Home extends React.Component {
 							<div className="column">
 								<div className="ui card centered">
 									<div className="content">
-										<div className="faq-title header">Cute Dog</div>
+										<div className="faq-title header">Lorem Ipsum?</div>
 										<p className="blue-text">
 											texttexttexttexttexttexttexttexttexttexttexttexttexttextt?
 										</p>
