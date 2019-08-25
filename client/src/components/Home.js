@@ -137,7 +137,7 @@ class Home extends React.Component {
 					<div className=" margin red content-padding">
 						<div className="ui fluid container center aligned">
 							<h1 className="white-text">We have free trial! Let's try it</h1>
-							<Link to="/" className="ui big yellow button">
+							<Link to="/contact" className="ui big yellow button">
 								Free Trial
 							</Link>
 						</div>
@@ -222,7 +222,7 @@ class Home extends React.Component {
 							</div>
 						</div>
 						<div className="row centered">
-							<Link to="/" className="ui big button yellow">
+							<Link to="/faq" className="ui big button yellow">
 								View FAQ's
 							</Link>
 						</div>
@@ -251,7 +251,7 @@ class Home extends React.Component {
 								</div>
 							</div>
 							<div className="row centered">
-								<Link to="/" className="ui big button yellow">
+								<Link to="/contact" className="ui big button yellow">
 									Contact us!
 								</Link>
 							</div>
