@@ -23,8 +23,8 @@ class AboutUs extends React.Component {
 						/>
 						<div className="main-header">
 							<h1>
-								WHAT’S <span className="br">JK Education</span>
-								<span className="br">FOR?</span>
+								What’s <span className="br">JK EXCELLETNT</span>
+								<span className="br">For?</span>
 							</h1>
 						</div>
 					</div>
@@ -33,16 +33,14 @@ class AboutUs extends React.Component {
 				<section className="blueGreen content-padding">
 					<div className="ui aligned container">
 						<div className="ui grid">
-							<h2 className="header white-text">What's JK Education</h2>
+							<h2 className="header white-text">What's JK Mission</h2>
 							<div className="three stackable column row about-company">
 								<div className="eight wide column aligned white-text">
 									<h3>
-										About sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
-										titleAbout sub titleAbout sub titleAbout sub titleAbout sub
+									Lorem ipsum
 									</h3>
 									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextt
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 									</p>
 								</div>
 								<div className="two wide column" />
@@ -57,9 +55,9 @@ class AboutUs extends React.Component {
 								</div>
 
 								<div className="eight wide column white-text">
-									<h3 className="header">Tutor Name</h3>
+									<h3 className="header">Lorem ipsum</h3>
 									<p>
-										texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextt
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 									</p>
 								</div>
 							</div>
@@ -72,9 +70,9 @@ class AboutUs extends React.Component {
 					<div className="ui container">
 						<div className="flex-container">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">1. Contact to Vickey</h3>
+								<h3 className="header ">1. Lorem ipsum</h3>
 								<p>
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">
@@ -87,9 +85,9 @@ class AboutUs extends React.Component {
 
 						<div className="flex-container reverse-order">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">1. Contact to Vickey</h3>
+								<h3 className="header ">2. Lorem ipsum</h3>
 								<p>
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">
@@ -102,9 +100,9 @@ class AboutUs extends React.Component {
 
 						<div className="flex-container">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">1. Contact to Vickey</h3>
+								<h3 className="header ">3. Lorem ipsum</h3>
 								<p>
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">
@@ -117,9 +115,9 @@ class AboutUs extends React.Component {
 
 						<div className="flex-container reverse-order">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">1. Contact to Vickey</h3>
+								<h3 className="header ">4. Lorem ipsum</h3>
 								<p>
-									texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttextttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexs
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">

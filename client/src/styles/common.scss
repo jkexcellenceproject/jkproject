@@ -268,11 +268,6 @@ h4 {
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.main-header {
-		left: 20px !important;
-	}
-}
 @media screen and (max-width: 468px) {
 }
 img {
@@ -354,4 +349,13 @@ li {
 			white-space: pre;
 		}
 	}
+@media screen and (max-width: 768px) {
+	& {
+		top: 45%;
+		left: 20px;
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
 }

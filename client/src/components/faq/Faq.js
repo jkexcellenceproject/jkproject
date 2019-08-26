@@ -18,10 +18,12 @@ class Faq extends React.Component {
 						className="bcg-image"
 						src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
 					/>
-					<h1 className="main-header">
-						WHAT’S <span className="br">JK Education</span>
-						<span className="br">FOR?</span>
-					</h1>
+					<div className="main-header">
+						<h1>
+							WHAT’S <span className="br">JK Education</span>
+							<span className="br">FOR?</span>
+						</h1>
+					</div>
 				</div>
 				<div className="blueGreen content-padding">
 					<div className="ui fluid container">

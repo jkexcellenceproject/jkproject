@@ -83,8 +83,7 @@ class Articles extends Component {
 							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
 						/>
 						<div className="main-header">
-							<h1>JK EXCELLENCE <span className="br">ENGLISH ARTICLES</span>
-							<span className="br">FOR LEARNING</span>
+							<h1>JK EXCELLENCE <span className="br">English Articles</span>
                             </h1>
 						</div>
 					</div>
