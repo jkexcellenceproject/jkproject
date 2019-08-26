@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import '../styles/common.scss';
 import '../styles/style.scss';
-import Header from './Header';
+import Header from '../header/Header';
 import ScrollToTop from './ScrollToTop';
 import Home from './Home';
 import AboutUs from './about/AboutUs';
