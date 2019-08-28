@@ -10,8 +10,16 @@ import { fetchArticles } from '../actions';
 import '../styles/common.scss';
 import '../styles/style.scss';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 class Home extends React.Component {
 	componentDidMount() {
+		AOS.init({
+			easing: 'ease-out-back',
+			once: true,
+			duration: 700
+		});
 		this.props.fetchArticles();
 		document.querySelector('.nav-bar').classList.remove('shrink-nav-bar');
 		document.querySelector('body').className = 'home';
@@ -32,7 +40,7 @@ class Home extends React.Component {
 						<h2 className="white-text">About us</h2>
 						<div className="row">
 							<div className="one wide column" />
-							<div className="eight wide column">
+							<div data-aos="fade-right" className="eight wide column">
 								<h3 className="white-text" style={{ marginBottom: '10px' }}>
 									Lorem ipsum dolor sit amet
 								</h3>
@@ -48,24 +56,32 @@ class Home extends React.Component {
 								<div className="ui four column grid">
 									<div className="column">
 										<img
+											data-aos="fade-up"
+											data-aos-delay="450"
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
 											className="ui image"
 										/>
 									</div>
 									<div className="column">
 										<img
+											data-aos="fade-up"
+											data-aos-delay="500"
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
 											className="ui image"
 										/>
 									</div>
 									<div className="column">
 										<img
+											data-aos="fade-up"
+											data-aos-delay="550"
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
 											className="ui image"
 										/>
 									</div>
 									<div className="column">
 										<img
+											data-aos="fade-up"
+											data-aos-delay="600"
 											src="https://react.semantic-ui.com/images/wireframe/image.png"
 											className="ui image"
 										/>
@@ -75,6 +91,7 @@ class Home extends React.Component {
 							<div className="one wide column" />
 							<div className="five wide column">
 								<img
+									data-aos="fade-left"
 									src={`${process.env.PUBLIC_URL}/images/groupPhoto.jpg`}
 									className="ui image"
 								/>
@@ -97,7 +114,7 @@ class Home extends React.Component {
 							<h2 className="blue-text">Our Class</h2>
 							<div className="row">
 								<div className="six wide centered center aligned column">
-									<p className="blue-text">
+									<p data-aos="fade-up" className="blue-text">
 										Sed ut perspiciatis unde omnis iste natus error sit
 										voluptatem accusantium doloremque laudantium, totam rem
 										aperiam, eaque ipsa quae ab illo inventore veritatis et
@@ -108,24 +125,32 @@ class Home extends React.Component {
 							<div className="four column row">
 								<div className="column">
 									<img
+										data-aos="fade-up"
+										data-aos-delay="100"
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										className="ui image "
+									/>
+								</div>
+								<div className="column">
+									<img
+										data-aos="fade-up"
+										data-aos-delay="200"
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
 										className="ui image"
 									/>
 								</div>
 								<div className="column">
 									<img
+										data-aos="fade-up"
+										data-aos-delay="300"
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
 										className="ui image"
 									/>
 								</div>
 								<div className="column">
 									<img
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
-										className="ui image"
-									/>
-								</div>
-								<div className="column">
-									<img
+										data-aos="fade-up"
+										data-aos-delay="400"
 										src="https://react.semantic-ui.com/images/wireframe/image.png"
 										className="ui image"
 									/>
@@ -135,7 +160,7 @@ class Home extends React.Component {
 					</div>
 
 					<div className=" margin red content-padding">
-						<div className="ui fluid container center aligned">
+						<div className="ui fluid container center aligned ">
 							<h1 className="white-text">We have free trial! Let's try it</h1>
 							<Link to="/contact" className="ui big yellow button">
 								Free Trial
@@ -169,7 +194,7 @@ class Home extends React.Component {
 						</div>
 						<div className="row">
 							<div className="six wide centered center aligned column">
-								<p className="blue-text">
+								<p data-aos="fade-up" className="blue-text">
 									Do you have any question? <br />
 									Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 									accusantium doloremque laudantium
@@ -177,7 +202,7 @@ class Home extends React.Component {
 							</div>
 						</div>
 						<div className="equal width row center aligned">
-							<div className="column">
+							<div data-aos="fade-up" data-aos-delay="200" className="column">
 								<div className="ui card centered">
 									<div className="content">
 										<div className="faq-title header ">Lorem Ipsum?</div>
@@ -188,7 +213,7 @@ class Home extends React.Component {
 									</div>
 								</div>
 							</div>
-							<div className="column">
+							<div data-aos="fade-up" data-aos-delay="250" className="column">
 								<div className="ui card centered">
 									<div className="content">
 										<div className="faq-title header">Lorem Ipsum?</div>
@@ -199,7 +224,7 @@ class Home extends React.Component {
 									</div>
 								</div>
 							</div>
-							<div className="column">
+							<div data-aos="fade-up" data-aos-delay="300" className="column">
 								<div className="ui card centered">
 									<div className="content">
 										<div className="faq-title header">Lorem Ipsum?</div>
@@ -210,7 +235,7 @@ class Home extends React.Component {
 									</div>
 								</div>
 							</div>
-							<div className="column">
+							<div data-aos="fade-up" data-aos-delay="350" className="column">
 								<div className="ui card centered">
 									<div className="content">
 										<div className="faq-title header">Lorem Ipsum?</div>
