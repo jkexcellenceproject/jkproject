@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 
 import './about.styles.scss';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 class AboutUs extends React.Component {
 	componentDidMount() {
+		AOS.init({
+			easing: 'ease-out-back',
+			once: true,
+			duration: 1000
+		});
 		document.querySelector('body').className = 'about';
 	}
 	componentWillUnmount() {
@@ -22,9 +30,18 @@ class AboutUs extends React.Component {
 							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
 						/>
 						<div className="main-header">
-							<h1>
-								What’s <span className="br">JK EXCELLETNT</span>
-								<span className="br">For?</span>
+							<h1
+								data-aos="fade-up"
+								data-aos-easing="ease-out"
+								// data-aos-duration="1000"
+							>
+								What’s{' '}
+								<span data-aos="fade-up" data-aos-delay="250" className="br">
+									JK EXCELLETNT
+								</span>
+								<span data-aos="fade-up" data-aos-delay="500" className="br">
+									For?
+								</span>
 							</h1>
 						</div>
 					</div>
@@ -36,11 +53,21 @@ class AboutUs extends React.Component {
 							<h2 className="header white-text">What's JK Mission</h2>
 							<div className="three stackable column row about-company">
 								<div className="eight wide column aligned white-text">
-									<h3>
-									Lorem ipsum
-									</h3>
+									<h3>Lorem ipsum</h3>
 									<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ac turpis egestas maecenas pharetra convallis
+										posuere. A scelerisque purus semper eget duis at tellus at
+										urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi
+										tincidunt augue interdum velit euismod in. Ut pharetra sit
+										amet aliquam id diam maecenas ultricies. Arcu odio ut sem
+										nulla pharetra diam. Rutrum quisque non tellus orci. Magna
+										eget est lorem ipsum dolor. Et odio pellentesque diam
+										volutpat commodo sed egestas egestas. Consequat interdum
+										varius sit amet mattis. Faucibus scelerisque eleifend donec
+										pretium vulputate sapien nec sagittis. Dictumst vestibulum
+										rhoncus est pellentesque elit.
 									</p>
 								</div>
 								<div className="two wide column" />
@@ -57,7 +84,19 @@ class AboutUs extends React.Component {
 								<div className="eight wide column white-text">
 									<h3 className="header">Lorem ipsum</h3>
 									<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ac turpis egestas maecenas pharetra convallis
+										posuere. A scelerisque purus semper eget duis at tellus at
+										urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi
+										tincidunt augue interdum velit euismod in. Ut pharetra sit
+										amet aliquam id diam maecenas ultricies. Arcu odio ut sem
+										nulla pharetra diam. Rutrum quisque non tellus orci. Magna
+										eget est lorem ipsum dolor. Et odio pellentesque diam
+										volutpat commodo sed egestas egestas. Consequat interdum
+										varius sit amet mattis. Faucibus scelerisque eleifend donec
+										pretium vulputate sapien nec sagittis. Dictumst vestibulum
+										rhoncus est pellentesque elit.
 									</p>
 								</div>
 							</div>
@@ -70,13 +109,28 @@ class AboutUs extends React.Component {
 					<div className="ui container">
 						<div className="flex-container">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">1. Lorem ipsum</h3>
-								<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
+								<h3 data-aos="fade-right" className="header ">
+									1. Lorem ipsum
+								</h3>
+								<p data-aos="fade-right">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ac turpis egestas maecenas pharetra convallis posuere. A
+									scelerisque purus semper eget duis at tellus at urna. Augue ut
+									lectus arcu bibendum at. Fringilla ut morbi tincidunt augue
+									interdum velit euismod in. Ut pharetra sit amet aliquam id
+									diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam.
+									Rutrum quisque non tellus orci. Magna eget est lorem ipsum
+									dolor. Et odio pellentesque diam volutpat commodo sed egestas
+									egestas. Consequat interdum varius sit amet mattis. Faucibus
+									scelerisque eleifend donec pretium vulputate sapien nec
+									sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">
 								<img
+									data-aos="fade-left"
+									data-aos-delay="200"
 									src="https://dummyimage.com/450x300/ccc/fff"
 									className="ui image"
 								/>
@@ -85,13 +139,28 @@ class AboutUs extends React.Component {
 
 						<div className="flex-container reverse-order">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">2. Lorem ipsum</h3>
-								<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
+								<h3 data-aos="fade-left" className="header ">
+									2. Lorem ipsum
+								</h3>
+								<p data-aos="fade-left">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ac turpis egestas maecenas pharetra convallis posuere. A
+									scelerisque purus semper eget duis at tellus at urna. Augue ut
+									lectus arcu bibendum at. Fringilla ut morbi tincidunt augue
+									interdum velit euismod in. Ut pharetra sit amet aliquam id
+									diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam.
+									Rutrum quisque non tellus orci. Magna eget est lorem ipsum
+									dolor. Et odio pellentesque diam volutpat commodo sed egestas
+									egestas. Consequat interdum varius sit amet mattis. Faucibus
+									scelerisque eleifend donec pretium vulputate sapien nec
+									sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">
 								<img
+									data-aos="fade-right"
+									data-aos-delay="200"
 									src="https://dummyimage.com/450x300/ccc/fff"
 									className="ui image"
 								/>
@@ -100,13 +169,28 @@ class AboutUs extends React.Component {
 
 						<div className="flex-container">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">3. Lorem ipsum</h3>
-								<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
+								<h3 data-aos="fade-right" className="header ">
+									3. Lorem ipsum
+								</h3>
+								<p data-aos="fade-right">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ac turpis egestas maecenas pharetra convallis posuere. A
+									scelerisque purus semper eget duis at tellus at urna. Augue ut
+									lectus arcu bibendum at. Fringilla ut morbi tincidunt augue
+									interdum velit euismod in. Ut pharetra sit amet aliquam id
+									diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam.
+									Rutrum quisque non tellus orci. Magna eget est lorem ipsum
+									dolor. Et odio pellentesque diam volutpat commodo sed egestas
+									egestas. Consequat interdum varius sit amet mattis. Faucibus
+									scelerisque eleifend donec pretium vulputate sapien nec
+									sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">
 								<img
+									data-aos="fade-left"
+									data-aos-delay="200"
 									src="https://dummyimage.com/450x300/ccc/fff"
 									className="ui image"
 								/>
@@ -115,13 +199,28 @@ class AboutUs extends React.Component {
 
 						<div className="flex-container reverse-order">
 							<div className="text-wrap blue-text">
-								<h3 className="header ">4. Lorem ipsum</h3>
-								<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere. A scelerisque purus semper eget duis at tellus at urna. Augue ut lectus arcu bibendum at. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ut pharetra sit amet aliquam id diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam. Rutrum quisque non tellus orci. Magna eget est lorem ipsum dolor. Et odio pellentesque diam volutpat commodo sed egestas egestas. Consequat interdum varius sit amet mattis. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
+								<h3 data-aos="fade-left" className="header ">
+									4. Lorem ipsum
+								</h3>
+								<p data-aos="fade-left">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									Ac turpis egestas maecenas pharetra convallis posuere. A
+									scelerisque purus semper eget duis at tellus at urna. Augue ut
+									lectus arcu bibendum at. Fringilla ut morbi tincidunt augue
+									interdum velit euismod in. Ut pharetra sit amet aliquam id
+									diam maecenas ultricies. Arcu odio ut sem nulla pharetra diam.
+									Rutrum quisque non tellus orci. Magna eget est lorem ipsum
+									dolor. Et odio pellentesque diam volutpat commodo sed egestas
+									egestas. Consequat interdum varius sit amet mattis. Faucibus
+									scelerisque eleifend donec pretium vulputate sapien nec
+									sagittis. Dictumst vestibulum rhoncus est pellentesque elit.
 								</p>
 							</div>
 							<div className="image-wrap">
 								<img
+									data-aos="fade-right"
+									data-aos-delay="200"
 									src="https://dummyimage.com/450x300/ccc/fff"
 									className="ui image"
 								/>
