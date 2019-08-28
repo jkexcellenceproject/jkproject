@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/style.scss';
-import '../styles/common.scss';
+import './header.scss';
 
 class Header extends React.Component {
 	componentDidMount() {
@@ -44,7 +43,7 @@ class Header extends React.Component {
 								<button className="ui circular twitter icon button">
 									<i className="twitter icon" />
 								</button>
-								<button className="ui circular linkedin icon button">
+								<button className="ui circular icon button instagram insta-color">
 									<i className="instagram icon" />
 								</button>
 							</ul>

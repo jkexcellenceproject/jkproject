@@ -16,56 +16,69 @@ class EnglishArticleCard extends React.Component {
 		if (this.props.articles === null) {
 			return <p>Loading</p>;
 		}
-		return this.props.articles.filter((article, idx) => idx < 3).map(article => {
-			const text = article.content.rendered;
-			const sliceText = text.length > 80 ? text.slice(0, 80) + '…' : text;
-			const spiltDate = article.date.split('T');
-			return (
-				<>
-					<div
-						key={article.title.rendered}
-						className="four wide column article-box"
-					>
-						<Link
-							to={`/article-detail/${article.slug}`}
-							className="aticle-image"
-						/>
-						<Link to={`/article-detail/${article.slug}`}>
-							<div className="content" style={{ marginTop: '10px' }}>
-								<div className="meta">
-									<span className="date white-text">{spiltDate[0]}</span>
-								</div>
-							</div>
-						</Link>
-						<h3 className="white-text" style={{ margin: '0 0 10px 0' }}>
-							{article.title.rendered}
-						</h3>
-						<p
-							className="description white-text"
-							dangerouslySetInnerHTML={{ __html: sliceText }}
-						/>
-						<Link
-							to={`/article-detail/${article.slug}`}
-							className="ui button yellow"
+		let delay = 0;
+		return this.props.articles
+			.filter((article, idx) => idx < 3)
+			.map(article => {
+				const text = article.content.rendered;
+				const sliceText = text.length > 80 ? text.slice(0, 80) + '…' : text;
+				const spiltDate = article.date.split('T');
+				delay += 100;
+				return (
+					<>
+						<div
+							data-aos="fade-up"
+							data-aos-delay={delay}
+							key={article.title.rendered}
+							className="four wide column article-box"
 						>
-							Read More
-						</Link>
-					</div>
-				</>
-			);
-		});
+							<Link
+								to={`/article-detail/${article.slug}`}
+								className="aticle-image"
+							/>
+							<Link to={`/article-detail/${article.slug}`}>
+								<div className="content" style={{ marginTop: '10px' }}>
+									<div className="meta">
+										<span className="date white-text">{spiltDate[0]}</span>
+									</div>
+								</div>
+							</Link>
+							<h3 className="white-text" style={{ margin: '0 0 10px 0' }}>
+								{article.title.rendered}
+							</h3>
+							<p
+								className="description white-text"
+								dangerouslySetInnerHTML={{ __html: sliceText }}
+							/>
+							<Link
+								to={`/article-detail/${article.slug}`}
+								className="ui button yellow"
+							>
+								Read More
+							</Link>
+						</div>
+					</>
+				);
+			});
 	}
 
 	render() {
 		return (
 			<div className="ui stackable grid container">
 				<div className="four wide column">
-					<h3 className="white-text">Lorem ipsum dolor sit amet</h3>
-					<p className="white-text">
+					<h3 data-aos="fade-right" className="white-text">
+						Lorem ipsum dolor sit amet
+					</h3>
+					<p data-aos="fade-right" data-aos-delay="200" className="white-text">
 						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 						accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
 					</p>
-					<Link className="ui yellow button" to="/articles">
+					<Link
+						data-aos="fade-right"
+						data-aos-delay="300"
+						className="ui yellow button"
+						to="/articles"
+					>
 						See Articles
 					</Link>
 				</div>

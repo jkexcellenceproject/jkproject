@@ -10,9 +10,9 @@ import 'slick-carousel/slick/slick-theme.scss';
 
 class SlideShow extends React.Component {
 	componentDidMount() {
-		if(this.props.for == 'topPage') {
+		if (this.props.for == 'topPage') {
 			this.changeSlide();
-		} else if(this.props.for == 'tutors') {
+		} else if (this.props.for == 'tutors') {
 			this.props.fetchTutors();
 		}
 	}
@@ -21,13 +21,13 @@ class SlideShow extends React.Component {
 		const images = document.querySelectorAll('.slides-wrap');
 		const imagesLength = images.length;
 		let count = 0;
-		if(images) {
+		if (images) {
 			function timer() {
 				images[count].classList.remove('showSlide');
 				count = (count + 1) % imagesLength;
 				images[count].classList.add('showSlide');
 			}
-			setInterval(timer, 4000);
+			setInterval(timer, 3500);
 		}
 	}
 
