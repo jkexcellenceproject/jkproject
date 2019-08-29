@@ -4,16 +4,8 @@ import { Link } from 'react-router-dom';
 
 import './about.styles.scss';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 class AboutUs extends React.Component {
 	componentDidMount() {
-		AOS.init({
-			easing: 'ease-out-back',
-			once: true,
-			duration: 1000
-		});
 		document.querySelector('body').className = 'about';
 	}
 	componentWillUnmount() {
