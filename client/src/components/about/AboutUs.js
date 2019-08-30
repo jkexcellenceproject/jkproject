@@ -45,8 +45,8 @@ class AboutUs extends React.Component {
 							<h2 className="header white-text">What's JK Mission</h2>
 							<div className="three stackable column row about-company">
 								<div className="eight wide column aligned white-text">
-									<h3>Lorem ipsum</h3>
-									<p>
+									<h3 data-aos="fade-up">Lorem ipsum</h3>
+									<p data-aos="fade-up">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 										do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ac turpis egestas maecenas pharetra convallis
@@ -64,18 +64,31 @@ class AboutUs extends React.Component {
 								</div>
 								<div className="two wide column" />
 								<div className="six wide column">
-									<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
+									<img
+										data-aos="fade-up"
+										data-aos-delay="200"
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+									/>
 								</div>
 							</div>
 							<div className="three stackable column row president-info">
 								<div className="one wide column" />
 								<div className="five wide column center aligned">
-									<img src="https://react.semantic-ui.com/images/wireframe/image.png" />
+									<img
+										data-aos="fade-up"
+										src="https://react.semantic-ui.com/images/wireframe/image.png"
+									/>
 								</div>
 
 								<div className="eight wide column white-text">
-									<h3 className="header">Lorem ipsum</h3>
-									<p>
+									<h3
+										data-aos="fade-up"
+										data-aos-delay="200"
+										className="header"
+									>
+										Lorem ipsum
+									</h3>
+									<p data-aos="fade-up" data-aos-delay="200">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 										do eiusmod tempor incididunt ut labore et dolore magna
 										aliqua. Ac turpis egestas maecenas pharetra convallis
