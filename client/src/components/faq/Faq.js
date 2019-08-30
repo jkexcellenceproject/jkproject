@@ -19,9 +19,14 @@ class Faq extends React.Component {
 						src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
 					/>
 					<div className="main-header">
-						<h1>
-							WHAT’S <span className="br">JK Education</span>
-							<span className="br">FOR?</span>
+						<h1 data-aos="fade-up">
+							WHAT’S{' '}
+							<span data-aos="fade-up" data-aos-delay="250" className="br">
+								JK Education
+							</span>
+							<span data-aos="fade-up" data-aos-delay="500" className="br">
+								FOR?
+							</span>
 						</h1>
 					</div>
 				</div>

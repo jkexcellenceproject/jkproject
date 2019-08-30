@@ -2,10 +2,11 @@ import React from 'react';
 import AccordionParts from './AccordionParts';
 
 const Accordion = props => {
-	// console.log(props);
 	return (
 		<div className="accordion">
-			<h4 className="faq-section-title">{props.title}</h4>
+			<h4 data-aos="fade-up" className="faq-section-title">
+				{props.title}
+			</h4>
 			<AccordionParts
 				title="Question 1"
 				content="Good Morning!"
