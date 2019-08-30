@@ -3,7 +3,19 @@ import { Link } from 'react-router-dom';
 
 import './header.scss';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 class Header extends React.Component {
+	constructor() {
+		super();
+		AOS.init({
+			easing: 'ease-out-back',
+			once: true,
+			duration: 700
+		});
+	}
+
 	componentDidMount() {
 		window.addEventListener('scroll', this.shrinkHeader);
 		document.querySelector('.nav-bar').classList.add('shrink-nav-bar');

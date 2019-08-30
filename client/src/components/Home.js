@@ -10,16 +10,8 @@ import { fetchArticles } from '../actions';
 import '../styles/common.scss';
 import '../styles/style.scss';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 class Home extends React.Component {
 	componentDidMount() {
-		AOS.init({
-			easing: 'ease-out-back',
-			once: true,
-			duration: 700
-		});
 		this.props.fetchArticles();
 		document.querySelector('.nav-bar').classList.remove('shrink-nav-bar');
 		document.querySelector('body').className = 'home';
