@@ -41,15 +41,17 @@ class SlideShow extends React.Component {
 				<div key={tutor.slug}>
 					<img src={tutor.jetpack_featured_media_url} />
 					<img
+						data-aos="fade-up"
 						className="ui medium circular image centered"
 						src={tutor._embedded['wp:featuredmedia'][0].source_url}
 					/>
 					<h4
+						data-aos="fade-up"
 						className="description"
 						dangerouslySetInnerHTML={{ __html: tutor.content.rendered }}
 					/>
 
-					<div className="meta centered">
+					<div data-aos="fade-up" className="meta centered">
 						{tutor.title.rendered}, {tutor.acf.age} year-old, US
 					</div>
 				</div>
