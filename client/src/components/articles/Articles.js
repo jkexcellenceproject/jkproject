@@ -50,6 +50,7 @@ class Articles extends Component {
 				return (
 					<>
 						<Link
+							data-aos="fade-up"
 							to={`/article-detail/${article.slug}`}
 							className="column article-box"
 							key={article.slug}

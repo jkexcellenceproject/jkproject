@@ -45,14 +45,15 @@ class StudentInterview extends Component {
 				<div key={id} className="doubling two column row interview-content">
 					<div className="four wide column">
 						<img
+							data-aos="fade-up"
 							className="ui medium circular image"
 							src="https://dummyimage.com/150x150/ccc/fff"
 						/>
 					</div>
 					<div className="twelve wide column student-info">
-						<h3>{name}</h3>
-						<h4>{title}</h4>
-						<p>{content}</p>
+						<h3 data-aos="fade-up">{name}</h3>
+						<h4 data-aos="fade-up">{title}</h4>
+						<p data-aos="fade-up">{content}</p>
 					</div>
 				</div>
 			);
