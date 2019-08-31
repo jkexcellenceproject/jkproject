@@ -1,5 +1,17 @@
 @import '../styles/common';
 
+img {
+	width: 100%;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
 .nav-bar {
 	width: 100%;
 	height: 130px;
@@ -136,6 +148,11 @@
 }
 
 @media screen and (max-width: 768px) {
+	.nav-btn-lists {
+		ul {
+			flex-direction: row;
+		}
+	}
 	.shrink-nav-bar {
 		height: 100px;
 
@@ -158,8 +175,8 @@
 	.nav-menu {
 		position: fixed;
 		top: 0;
-		right: -50%;
-		width: 50%;
+		right: -75%;
+		width: 75%;
 		height: 106vh;
 		background: $blueGreen;
 		transition: all 0.4s;
@@ -182,6 +199,15 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			a {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.nav-btn-lists {
+		ul {
+			flex-direction: row;
 		}
 	}
 
@@ -216,33 +242,13 @@
 
 @media screen and (max-width: 468px) {
 	.nav-bar {
-		height: 80px;
+		height: 60px;
 
 		.menu-trigger-btn {
-			top: 20px;
+			top: 10px;
 		}
 		img {
-			height: 60px;
+			height: 40px;
 		}
 	}
-}
-
-@media screen and (max-width: 768px) {
-	.nav-btn-lists {
-		ul {
-			flex-direction: row;
-		}
-	}
-}
-
-img {
-	width: 100%;
-}
-ul {
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	list-style: none;
 }
