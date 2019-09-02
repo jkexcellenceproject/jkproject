@@ -28,7 +28,6 @@ export const fetchTutors = () => async dispatch => {
 	const response = await axios.get(
 		'http://localhost:8888/jk-wp/wp-json/wp/v2/tutors?_embed'
 	);
-	console.log(response.data);
 	dispatch({ type: FETCH_TUTORS, payload: response.data });
 };
 

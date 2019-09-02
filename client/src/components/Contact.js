@@ -41,8 +41,7 @@ class Contact extends Component {
 						/>
 						<div className="main-header">
 							<h1>
-								JK EXCELLENCE <span className="br">ENGLISH ARTICLES</span>
-								<span className="br">FOR LEARNING</span>
+								Contact Us
 							</h1>
 						</div>
 					</div>

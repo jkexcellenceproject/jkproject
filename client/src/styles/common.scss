@@ -10,65 +10,60 @@ $blueGreen: #70afac;
 	box-sizing: border-box;
 }
 
+:root {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 468px) {
+	:root {
+		font-size: 3vw;
+	}
+}
+
 @mixin margin {
 	margin-top: 100px;
 }
 
 p {
 	word-wrap: break-word;
+	font-size: 1rem;
 }
 a {
 	color: white;
-	transition: .5s;
+	transition: 0.5s;
 }
 a:hover {
 	color: white;
-	opacity: .5;
+	opacity: 0.5;
 }
 h1 {
 	font-size: 4.5rem;
-
 	color: white;
+	font-family: 'Libre Caslon Display', serif;
 }
 h2 {
 	width: 100%;
 	margin-bottom: 50px;
 	color: white;
 	font-size: 3rem;
-
 	text-align: center;
+	font-family: 'Libre Caslon Display', serif;
 }
 h3 {
 	font-size: 1.625rem;
+	font-weight: normal;
+	font-family: 'Libre Caslon Display', serif;
+}
+h4 {
+	font-size: 1.25rem;
+	font-weight: normal;
 }
 
-@media screen and (max-width: 768px) {
-	h1 {
-		font-size: 3.5rem;
-	}
-	h2 {
-		font-size: 1.8rem;
-	}
-	.main-header {
-		left: 20px !important;
-	}
-}
-@media screen and (max-width: 468px) {
-	h1 {
-		font-size: 2rem;
-	}
-}
-img {
-	width: 100%;
-}
-ul {
-	margin: 0;
-	padding: 0;
+.margin {
+	@include margin;
 }
 
-li {
-	list-style: none;
-}
+// Header.js-----------------------------
 
 @media screen and (max-width: 468px) {
 	.line-break {
@@ -135,6 +130,15 @@ li {
 		&:before {
 			content: '\A';
 			white-space: pre;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		& {
+			top: 45%;
+			left: 20px;
+			h1 {
+				font-size: 3.5rem;
+			}
 		}
 	}
 }
