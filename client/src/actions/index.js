@@ -11,7 +11,7 @@ export const fetchDatas = datas => {
 
 export const fetchArticles = () => async dispatch => {
 	const response = await axios.get(
-		'http://localhost:8888/jk-wp/wp-json/wp/v2/posts'
+		'https://jkapi.yasuhiro-k.com/wp-json/wp/v2/posts'
 	);
 	console.log(response.data);
 	dispatch({ type: FETCH_ARTICLES, payload: response.data });
@@ -19,22 +19,22 @@ export const fetchArticles = () => async dispatch => {
 
 export const fetchArticle = slug => async dispatch => {
 	const response = await axios.get(
-		`http://localhost:8888/jk-wp/wp-json/wp/v2/posts?slug=${slug}`
+		`https://jkapi.yasuhiro-k.com/wp-json/wp/v2/posts?slug=${slug}`
 	);
 	dispatch({ type: FETCH_ARTICLE, payload: response.data[0] });
 };
 
 export const fetchTutors = () => async dispatch => {
 	const response = await axios.get(
-		'http://localhost:8888/jk-wp/wp-json/wp/v2/tutors?_embed'
+		'https://jkapi.yasuhiro-k.com/wp-json/wp/v2/tutors?_embed'
 	);
 	dispatch({ type: FETCH_TUTORS, payload: response.data });
 };
 
 export const submitContact = (formData, history) => async dispatch => {
 	const response = await axios.post(
-		`http://wordpress.local.com:8888/wordpress/jk-wp/wp-json/contact-form-7/v1/contact-forms/11/feedback`,
+		`https://jkapi.yasuhiro-k.com/wp-json/contact-form-7/v1/contact-forms/11/feedback`,
 		formData
 	);
-	history.push('/contact');
+	history.push('/');
 };
