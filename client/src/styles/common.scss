@@ -13,7 +13,9 @@ $blueGreen: #70afac;
 :root {
 	font-size: 16px;
 }
-
+body, #root {
+	overflow-x: hidden;
+}
 @media screen and (max-width: 468px) {
 	:root {
 		font-size: 3vw;
