@@ -52,7 +52,7 @@ class SlideShow extends React.Component {
 					/>
 
 					<div data-aos="fade-up" className="meta centered">
-						{tutor.title.rendered}, {tutor.acf.age} year-old, US
+						{tutor.title.rendered}, {tutor.acf.age} year-old, {tutor.acf.place}
 					</div>
 				</div>
 			);
@@ -66,19 +66,19 @@ class SlideShow extends React.Component {
 					<li className="slides-wrap showSlide">
 						<img
 							className="slideImage"
-							src={`${process.env.PUBLIC_URL}/images/sampleImage1.jpg`}
+							src={`${process.env.PUBLIC_URL}/images/sampleImage1.png`}
 						/>
 					</li>
 					<li className="slides-wrap ">
 						<img
 							className="slideImage "
-							src={`${process.env.PUBLIC_URL}/images/sampleImage4.jpg`}
+							src={`${process.env.PUBLIC_URL}/images/sampleImage2.png`}
 						/>
 					</li>
 					<li className="slides-wrap">
 						<img
 							className="slideImage"
-							src={`${process.env.PUBLIC_URL}/images/sampleImage5.jpg`}
+							src={`${process.env.PUBLIC_URL}/images/sampleImage3.png`}
 						/>
 					</li>
 				</ul>
