@@ -45,7 +45,7 @@ class Home extends React.Component {
 									consequuntur magni dolores eos qui ratione voluptatem sequi
 									nesciunt.
 								</p>
-								<div className="ui four column grid">
+								{/* <div className="ui four column grid">
 									<div className="column">
 										<img
 											data-aos="fade-up"
@@ -78,7 +78,7 @@ class Home extends React.Component {
 											className="ui image"
 										/>
 									</div>
-								</div>
+								</div> */}
 							</div>
 							<div className="one wide column" />
 							<div className="five wide column">
@@ -119,7 +119,7 @@ class Home extends React.Component {
 									<img
 										data-aos="fade-up"
 										data-aos-delay="100"
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										src={`${process.env.PUBLIC_URL}/images/lesson-img01.jpg`}
 										className="ui image "
 									/>
 								</div>
@@ -127,7 +127,7 @@ class Home extends React.Component {
 									<img
 										data-aos="fade-up"
 										data-aos-delay="200"
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										src={`${process.env.PUBLIC_URL}/images/lesson-img02.jpg`}
 										className="ui image"
 									/>
 								</div>
@@ -135,7 +135,7 @@ class Home extends React.Component {
 									<img
 										data-aos="fade-up"
 										data-aos-delay="300"
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										src={`${process.env.PUBLIC_URL}/images/lesson-img03.jpg`}
 										className="ui image"
 									/>
 								</div>
@@ -143,7 +143,7 @@ class Home extends React.Component {
 									<img
 										data-aos="fade-up"
 										data-aos-delay="400"
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										src={`${process.env.PUBLIC_URL}/images/lesson-img04.jpg`}
 										className="ui image"
 									/>
 								</div>
