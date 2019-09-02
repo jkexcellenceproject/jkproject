@@ -102,7 +102,7 @@ class Articles extends Component {
 					<div className="bcg-base">
 						<img
 							className="bcg-image"
-							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
+							src={`${process.env.PUBLIC_URL}/images/articles-mv-img.jpg`}
 						/>
 						<div className="main-header">
 							<h1 data-aos="fade-up">
