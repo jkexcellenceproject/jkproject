@@ -47,7 +47,7 @@ class StudentInterview extends Component {
 						<img
 							data-aos="fade-up"
 							className="ui medium circular image"
-							src="https://dummyimage.com/150x150/ccc/fff"
+							src={`${process.env.PUBLIC_URL}/images/avator2.png`}
 						/>
 					</div>
 					<div className="twelve wide column student-info">
@@ -66,7 +66,7 @@ class StudentInterview extends Component {
 					<div className="bcg-base container">
 						<img
 							className="bcg-image"
-							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
+							src={`${process.env.PUBLIC_URL}/images/studentinterview-mv-img.jpg`}
 						/>
 						<div className="main-header">
 							<h1 data-aos="fade-up">

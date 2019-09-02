@@ -37,7 +37,7 @@ class Contact extends Component {
 					<div className="bcg-base">
 						<img
 							className="bcg-image"
-							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
+							src={`${process.env.PUBLIC_URL}/images/contact-mv-img.jpg`}
 						/>
 						<div className="main-header">
 							<h1>
