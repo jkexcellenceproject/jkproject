@@ -19,7 +19,7 @@ class AboutUs extends React.Component {
 					<div className="bcg-base">
 						<img
 							className="bcg-image"
-							src={`${process.env.PUBLIC_URL}/images/sampleImage2.jpg`}
+							src={`${process.env.PUBLIC_URL}/images/about-mv-img.jpg`}
 						/>
 						<div className="main-header">
 							<h1
@@ -29,7 +29,7 @@ class AboutUs extends React.Component {
 							>
 								What’s{' '}
 								<span data-aos="fade-up" data-aos-delay="250" className="br">
-									JK EXCELLETNT
+									JK EXCELLENCE
 								</span>
 								<span data-aos="fade-up" data-aos-delay="500" className="br">
 									For?
@@ -67,7 +67,7 @@ class AboutUs extends React.Component {
 									<img
 										data-aos="fade-up"
 										data-aos-delay="200"
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										src={`${process.env.PUBLIC_URL}/images/mission-img01.jpg`}
 									/>
 								</div>
 							</div>
@@ -76,7 +76,7 @@ class AboutUs extends React.Component {
 								<div className="five wide column center aligned">
 									<img
 										data-aos="fade-up"
-										src="https://react.semantic-ui.com/images/wireframe/image.png"
+										src={`${process.env.PUBLIC_URL}/images/avator2.png`}
 									/>
 								</div>
 
@@ -136,7 +136,7 @@ class AboutUs extends React.Component {
 								<img
 									data-aos="fade-left"
 									data-aos-delay="200"
-									src="https://dummyimage.com/450x300/ccc/fff"
+									src={`${process.env.PUBLIC_URL}/images/howto-img01.jpg`}
 									className="ui image"
 								/>
 							</div>
@@ -166,7 +166,7 @@ class AboutUs extends React.Component {
 								<img
 									data-aos="fade-right"
 									data-aos-delay="200"
-									src="https://dummyimage.com/450x300/ccc/fff"
+									src={`${process.env.PUBLIC_URL}/images/howto-img02.jpg`}
 									className="ui image"
 								/>
 							</div>
@@ -196,7 +196,7 @@ class AboutUs extends React.Component {
 								<img
 									data-aos="fade-left"
 									data-aos-delay="200"
-									src="https://dummyimage.com/450x300/ccc/fff"
+									src={`${process.env.PUBLIC_URL}/images/howto-img03.jpg`}
 									className="ui image"
 								/>
 							</div>
@@ -226,7 +226,7 @@ class AboutUs extends React.Component {
 								<img
 									data-aos="fade-right"
 									data-aos-delay="200"
-									src="https://dummyimage.com/450x300/ccc/fff"
+									src={`${process.env.PUBLIC_URL}/images/howto-img04.jpg`}
 									className="ui image"
 								/>
 							</div>
