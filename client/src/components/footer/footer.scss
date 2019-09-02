@@ -19,9 +19,13 @@ small {
 
 .footer-links .item {
 	margin: 10px 0;
+	text-align: left;
 }
 
 @media screen and (max-width: 468px) {
+	.footer-links .item {
+		text-align: center;
+	}
 	.ui.vertical.footer {
 		.ui.container {
 			margin-left: 0 !important;
