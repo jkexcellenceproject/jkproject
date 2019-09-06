@@ -16,40 +16,75 @@ class EnglishArticleCard extends React.Component {
 		if (this.props.articles === null) {
 			return <p>Loading</p>;
 		}
-		return this.props.articles.map(article => {
-			if (!article[0]) {
-				console.log(article.dateSent);
+		let delay = 0;
+		return this.props.articles
+			.filter((article, idx) => idx < 3)
+			.map(article => {
+				const text = article.content.rendered;
+				const sliceText = text.length > 80 ? text.slice(0, 80) + '…' : text;
+				const spiltDate = article.date.split('T');
+				delay += 100;
 				return (
-					<div className="column">
-						<div className="item" key={article.id}>
-							<div className="right floated content">
-								<div className="ui large teal button">
-									<Link to={`/article/edit/${article.id}`}>Edit</Link>
-								</div>
-								<button
-									className="ui large red button"
-									onClick={() => {
-										if (window.confirm('Do you want to delete it ?'))
-											this.deletePost(article.id);
-									}}
-								>
-									Delete
-								</button>
-							</div>
-							<img
-								className="ui image"
-								src="https://dummyimage.com/150x150/ccc/fff"
+					<>
+						<div
+							data-aos="fade-up"
+							data-aos-delay={delay}
+							key={article.title.rendered}
+							className="four wide column article-box"
+						>
+							<Link
+								to={`/article-detail/${article.slug}`}
+								className="aticle-image"
 							/>
-							<div className="content">{article.title}</div>
+							<Link to={`/article-detail/${article.slug}`}>
+								<div className="content" style={{ marginTop: '10px' }}>
+									<div className="meta">
+										<span className="date white-text">{spiltDate[0]}</span>
+									</div>
+								</div>
+							</Link>
+							<h3 className="white-text" style={{ margin: '0 0 10px 0' }}>
+								{article.title.rendered}
+							</h3>
+							<p
+								className="description white-text"
+								dangerouslySetInnerHTML={{ __html: sliceText }}
+							/>
+							<Link
+								to={`/article-detail/${article.slug}`}
+								className="ui button yellow"
+							>
+								Read More
+							</Link>
 						</div>
-					</div>
+					</>
 				);
-			}
-		});
+			});
 	}
 
 	render() {
-		return <div className="four column row">{this.renderList()}</div>;
+		return (
+			<div className="ui stackable grid container">
+				<div className="four wide column">
+					<h3 data-aos="fade-right" className="white-text">
+						Lorem ipsum dolor sit amet
+					</h3>
+					<p data-aos="fade-right" data-aos-delay="200" className="white-text">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+					</p>
+					<Link
+						data-aos="fade-right"
+						data-aos-delay="300"
+						className="ui yellow button"
+						to="/articles"
+					>
+						See Articles
+					</Link>
+				</div>
+				{this.renderList()}
+			</div>
+		);
 	}
 }
 

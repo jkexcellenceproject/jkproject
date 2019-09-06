@@ -1,132 +1,68 @@
 @import 'common';
+// Home.js----------------------------------
 
-.blueGreen {
-	background-color: $blueGreen;
+.faq-title {
+	color: $blue !important;
 }
-
-.red {
-	background-color: $red;
-}
-
-.white-text {
-	color: white !important;
-}
-
-.blue-text {
-	color: $blueGreen !important;
-}
-
-.content-padding {
-	@include padding;
-}
-
-.margin {
-	@include margin;
-}
-
-// Header.js
-
-.links {
-	img {
-		background-size: contain;
-		width: auto !important;
-		height: 40px;
-	}
-	a {
-		color: $yellow !important;
-	}
-}
-
-// Home.js
-.slides-wrap {
-	position: relative;
-	overflow: hidden;
-}
-
-.slideImage {
-	object-fit: cover;
-	object-position: 50% 25%;
-	width: 100%;
-	height: 100vh;
-	vertical-align: bottom;
-}
-
-// AboutUs.js
-
-.bcg-base {
-	background-color: $blue;
-	position: relative;
-}
-
-.bcg-image {
-	width: 100%;
-	height: 60vh;
-	object-fit: cover;
-	vertical-align: bottom;
-	object-position: 50% 30%;
-	opacity: 0.6;
-}
-
-.main-header {
-	position: absolute;
-	top: 33%;
-	left: 15%;
-	font-size: 4.5rem;
-	line-height: 5rem;
-	color: white;
-
-	.br {
-		&:before {
-			content: '\A';
-			white-space: pre;
-		}
-	}
-}
-
-// Faq.js
-
-// .accordion {
-// 	background-color: #eee;
-// 	color: #444;
-// 	cursor: pointer;
-// 	padding: 18px;
-// 	width: 100%;
-// 	text-align: left;
-// 	border: none;
-// 	outline: none;
-// 	transition: 0.4s;
-
-// 	&:after {
-// 		content: '\02795';
-// 		font-size: 13px;
-// 		color: #777;
-// 		float: right;
-// 		margin-left: 5px;
-// 	}
-// }
-
-// .active,
-// .accordion:hover {
-// 	background-color: #ccc;
-// }
-
-// .active:after {
-// 	content: '\2796';
-// }
-
-// .panel {
-// 	padding: 0 18px;
-// 	background-color: white;
-// 	display: none;
-// 	overflow: hidden;
-// 	padding: 0 18px;
-// 	max-height: 0;
-// 	transition: max-height 0.2s ease-out;
-// }
 
 // Carousel.js
+
+.slider-control-centerright,
+.slider-control-centerleft {
+	display: none;
+}
 
 .carousel-wrap {
 	width: 50%;
 	margin: 0 auto;
+}
+
+// Student Interview
+
+.student-interview {
+	.interview-content {
+		margin-bottom: 50px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		h3 {
+			font-size: 2rem;
+			color: #f4c252;
+		}
+		h4 {
+			margin: 15px 0 5px 0;
+			font-size: 1.625rem;
+		}
+		.image {
+			width: 100%;
+		}
+		.student-info {
+			padding: 0 50px !important;
+			text-align: left;
+			align-self: center;
+			color: white;
+		}
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+		@media screen and (max-width: 768px) {
+			.image {
+				margin: auto;
+				width: 300px;
+			}
+			.student-info {
+				text-align: center;
+			}
+			&:nth-child(even) {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+// Contact.js----------------------------------------
+.contact-form {
+	width: 600px;
+	margin: 0 auto !important;
+	background-color: lighten($blueGreen, 40%) !important;
 }

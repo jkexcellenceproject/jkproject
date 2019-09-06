@@ -1,0 +1,84 @@
+@import '../../styles/common.scss';
+
+.margin {
+	@include margin;
+}
+
+// AboutUs.js--------------------------------
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+
+	.image-wrap {
+		padding-left: 50px;
+	}
+}
+
+.reverse-order {
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+
+	.image-wrap {
+		padding-left: 0;
+		padding-right: 50px;
+	}
+}
+
+.text-wrap {
+	width: 55%;
+}
+
+.image-wrap {
+	width: 40%;
+}
+
+.about-company {
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.president-info {
+    margin-top: 50px;
+    img {
+        width: auto;
+        max-height: 200px;
+        border-radius: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.lesson-info {
+    h3 {
+        font-weight: bold;
+    }
+    p {
+        color: #707070;
+        padding-left: 20px;
+    }
+    @media screen and (max-width: 768px) {
+        p {
+            padding-left: 0; 
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.flex-container,
+	.reverse-order {
+		flex-direction: column;
+
+		div {
+			width: 100%;
+			padding: 15px 0;
+			text-align: center;
+		}
+		.image-wrap {
+			padding: 0;
+		}
+	}
+}

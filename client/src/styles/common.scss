@@ -6,9 +6,18 @@ $blue: #448fb3;
 $blueGreen: #70afac;
 
 // mixins
-@mixin padding {
-	padding-top: 100px;
-	padding-bottom: 100px;
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 468px) {
+	:root {
+		font-size: 3vw;
+	}
 }
 
 @mixin margin {
@@ -17,4 +26,119 @@ $blueGreen: #70afac;
 
 p {
 	word-wrap: break-word;
+	font-size: 1rem;
+}
+a {
+	color: white;
+	transition: 0.5s;
+}
+a:hover {
+	color: white;
+	opacity: 0.5;
+}
+h1 {
+	font-size: 4.5rem;
+	color: white;
+	font-family: 'Libre Caslon Display', serif;
+}
+h2 {
+	width: 100%;
+	margin-bottom: 50px;
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	font-family: 'Libre Caslon Display', serif;
+}
+h3 {
+	font-size: 1.625rem;
+	font-weight: normal;
+	font-family: 'Libre Caslon Display', serif;
+}
+h4 {
+	font-size: 1.25rem;
+	font-weight: normal;
+}
+
+.margin {
+	@include margin;
+}
+
+// Header.js-----------------------------
+
+@media screen and (max-width: 468px) {
+	.line-break {
+		display: block;
+	}
+}
+// .main-visual {
+// 	margin-bottom: 100px;
+// }
+.content-padding {
+	padding: 100px 0;
+}
+
+.aticle-image {
+	min-height: 250px;
+	padding: 0 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: url(/images/logo.png) center center no-repeat white;
+	background-size: contain;
+	h3 {
+		color: #e86262;
+	}
+	@media screen and (max-width: 1024px) {
+		min-height: 230px;
+	}
+}
+.blueGreen {
+	background-color: $blueGreen;
+}
+.red {
+	background-color: $red;
+}
+.white-text {
+	color: white !important;
+}
+.blue-text {
+	color: $blueGreen !important;
+}
+.bcg-base {
+	background-color: $blue;
+	position: relative;
+}
+.bcg-image {
+	width: 100%;
+	height: 60vh;
+	object-fit: cover;
+	vertical-align: bottom;
+	object-position: 50% 30%;
+	opacity: 0.6;
+}
+.main-header {
+	position: absolute;
+	top: 33%;
+	left: 15%;
+	font-size: 4.5rem;
+	line-height: 5rem;
+	color: white;
+	.br {
+		&:before {
+			content: '\A';
+			white-space: pre;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		& {
+			top: 45%;
+			left: 20px;
+			h1 {
+				font-size: 3.5rem;
+			}
+		}
+	}
 }
